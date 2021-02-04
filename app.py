@@ -44,7 +44,7 @@ def reg_user():
 
         register = {
             "username": request.form.get("username").lower(),
-            "password": generate_password_hash(request.form.get("password"))
+            "password": generate_password_hash(request.form.get("password")),
         }
         mongo.db.users.insert_one(register)
 
@@ -80,6 +80,25 @@ def login():
             return redirect(url_for("login"))
 
     return render_template("login.html")
+
+
+# Log out function
+@app.route("/logout")
+def logout():
+    # remove user from session cookie
+    flash("Goodbye, Have a nice travel!")
+    session.pop("user")
+    return redirect(url_for("login"))
+
+
+# Profile function
+@app.route("/globetrotter/<username>", methods=["GET", "POST"])
+def globetrotter(username):
+    # grab the session user's username from db
+    username = mongo.db.users.find_one(
+        {"username": session["user"]})["username"]
+    return render_template("globetrotter.html", username=username)
+
 
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),

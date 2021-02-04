@@ -25,13 +25,16 @@
                 <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="fas fa-bars"></i></a>
                 <ul class="right hide-on-med-and-down">
                     <li><a href="{{ url_for('travel') }}">Home</a></li>
-                    <li><a href="#">Profile</a></li>
-                    <li><a href="#">Globe traveler</a></li>
-                    <li><a href="#">Categories</a></li>
-                    <li><a href="{{ url_for('reg_user') }}">Register</a></li>
-                    <li><a href="{{ url_for('login') }}">Log In</a></li>
-                    <li><a href="#">Log Out</a></li>
-
+                        <!-- If user is true-->
+                      {% if session.user %}
+                        <li><a href="{{ url_for('globetrotter', username=session['user']) }}">Profile</a></li>
+                        <li><a href="#">New Task</a></li>
+                        <li><a href="#">Manage Categories</a></li>
+                        <li><a href="{{ url_for('logout') }}">Log Out</a></li>
+                    {% else %}
+                        <li><a href="{{ url_for('login') }}">Log In</a></li>
+                        <li><a href="{{ url_for('reg_user') }}">Register</a></li>
+                    {% endif %}
                 </ul>
             </div>
         </nav>
@@ -41,12 +44,16 @@
                 <h4 class="center-align light-blue-text text-darken 4">Globe Traveler</h4>
             </li>
             <li><a href="{{ url_for('travel') }}">Home</a></li>
-            <li><a href="#">Profile</a></li>
-            <li><a href="#">Globe traveler</a></li>
-            <li><a href="#">Categories</a></li>
-            <li><a href="{{ url_for('reg_user') }}">Register</a></li>
-            <li><a href="{{ url_for('login') }}">Log In</a></li>
-            <li><a href="#">Log Out</a></li>
+               <!-- If user is true-->
+                      {% if session.user %}
+                        <li><a href="{{ url_for('globetrotter', username=session['user']) }}">Profile</a></li>
+                        <li><a href="#">New Task</a></li>
+                        <li><a href="#">Manage Categories</a></li>
+                        <li><a href="{{ url_for('logout') }}">Log Out</a></li>
+                    {% else %}
+                        <li><a href="{{ url_for('login') }}">Log In</a></li>
+                        <li><a href="{{ url_for('reg_user') }}">Register</a></li>
+                    {% endif %}
         </ul>
     </header>
     <section>
