@@ -24,10 +24,11 @@ app.secret_key = os.environ.get("SECRET_KEY")
 # We setup an instance of Pymongo and add the app using a constructor method
 mongo = PyMongo(app)
 
+
 @app.route("/")
-@app.route("/travel")
-def travel():
-    return render_template("traveling.html", travel=travel)
+@app.route("/adventure")
+def adventure():
+    return render_template("adventure.html", adventure=adventure)
 
 
 # Reg_user function
@@ -68,8 +69,7 @@ def login():
                     existing_user["password"], request.form.get("password")):
                         session["user"] = request.form.get("username").lower()
                         flash("Welcome, {}".format(
-                            request.form.get("username")))
-                        
+                            request.form.get("username")))                    
             else:
                 # invalid password match
                 flash("Incorrect Username and/or Password")
@@ -98,6 +98,33 @@ def globetrotter(username):
     username = mongo.db.users.find_one(
         {"username": session["user"]})["username"]
     return render_template("globetrotter.html", username=username)
+
+
+# Travel Profile function
+@app.route("/travel_profile")
+def travel_profile():
+    return render_template("travel_profile.html")
+
+
+# Add Adventure
+@app.route("/add_adventure", methods=["GET", "POST"])
+def add_adventure():
+    if request.method == "POST":
+        travels = {
+            "continent": request.form.get("continent"),
+            "country": request.form.get("country"),
+            "city": request.form.get("city"),
+            "date": request.form.get("date"),
+            "description": request.form.get("description"),
+            "created_by": session["user"]
+        }
+        mongo.db.traveler.insert_one(traveler)
+        flash("Task Successfully Added")
+        return redirect(url_for("adventure"))
+
+    continent = mongo.db.continent.find().sort("continent", 1)
+    return render_template("add_adventure.html", continent= continent)
+
 
 
 if __name__ == "__main__":

@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h3 class="light-blue-text text-darken-4 center-align">Latest Adventures</h3>
+
+<ul class="collapsible">
+    {% for adventure in adventures %}
+    <li>
+        <div class="collapsible-header white-text light-blue darken-4 text-shadow">
+            <i class="fas fa-caret-down"></i>
+            <strong>{{ adventure.continent }}</strong> : {{ adventure.date }}
+        </div>
+        <div class="collapsible-body">
+            <strong>{{ adventure.continent }}</strong>
+            <p>{{ adventure.description }}</p>
+            <p><em>by: {{ adventure.created_by }}</em></p>
+        </div>
+    </li>
+    {% endfor %}
+</ul>
+
+{% endblock %}
