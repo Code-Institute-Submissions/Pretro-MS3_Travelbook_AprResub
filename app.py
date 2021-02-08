@@ -28,7 +28,14 @@ mongo = PyMongo(app)
 @app.route("/")
 @app.route("/adventure")
 def adventure():
-    return render_template("adventure.html", adventure=adventure)
+    travels = list(mongo.db.travels.find())
+    return render_template("adventure.html", travels=travels)
+
+
+@app.route("/add_adventure")
+def add_adventure():
+    continents = mongo.db.continents.find().sort("continent" , 1)
+    return render_template("add_adventure.html", continents=continents)
 
 
 # Reg_user function
@@ -45,7 +52,8 @@ def reg_user():
 
         register = {
             "username": request.form.get("username").lower(),
-            "password": generate_password_hash(request.form.get("password")),
+            "password": generate_password_hash(request.form.get("password"),
+            ),
         }
         mongo.db.users.insert_one(register)
 
@@ -98,33 +106,6 @@ def globetrotter(username):
     username = mongo.db.users.find_one(
         {"username": session["user"]})["username"]
     return render_template("globetrotter.html", username=username)
-
-
-# Travel Profile function
-@app.route("/travel_profile")
-def travel_profile():
-    return render_template("travel_profile.html")
-
-
-# Add Adventure
-@app.route("/add_adventure", methods=["GET", "POST"])
-def add_adventure():
-    if request.method == "POST":
-        travels = {
-            "continent": request.form.get("continent"),
-            "country": request.form.get("country"),
-            "city": request.form.get("city"),
-            "date": request.form.get("date"),
-            "description": request.form.get("description"),
-            "created_by": session["user"]
-        }
-        mongo.db.traveler.insert_one(traveler)
-        flash("Task Successfully Added")
-        return redirect(url_for("adventure"))
-
-    continent = mongo.db.continent.find().sort("continent", 1)
-    return render_template("add_adventure.html", continent= continent)
-
 
 
 if __name__ == "__main__":
