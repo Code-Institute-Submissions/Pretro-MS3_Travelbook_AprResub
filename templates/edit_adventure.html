@@ -9,9 +9,13 @@
                     <div class="input-field col s12">
                         <i class="fas fa-folder-open prefix light-blue-text text-darken-4"></i>
                         <select id="continent" name="continent" class="validate" required>
-                            <option value="" disabled selected>Choose Continent</option>
+                            <option value="" disabled>Choose Continent</option>
                             {% for cont in continents %}
+                                {% if cont.continent == traveler.continent%}
+                            <option value="{{ cont.continent }}" selected>{{ cont.continent }}</option>
+                            {% else %}
                             <option value="{{ cont.continent }}">{{ cont.continent }}</option>
+                            {% endif %}
                             {% endfor %}
                         </select>
                         <label for="continent">Continent</label>
@@ -21,7 +25,7 @@
                 <div class="row">
                     <div class="input-field col s12">
                         <i class="fas fa-globe prefix light-blue-text text-darken-4"></i>
-                        <input id="country" name="country" minlength="5" maxlength="50" type="text" class="validate"
+                        <input id="country" name="country" minlength="5" maxlength="50" value="{{traveler.country}}" type="text" class="validate"
                             required>
                         <label for="country">Country</label>
                     </div>
@@ -30,7 +34,7 @@
                 <div class="row">
                     <div class="input-field col s12">
                         <i class="fas fa-city prefix light-blue-text text-darken-4"></i>
-                        <input id="city" name="city" minlength="5" maxlength="50" type="text" class="validate" required>
+                        <input id="city" name="city" minlength="5" maxlength="50" value="{{traveler.city}}" type="text" class="validate" required>
                         <label for="city">City</label>
                     </div>
                 </div>
@@ -38,7 +42,7 @@
                 <div class="row">
                     <div class="input-field col s12">
                         <i class="fas fa-calendar-alt prefix light-blue-text text-darken-4"></i>
-                        <input id="date" name="date" type="text" class="datepicker validate" required>
+                        <input id="date" name="date" type="text" value="{{traveler.date}}" class="datepicker validate" required>
                         <label for="date">Date of travel</label>
                     </div>
                 </div>
@@ -47,7 +51,7 @@
                     <div class="input-field col s12">
                         <i class="fas fa-align-left prefix light-blue-text text-darken-4"></i>
                         <textarea id="description" name="description" minlength="5" maxlength="200"
-                            class="materialize-textarea validate" required></textarea>
+                            class="materialize-textarea validate" required>{{-traveler.description-}}</textarea>
                         <label for="description">Description</label>
                     </div>
                 </div>
@@ -57,6 +61,10 @@
                         <button type="submit" class="btn-large light-blue darken-1 text-shadow">
                             Edit <i class="fas fa-edit right"></i>
                         </button>
+                         <!-- cancel button -->
+                        <a href="{{ url_for('adventure') }}" class="btn-large red text-shadow">
+                        Cancel <i class="fas fa-times-circle right"></i>
+                        </a>
                     </div>
                 </div>
             </form>
