@@ -54,6 +54,18 @@ def add_adventure():
 #Edit adventure
 @app.route("/edit_adventure/<adventure_id>", methods=["GET", "POST"])
 def edit_adventure(adventure_id):
+    if request.method == "POST":
+        enviar = {
+            "continent": request.form.get("continent"),
+            "country": request.form.get("country"),
+            "city": request.form.get("city"),
+            "date": request.form.get("date"),
+            "description": request.form.get("description"),
+            "created_by": session["user"]
+        }
+        mongo.db.travels.update({"_id": ObjectId(adventure_id)}, enviar)
+        flash("Information Updated Successfully")
+
     traveler = mongo.db.travels.find_one({"_id": ObjectId(adventure_id)})
     continents = mongo.db.continents.find().sort("continent" , 1)
     return render_template("edit_adventure.html", traveler=traveler, continents=continents)
