@@ -71,6 +71,21 @@ def edit_adventure(adventure_id):
     return render_template("edit_adventure.html", traveler=traveler, continents=continents)
 
 
+#Delete function
+@app.route("/delete_adventure/<adventure_id>")
+def delete_adventure(adventure_id):
+    mongo.db.travels.remove({"_id": ObjectId(adventure_id)})
+    flash("Adventure deleted")
+    return redirect(url_for("adventure"))
+
+#Search function
+@app.route("/search", methods=["GET", "POST"])
+def search():
+    query = request.form.get("query")
+    travels = list(mongo.db.travels.find({"$text": {"$search": query}}))
+    return render_template("adventure.html", travels=travels)
+
+
 # Reg_user function
 @app.route("/reg_user", methods=["GET", "POST"])
 def reg_user():
