@@ -32,10 +32,31 @@ def adventure():
     return render_template("adventure.html", travels=travels)
 
 
-@app.route("/add_adventure")
+@app.route("/add_adventure", methods=["GET", "POST"])
 def add_adventure():
+    if request.method == "POST":
+        traveler = {
+            "continent": request.form.get("continent"),
+            "country": request.form.get("country"),
+            "city": request.form.get("city"),
+            "date": request.form.get("date"),
+            "description": request.form.get("description"),
+            "created_by": session["user"]
+        }
+        mongo.db.travels.insert_one(traveler)
+        flash("Travel destination ready!")
+        return redirect(url_for("adventure"))
+
     continents = mongo.db.continents.find().sort("continent" , 1)
     return render_template("add_adventure.html", continents=continents)
+
+
+#Edit adventure
+@app.route("/edit_adventure/<adventure_id>", methods=["GET", "POST"])
+def edit_adventure(adventure_id):
+    traveler = mongo.db.travels.find_one({"_id": ObjectId(adventure_id)})
+    continents = mongo.db.continents.find().sort("continent" , 1)
+    return render_template("edit_adventure.html", traveler=traveler, continents=continents)
 
 
 # Reg_user function
