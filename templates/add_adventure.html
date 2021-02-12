@@ -2,12 +2,14 @@
 {% extends "base.html" %}
 {% block content %}
 
-<h3 class="light-blue-text text-darken-4 center-align">What's your Adventure?<h3>
-        <div class="row card-panel grey lighten-5">
+<h3 class="light-blue-text text-darken-4 center-align">What's your Adventure
+    </h3>
+        <div class="row  ">
             <form class="col s12" method="POST" action="{{ url_for('add_adventure') }}">
-                <div class="row">
-                    <div class="input-field col s12">
-                        <i class="fas fa-folder-open prefix light-blue-text text-darken-4"></i>
+                <!--continent section-->
+                <div class="row ">
+                    <div class="input-field col s6 ">
+                        <i class="fas fa-folder-open prefix red-text text-darken-4"></i>
                         <select id="continent" name="continent" class="validate" required>
                             <option value="" disabled selected>Choose Continent</option>
                             {% for cont in continents %}
@@ -16,11 +18,12 @@
                         </select>
                         <label for="continent">Continent</label>
                     </div>
-                </div>
+                
                 <!--Country-->
-                <div class="row">
-                    <div class="input-field col s12">
-                        <i class="fas fa-globe prefix light-blue-text text-darken-4"></i>
+                
+                    <div class="input-field col s6">
+                        <i class="fas fa-globe prefix red-text text-darken-4">
+                        </i>
                         <input id="country" name="country" minlength="5" maxlength="50" type="text" class="validate"
                             required>
                         <label for="country">Country</label>
@@ -28,17 +31,18 @@
                 </div>
                 <!--City-->
                 <div class="row">
-                    <div class="input-field col s12">
-                        <i class="fas fa-city prefix light-blue-text text-darken-4"></i>
+                    <div class="input-field col s6">
+                        <i class="fas fa-city prefix red-text text-darken-4">
+                        </i>
                         <input id="city" name="city" minlength="5" maxlength="50" type="text" class="validate"
                             required>
                         <label for="city">City</label>
                     </div>
-                </div>
+                
                 <!--Date of travel-->
-                <div class="row">
-                    <div class="input-field col s12">
-                        <i class="fas fa-calendar-alt prefix light-blue-text text-darken-4"></i>
+                
+                    <div class="input-field col s6">
+                        <i class="fas fa-calendar-alt prefix red-text text-darken-4"></i>
                         <input id="date" name="date" type="text" class="datepicker validate" required>
                         <label for="date">Date of travel</label>
                     </div>
@@ -46,7 +50,7 @@
                 <!--Description-->
                 <div class="row">
                     <div class="input-field col s12">
-                        <i class="fas fa-align-left prefix light-blue-text text-darken-4"></i>
+                        <i class="fas fa-align-left prefix red-text text-darken-4"></i>
                         <textarea id="description" name="description" minlength="5" maxlength="200"
                             class="materialize-textarea validate" required></textarea>
                         <label for="description">Description</label>

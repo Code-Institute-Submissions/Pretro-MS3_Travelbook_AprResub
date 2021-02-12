@@ -29,56 +29,71 @@ mongo = PyMongo(app)
 @app.route("/adventure")
 def adventure():
     travels = list(mongo.db.travels.find())
+    for travel in travels:
+        try:
+            continent_name = mongo.db.continents.find_one({"_id": travel["continent"]})
+            user_name = mongo.db.users.find_one({"_id": travel["created_by"]})
+            travel["continent"] = continent_name["continent"]
+            travel["created_by"] = user_name["username"]
+        except:
+            pass
     return render_template("adventure.html", travels=travels)
 
 
 @app.route("/add_adventure", methods=["GET", "POST"])
 def add_adventure():
     if request.method == "POST":
+        continent = mongo.db.continents.find_one({"continent": 
+            request.form.get("continent")})
+        user = mongo.db.users.find_one({"username": session["user"]})
         traveler = {
-            "continent": request.form.get("continent"),
+            "continent": ObjectId(continent["_id"]),
             "country": request.form.get("country"),
             "city": request.form.get("city"),
             "date": request.form.get("date"),
             "description": request.form.get("description"),
-            "created_by": session["user"]
+            "created_by":  ObjectId(user["_id"])
         }
         mongo.db.travels.insert_one(traveler)
         flash("Travel destination ready!")
         return redirect(url_for("adventure"))
 
-    continents = mongo.db.continents.find().sort("continent" , 1)
+    continents = mongo.db.continents.find().sort("continent", 1)
     return render_template("add_adventure.html", continents=continents)
 
 
-#Edit adventure
+# Edit adventure
 @app.route("/edit_adventure/<adventure_id>", methods=["GET", "POST"])
 def edit_adventure(adventure_id):
     if request.method == "POST":
+        continent = mongo.db.continents.find_one({"continent": request.form.get("continent")})
+        user = mongo.db.users.find_one({"username": session["user"]})
         enviar = {
-            "continent": request.form.get("continent"),
+            "continent": ObjectId(continent["_id"]),
             "country": request.form.get("country"),
             "city": request.form.get("city"),
             "date": request.form.get("date"),
             "description": request.form.get("description"),
-            "created_by": session["user"]
+            "created_by": ObjectId(user["_id"])
         }
         mongo.db.travels.update({"_id": ObjectId(adventure_id)}, enviar)
         flash("Information Updated Successfully")
 
     traveler = mongo.db.travels.find_one({"_id": ObjectId(adventure_id)})
-    continents = mongo.db.continents.find().sort("continent" , 1)
-    return render_template("edit_adventure.html", traveler=traveler, continents=continents)
+    continents = mongo.db.continents.find().sort("continent", 1)
+    return render_template("edit_adventure.html", traveler = traveler, continents= continents)
 
 
-#Delete function
+# Delete function
 @app.route("/delete_adventure/<adventure_id>")
 def delete_adventure(adventure_id):
     mongo.db.travels.remove({"_id": ObjectId(adventure_id)})
     flash("Adventure deleted")
     return redirect(url_for("adventure"))
 
-#Search function
+# Search function
+
+
 @app.route("/search", methods=["GET", "POST"])
 def search():
     query = request.form.get("query")
@@ -101,7 +116,7 @@ def reg_user():
         register = {
             "username": request.form.get("username").lower(),
             "password": generate_password_hash(request.form.get("password"),
-            ),
+                                               ),
         }
         mongo.db.users.insert_one(register)
 
@@ -123,9 +138,9 @@ def login():
             # Checks the password to match user input
             if check_password_hash(
                     existing_user["password"], request.form.get("password")):
-                        session["user"] = request.form.get("username").lower()
-                        flash("Welcome, {}".format(
-                            request.form.get("username")))                    
+                session["user"] = request.form.get("username").lower()
+                flash("Welcome, {}".format(
+                    request.form.get("username")))
             else:
                 # invalid password match
                 flash("Incorrect Username and/or Password")
@@ -152,8 +167,17 @@ def logout():
 def globetrotter(username):
     # grab the session user's username from db
     username = mongo.db.users.find_one(
-        {"username": session["user"]})["username"]
-    return render_template("globetrotter.html", username=username)
+        {"username": session["user"]})
+    user_travels = list(mongo.db.travels.find({"created_by": username["_id"]}))
+    for travel in user_travels:
+        continent_name = mongo.db.continents.find_one({"_id": travel["continent"]})
+        user_name = mongo.db.users.find_one({"_id": travel["created_by"]})
+        travel["continent"] = continent_name["continent"]
+        travel["created_by"] = user_name["username"]
+    if session["user"]:
+        data = {"username": username["username"], "user_travels": user_travels}
+        return render_template("globetrotter.html", data=data)
+    return redirect(url_for("login"))
 
 
 if __name__ == "__main__":

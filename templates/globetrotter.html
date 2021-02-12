@@ -3,52 +3,36 @@
 {% block content %}
 <div class="row">
     <div class="col s12 m8 offset-m2">
-        <h3 class="center-align red-text text-darken-4">
-            {{ username }}'s Profile
+        <h3 class="center-align light-blue-text text-darken-4">
+            {{ data.username }}'s Profile
         </h3>
     </div>
-                <!--FirstName-->
-                <div class="input-field col s6">
-                <i class="fas fa-hand-rock prefix red-text text-shadow "></i>
-                <input id="icon_hand" type="text" class="validate">
-                <label for="icon_hand">First Name</label>
-            </div><!--LastName-->
-                <div class="input-field col s6">
-                <i class="fas fa-signature prefix red-text text-darken-4"></i>
-                <input id="icon_signature" type="text" class="validate">
-                <label for="icon_signature">Last Name</label>
-            </div>
-            <!--Nationality-->
-                <div class="input-field col s6">
-                <i class="fas fa-location-arrow prefix red-text text-darken-4"></i>
-                <input id="icon_location-arrow" type="text" class="validate">
-                <label for="icon_location-arrow">Nationality</label>
-            </div>
-             <!--Gender-->
-                <div class="input-field col s6">
-                <i class="fas fa-venus-mars prefix red-text text-darken-4"></i>
-                <input id="icon_venus-mars" type="text" class="validate">
-                <label for="icon_venus-mars">Gender</label>
-            </div>
-             <!--Date of birth-->
-                <div class="input-field col s6">
-                <i class="fas fa-birthday-cake prefix red-text text-darken-4"></i>
-                <input id="icon_birthday-cake" type="text" class="validate">
-                <label for="icon_birthday-cake">Date of Birth</label>
-            </div>
-             <!--Phone-->
-                <div class="input-field col s6">
-                <i class="fas fa-phone prefix red-text text-darken-4"></i>
-                <input id="icon_phone" type="text" class="validate">
-                <label for="icon_phone">Phone</label>
-            </div>
-             <!--Email-->
-                <div class="input-field col s6">
-                <i class="fas fa-envelope-square prefix red-text text-darken-4"></i>
-                <input id="icon_envelope" type="text" class="validate">
-                <label for="icon_envelope">Email</label>
-            </div>
 </div>
 
+<ul class="collapsible popout">
+    {% for traveler in data.user_travels %}
+    <li>
+        <div class="collapsible-header white-text grey darken-3 text-shadow">
+            <div class="col s3">
+                <i class="fas fa-caret-down"></i>
+                {% if session.user|lower == traveler.created_by|lower %}
+                <a href="{{url_for('delete_adventure', adventure_id=traveler._id)}}"
+                    class="btn-small red accent-4">Delete</a>
+                <a href="{{url_for('edit_adventure', adventure_id=traveler._id)}}"
+                    class="btn-small light-blue lighten-1">Edit</a>
+                {% endif %}
+            </div>
+            <div class="col s9 pais">
+                <strong>{{ traveler.country }}</strong> : {{ traveler.date }}
+            </div>
+        </div>
 
+        <div class="collapsible-body">
+            <strong>{{ traveler.continent }}</strong>
+            <p>{{ traveler.description }}</p>
+            <p><em>by: {{ traveler.created_by }}</em></p>
+        </div>
+    </li>
+    {% endfor %}
+</ul>
 {% endblock %}

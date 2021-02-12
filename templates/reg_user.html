@@ -2,12 +2,12 @@
 {% extends "base.html" %}
 {% block content %}
 
-<h3 class="center-align red-text text-darken-4">Register Globetrotter</h3>
+<h3 class="center-align red-text text-darken-4">Register Traveler</h3>
 
 <div class="row">
     <form class="col s12 m8 offset-m2" method="POST" action="{{ url_for('reg_user') }}">
         <!-- username -->
-        <div class="row">
+        <div class="row ">
             <div class="input-field col s12">
                 <i class="fas fa-user-plus prefix red-text text-darken-4"></i>
                 <input id="username" name="username" type="text" minlength="3" maxlength="20"
@@ -26,7 +26,7 @@
         </div>
         <!-- register -->
         <div class="row">
-            <button type="submit" class="col s12 btn-large red darken-4 text-shadow">
+            <button type="submit" class="col s12 btn-large red darken-4 text-shadow boton">
                 Register <i class="fas fa-sign-in-alt"></i>
             </button>
         </div>

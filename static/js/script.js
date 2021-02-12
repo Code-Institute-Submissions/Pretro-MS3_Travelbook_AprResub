@@ -1,18 +1,27 @@
 $(document).ready(function () {
-    $(".sidenav").sidenav({edge: "right"});
+    $(".sidenav").sidenav({ edge: "right" });
     $(".collapsible").collapsible();
     $(".tooltipped").tooltip();
     $('select').formSelect();
+    $('.carousel').carousel({
+        duration: 150,
+        dist: -80,
+        shift: 5,
+        padding: 5,
+        numVisible: 3,
+        indicators: true,
+        noWrap: false
+
+    });
     $(".datepicker").datepicker({
         format: "dd mmmm, yyyy",
-        yearRange: 3,
+        yearRange: 10,
         showClearBtn: true,
         i18n: {
             done: "Select"
         }
     });
-
-validateMaterializeSelect();
+    validateMaterializeSelect();
     function validateMaterializeSelect() {
         let classValid = { "border-bottom": "1px solid #4caf50", "box-shadow": "0 1px 0 0 #4caf50" };
         let classInvalid = { "border-bottom": "1px solid #f44336", "box-shadow": "0 1px 0 0 #f44336" };
