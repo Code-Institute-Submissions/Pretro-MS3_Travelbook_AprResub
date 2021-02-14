@@ -99,3 +99,20 @@ body {
 .btn-small{
     border-radius: 20px;
 }
+
+/*Input button*/
+.btn-large {
+    border-radius: 20px;
+}
+
+.btn{
+    border-radius: 20px;
+}
+
+/*media queries*/
+@media(min-width: 375px) {
+  .card-panel {
+    padding:15px;
+    border-radius:20px;
+  }
+}
