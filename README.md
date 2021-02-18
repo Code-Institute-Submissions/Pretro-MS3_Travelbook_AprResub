@@ -161,6 +161,10 @@ As a user of this site, i want to
 
     PEP 8 is a comprehensive styling guide for your Python code. PEP 8’s aim is to bring all Python together under one styling guide. 
 
++ [Flask](https://flask.palletsprojects.com/en/1.1.x/)
+
+    Flask is a micro web framework written in Python. It is classified as a microframework because it does not require particular tools or libraries. It has no database abstraction layer, form validation, or any other components where pre-existing third-party libraries provide common functions. 
+    
 # Testing
 
     The language this project such as HTML, CSS, Pyhton were tested for errors and warnings in the code.
@@ -236,8 +240,8 @@ The Project was deployed to Heroku using the following steps...
 
 1. Log in to your Heroku account
 2. Choose the project you want to deploy
-3. Go to the settings tab
-4. 
+3. Go to the settings tab and at the domains section, you find the link to deploy your project 
+4. Copy your app link and paste it in your browser or push the link to direct come toyour project
 
 ### __GitHub Pages__
 The project was deployed to GitHub Pages using the following steps...
@@ -280,12 +284,13 @@ You should now have a copy of the original repository in your GitHub account.
 
 __Code__
 
-* [Bootstrap 4](https://getbootstrap.com/) Library used throughout the project in the making of the game and to make it responsive.
+* [Materialize](https://materializecss.com) Library used throughout the project in the making of the website and to make it responsive.
 * The code was validated in the following pages for error correction:
 
     + [W3C Valitor HTML](https://validator.w3.org/)
     + [JSHint](https://jshint.com/)
     + [CSS](https://www.w3schools.com/css/default.asp)
+    + [Pep8](http://pep8online.com/)
 
 __Content__
 
