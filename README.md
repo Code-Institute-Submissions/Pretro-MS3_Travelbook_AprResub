@@ -36,6 +36,7 @@ As a user of this site, i want to
 1. As a Frequent User, it's important to see the development of the site, that makes it more interesting to come back to.
 2. As a Frequent User, i want to check to see if there are any new features like pictures or buttons.
 3. As a Frequent User, i want to be able to comunicate with other members.
+4. As a Frequent User, i want to be able to manage my information as easy and fast as possible.
 
 + ### Design
 * _Color Scheme_
@@ -43,22 +44,29 @@ As a user of this site, i want to
     * Red and blue are for input, edit and delete buttons.
     * Cyan is the color for the login and reg user buttons
     * White with dark text shadow is for the navbar titles and footer texts.
+    * The rest of the text are in light-blue and black color.
     
 * Typography
-    * The **Arial, Helvetica, sans-serif** font is the main font used throughout the game.
-    * As a typeface, Arial is one of the most used designs in recent times thanks to the fact that it has specific characteristics that make it more accessible and it has become a basic element for textual content.
-    Arial typeface is easy to read in a variety of sizes and in a variety of applications, not only on screen but also in print.
-    * The **Helvetica** family is characterized by its neutrality, versatility and high readability. It is a very suitable typeface for informational posters.
+    * The **Dancing Script, cursive** is a lively casual script where the letters bounce and change size slightly. Caps are big, and goes below the baseline.
+    Dancing Script references popular scripts typefaces from the 50's.
+    It relates to Murray Hill (Emil Klumpp. 1956) in his weight distribution, and to Mistral (Roger Excoffon. 1953) in his lively bouncing effect.
+    This type of typography suits at it best in friendly, spontaneous and informal look.
+
+    * The **Raleway** is an elegant sans-serif typeface family. It is a display face and the download features both old style and lining numerals, standard and discretionary ligatures, a pretty complete set of diacritics, as well as a stylistic alternate inspired by more geometric sans-serif typefaces than its neo-grotesque inspired default character set.
+
     * **Sans serif** it is usually used for titles that seek to make an impact, for headlines that must be read from a distance or for reading bodies that are relatively short.
     
 * Imagery
-    * Imagery is the face of the game. Though the background its just a color. The main goal of the game are the images used. The images are inspired in the covid-19 advises, and work as a reminder of what we must do nowadays to stay safe. 
-    * The reason why the game do not have a background image and just color is to make it more easier for the user to concentrate on the game cards.    
+    * Imagery is used most for the carousel of the website. The images are the face of this site and reflect at an early stage the purpose of this site. The images are inspired in different cities around the world, each one representing a continent. 
+    * For now the images are only availbale in the carousel, but in a near future the purpose is to be able to store pictures in tyhe database that every register user might be able to load up.
 
 * ## Wireframes ##
 
-    + [Wireframe 1](wireframes/Memory_game.png)
-    + [Wireframe 2](wireframes/Memory_mobile.png)
+    + [Wireframe 1](wireframes/home.png)
+    + [Wireframe 2](wireframes/adventure.png)
+    + [Wireframe 3](wireframes/login.png)
+    + [Wireframe 4](wireframes/profile.png)
+    + [Wireframe 5](wireframes/register.png)
 
 * ## Features ##
     + Responsive on all devices
@@ -267,7 +275,7 @@ __Code__
 
 __Content__
 
-* All content (this means the coding) was 
+* The content (this means the coding) for this project was taken from the mini project tutorial, my own code and ideas and guidence from my mentor Antonio Rodriguez.
 
 __Media__
 * All Images were taken from the following site:
@@ -279,4 +287,4 @@ __Acknowledgements__
 
 * Tutor support at Code Institute for their support and help.
 
-* Tim Nelson for the easy to understand tutorial from Code Institute who guided me in this project.
+* Tim Nelson for the easy to understand tutorial from Code Institute who guided   me in this project.
