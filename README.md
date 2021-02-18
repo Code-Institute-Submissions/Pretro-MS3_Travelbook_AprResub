@@ -67,6 +67,7 @@ As a user of this site, i want to
     + [Wireframe 3](wireframes/login.png)
     + [Wireframe 4](wireframes/profile.png)
     + [Wireframe 5](wireframes/register.png)
+    + [Wireframe 6](wireframes/responsive.png)
 
 * ## Features ##
     + Responsive on all devices
@@ -172,30 +173,34 @@ As a user of this site, i want to
 
 ##  Testing User Stories from User Experience (UX) Section 
 
-* As a first time Visitor, i want to be able to easy navegate through the gameboard.
+* As a first time Visitor, i want to be able to easy navegate through the website.
 
-    a. Since the game is very simple build it makes it easy for the user to see what it about.
+    a. Since the site is very simple build it makes it easy for the user to see what it is about.
 
-    b. The game is build with a button "start game" that makes it easy for user to understand when the game beigins.
+    b. The website is build with a navmenu that makes it possible for the user to navigate and gives the possibbility to register and login
 
-    c. Also if the users wants to start a new game while playing just have to push the start button and not necessary wait until the session is over.
+    c. There is also a search box where the user can search by contries that different travelers have been to.
 
-* As a returning time visitor, i expect to see improvments in the game, updates.
+* As a returning time visitor, i expect to see improvments, updates and new features.
 
-    a. There will be updates in the game like change of color, pictures and layouts.
+    a. There will be updates like change of color, pictures and layouts.
 
-    b. Also new scenarios and other features like new buttons and options
+    b. Also new features like be able to make your own gallery with pictures
+
+    c. And the search feature will be able not only for countries but also for users and city names
 
 * As Frequent time visitor. I want to check if there are any newly added challenges in the game.
 
-    a. New challanges will appear as the game evolutionates.
+    a. New features like own gallery, a personal profile page will be added.
 
-    b. The new challenges will consist in different types of gameboard with less time to make it through.
+    b. Also in the future the will be the possibbility to send messages between members 
 
-    c. There are also thoughts of making the game a two player, in which you can compete against an opponents.
+    c. There site is also expected to be able in different languages.
+
+    d. And the most ambitious project is to make a chat channel so members can communicate direct with each others.
 
 *  During my test period i focus on the user stories.
-    The game has been tested in different browser, such as.
+    The website has been checked in different browser, such as.
 
     1. Chrome
 
@@ -214,16 +219,25 @@ As a user of this site, i want to
 
     4. Laptop
 
-* Friends and family members played to review the game and to point out any bugs and/or user experience issues.
+* Friends and family tested the site by loggin in and writing about there stories. This was also made to point out any bugs and/or user experience issues.
 
 ## Known Bugs ##
 
-    + The gameboard shows at the left side of the screen instead of in the center in iPad portrait · width: 768px
-    + Delay esperience of the pictures sometimes, but not all the times.
+    + The footer changes places in the ipad when there are no registers in the profile page.
+    + In the galaxy S5 the footer text in some parts appears one on top another. Also the buttons in the profile page appears not at the same space.
+    + The Titles of carousel such as "Where have you been?" appears in white color on responsive devices.
 # Deployment #
 
-To deploy this porject, i used the hosting platform of Github
+To deploy this porject, i used the hosting platform of Github and heroku
 The step to deploy this project were as follows.
+
+### __Heroku__
+The Project was deployed to Heroku using the following steps...
+
+1. Log in to your Heroku account
+2. Choose the project you want to deploy
+3. Go to the settings tab
+4. 
 
 ### __GitHub Pages__
 The project was deployed to GitHub Pages using the following steps...
@@ -275,7 +289,7 @@ __Code__
 
 __Content__
 
-* The content (this means the coding) for this project was taken from the mini project tutorial, my own code and ideas and guidence from my mentor Antonio Rodriguez.
+* The content (this means the coding) for this project was taken from the mini project tutorial from Code Institute, also part of the code is my own code and ideas and guidence from my mentor Antonio Rodriguez.
 
 __Media__
 * All Images were taken from the following site:
@@ -287,4 +301,4 @@ __Acknowledgements__
 
 * Tutor support at Code Institute for their support and help.
 
-* Tim Nelson for the easy to understand tutorial from Code Institute who guided   me in this project.
+* Tim Nelson for the easy to understand tutorial from Code Institute that i use for guidence in this project.
