@@ -2,10 +2,8 @@
 
 The project is inspired on the idea to make a website where everyone who is interested in traveling can have the opportunity to share his/her experience.
 This project is the third part of the milestone project. The system database is made in MongoDB. For the making of the functions it has been programing in Pyhton. The main focus was on the "crud" functions, 
-making the project available to create,read,update and delete data by the users who must register to be able to use the system. The porject has been deploy in Heroku. The technologies used for the making of 
-this project are in this readme file later on.
-
- The main goal of this project is to be able to share with other your traveling experiences, where you have been, what you did and if you would recommend the place you've been to anybody else who shares the same interest as you.
+making the project available to create,read,update and delete data by the users who must register to be able to use the system. The porject has been deploy in Heroku. The technologies used for the making of this project are in this readme file later on.
+The main goal of this project is to be able to share with other your traveling experiences, where you have been, what you did and if you would recommend the place you've been to anybody else who shares the same interest as you.
 
 ## __UX__
 
@@ -37,33 +35,33 @@ __The purpose of this site is to :__
 
 ### __Returning time visitors goals__
 
-1. As a Returning Visitor, i want to see improvments in the website.
+1. As a Returning Visitor, i want to see improvments in the website.
 
-2. As a Returning Visitor, i want to see updates available.
+2. As a Returning Visitor, i want to see updates available.
 
-3. As a Returning Visitor, i want to see new features.
+3. As a Returning Visitor, i want to see new features.
 
 ### __Frequent time visitors goals__
 
-1. As a Frequent User, it's important to see the development of the site, that makes it more interesting to come back to.
+1. As a Frequent User, it's important to see the development of the site, that makes it more interesting to come back to.
 
-2. As a Frequent User, i want to be able to comunicate with other members.
+2. As a Frequent User, i want to be able to comunicate with other members.
 
-3. As a Frequent User, i want to be able to manage my information as easy and fast as possible.
+3. As a Frequent User, i want to be able to manage my information as easy and fast as possible.
 
 ### __Design__
 
 __Color Scheme__
 
-*The main color of the website is grey and white for the pages.*
+* The main color of the website is grey and white for the pages.
 
-*Red and blue are for input, edit and delete buttons.*
+* Red and blue are for input, edit and delete buttons.
 
-*Cyan is the color for the login and reg user buttons.*
+* Cyan is the color for the login and reg user buttons.
 
-*White with dark text shadow is for the navbar titles and footer texts.*
+* White with dark text shadow is for the navbar titles and footer texts.
 
-*The rest of the text are in light-blue and black color.*
+* The rest of the text are in light-blue and black color.
     
 ### __Typography__
 
@@ -71,7 +69,7 @@ __Color Scheme__
   It relates to Murray Hill (Emil Klumpp. 1956) in his weight distribution, and to Mistral (Roger Excoffon. 1953) in his lively bouncing effect.
   This type of typography suits at it best in friendly, spontaneous and informal look.
 
-**Raleway** is an elegant sans-serif typeface family. It is a display face and the download features both old style and lining numerals, standard and discretionary ligatures, a pretty complete set of diacritics, as well as a stylistic alternate inspired by more geometric sans-serif typefaces than its neo-grotesque inspired default character set.
+**Raleway** is an elegant sans-serif typeface family. It is a display face and the download features both old style and lining numerals, standard and discretionary ligatures, a pretty complete set of diacritics, as well as a stylistic alternate inspired by more geometric sans-serif typefaces than it's neo-grotesque inspired default character set.
 
 **Sans serif** it is usually used for titles that seek to make an impact, for headlines that must be read from a distance or for reading bodies that are relatively short.
     
@@ -131,7 +129,7 @@ __Color Scheme__
 * [MongoDB](https://www.mongodb.com/3)
 
 ## __Frameworks, Libraries & Programs Used__
-  
+
 ##### For the making of this project, the following technologies has been used.
 
 + [Gitpod](https://www.gitpod.io/) 
@@ -144,7 +142,7 @@ __Color Scheme__
     the opportunity to see your repositories if made as open source code.
 
 + [HTML5](https://www.w3schools.com/)
-    
+
     HTML is the language use to make websites. Since it is the standard markup languages for webpages.
 
 + [CSS](https://www.w3schools.com/css/default.asp)
