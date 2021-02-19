@@ -35,7 +35,8 @@ def adventure():
             user_name = mongo.db.users.find_one({"_id": travel["created_by"]})
             travel["continent"] = continent_name["continent"]
             travel["created_by"] = user_name["username"]
-        except:
+        except Exception as e :
+            print(e)
             pass
     return render_template("adventure.html", travels=travels)
 

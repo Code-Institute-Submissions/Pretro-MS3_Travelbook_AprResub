@@ -3,6 +3,7 @@ $(document).ready(function () {
     $(".collapsible").collapsible();
     $(".tooltipped").tooltip();
     $('select').formSelect();
+    $('.modal').modal();
     $('input, textarea').characterCounter();
     $('.carousel').carousel({
         duration: 150,
