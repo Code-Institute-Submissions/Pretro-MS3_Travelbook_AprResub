@@ -1,9 +1,18 @@
+<<<<<<< HEAD
 # __Globe traveler__
 
 The project is inspired on the idea to make a website where everyone who is interested in traveling can have the opportunity to share his/her experience.
 This project is the third part of the milestone project. The system database is made in MongoDB. For the making of the functions it has been programing in Pyhton. The main focus was on the "crud" functions, 
 making the project available to create,read,update and delete data by the users who must register to be able to use the system. The porject has been deploy in Heroku. The technologies used for the making of 
 this project are in this readme file later on.
+=======
+# Globe traveler
+
+The project is inspired on the idea to make a website where everyone who is interested in traveling can have the opportunity to share his/her experience.
+This project is the third part of the milestone project. The system database is made in MongoDB. For the making of the functions it has been programing in Pyhton. 
+The main focus was on the "crud" functions, making the project available to create,read,update and delete data by the users who must register to be able to use the system. 
+The porject has been deploy in Heroku. The technologies used for the making of this project are in this readme file later on.
+>>>>>>> f4ab0754124b814048bf8e2746a2df4f2e1d8bd2
 
  The main goal of this project is to be able to share with other your traveling experiences, where you have been, what you did and if you would recommend the place you've been to anybody else who shares the same interest as you.
 
