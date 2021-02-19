@@ -1,18 +1,9 @@
-<<<<<<< HEAD
 # __Globe traveler__
 
 The project is inspired on the idea to make a website where everyone who is interested in traveling can have the opportunity to share his/her experience.
 This project is the third part of the milestone project. The system database is made in MongoDB. For the making of the functions it has been programing in Pyhton. The main focus was on the "crud" functions, 
 making the project available to create,read,update and delete data by the users who must register to be able to use the system. The porject has been deploy in Heroku. The technologies used for the making of 
 this project are in this readme file later on.
-=======
-# Globe traveler
-
-The project is inspired on the idea to make a website where everyone who is interested in traveling can have the opportunity to share his/her experience.
-This project is the third part of the milestone project. The system database is made in MongoDB. For the making of the functions it has been programing in Pyhton. 
-The main focus was on the "crud" functions, making the project available to create,read,update and delete data by the users who must register to be able to use the system. 
-The porject has been deploy in Heroku. The technologies used for the making of this project are in this readme file later on.
->>>>>>> f4ab0754124b814048bf8e2746a2df4f2e1d8bd2
 
  The main goal of this project is to be able to share with other your traveling experiences, where you have been, what you did and if you would recommend the place you've been to anybody else who shares the same interest as you.
 
@@ -217,7 +208,7 @@ __Color Scheme__
 
     Flask is a micro web framework written in Python. It is classified as a microframework because it does not require particular tools or libraries. It has no database abstraction layer, form validation, or any other components where pre-existing third-party libraries provide common functions. 
     
-# Testing
+## Testing
 
     The language this project such as HTML, CSS, Pyhton were tested for errors and warnings in the code.
 
@@ -306,7 +297,7 @@ __Color Scheme__
 
 4. Microsoft edge
 
-* The responsive part has also been tested in http://www.responsinator.com/ for  
+* The responsive part has also been tested in http://www.responsinator.com/ for
 
 1. Ipad
 
