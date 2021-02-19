@@ -1,4 +1,5 @@
 # Globe traveler
+
 The project is inspired on the idea to make a website where everyone who is interested in traveling can have the opportunity to share his/her experience.
 This project is the third part of the milestone project. The system database is made in MongoDB. For the making of the functions it has been programing in Pyhton. 
 The main focus was on the "crud" functions, making the project available to create,read,update and delete data by the users who must register to be able to use the system. 
