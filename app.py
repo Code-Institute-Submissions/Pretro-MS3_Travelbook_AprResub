@@ -31,11 +31,12 @@ def adventure():
     travels = list(mongo.db.travels.find())
     for travel in travels:
         try:
-            continent_name = mongo.db.continents.find_one({"_id": travel["continent"]})
+            continent_name = mongo.db.continents.find_one(
+                {"_id": travel["continent"]})
             user_name = mongo.db.users.find_one({"_id": travel["created_by"]})
             travel["continent"] = continent_name["continent"]
             travel["created_by"] = user_name["username"]
-        except Exception as e :
+        except Exception as e:
             print(e)
             pass
     return render_template("adventure.html", travels=travels)
@@ -44,8 +45,8 @@ def adventure():
 @app.route("/add_adventure", methods=["GET", "POST"])
 def add_adventure():
     if request.method == "POST":
-        continent = mongo.db.continents.find_one({"continent": 
-            request.form.get("continent")})
+        continent = mongo.db.continents.find_one(
+            {"continent": request.form.get("continent")})
         user = mongo.db.users.find_one({"username": session["user"]})
         traveler = {
             "continent": ObjectId(continent["_id"]),
@@ -67,7 +68,8 @@ def add_adventure():
 @app.route("/edit_adventure/<adventure_id>", methods=["GET", "POST"])
 def edit_adventure(adventure_id):
     if request.method == "POST":
-        continent = mongo.db.continents.find_one({"continent": request.form.get("continent")})
+        continent = mongo.db.continents.find_one(
+            {"continent": request.form.get("continent")})
         user = mongo.db.users.find_one({"username": session["user"]})
         enviar = {
             "continent": ObjectId(continent["_id"]),
@@ -82,7 +84,8 @@ def edit_adventure(adventure_id):
 
     traveler = mongo.db.travels.find_one({"_id": ObjectId(adventure_id)})
     continents = mongo.db.continents.find().sort("continent", 1)
-    return render_template("edit_adventure.html", traveler = traveler, continents= continents)
+    return render_template("edit_adventure.html", traveler=traveler,
+                           continents=continents)
 
 
 # Delete function
@@ -171,7 +174,8 @@ def globetrotter(username):
         {"username": session["user"]})
     user_travels = list(mongo.db.travels.find({"created_by": username["_id"]}))
     for travel in user_travels:
-        continent_name = mongo.db.continents.find_one({"_id": travel["continent"]})
+        continent_name = mongo.db.continents.find_one(
+            {"_id": travel["continent"]})
         user_name = mongo.db.users.find_one({"_id": travel["created_by"]})
         travel["continent"] = continent_name["continent"]
         travel["created_by"] = user_name["username"]

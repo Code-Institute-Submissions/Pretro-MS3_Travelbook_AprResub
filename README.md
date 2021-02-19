@@ -1,7 +1,9 @@
 # Globe traveler
 The project is inspired on the idea to make a website where everyone who is  
 interested in traveling can have the opportunity to share his/her experience.
-This project is the third part of the milestone project. The system database is made in MongoDB. For the making of the functions it has been programing in Pyhton. The main focus was on the "crud" fucntions, making the project available to create,read,update and delete data by the users who must register to be able to use the system. The porject has been deploy in Heroku. The technologies used for the making of this project are in this readme file later on.
+This project is the third part of the milestone project. The system database is made in MongoDB. For the making of the functions it has been programing in Pyhton. The main focus was on the "crud" functions, 
+making the project available to create,read,update and delete data by the users who must register to be able to use the system. The porject has been deploy in Heroku. The technologies used for the making of 
+this project are in this readme file later on.
 
  The main goal of this project is to be able to share with other your traveling experiences, where you have been, what you did and if you would recommend the place you've been to anybody else who shares the same interest as you.
 
@@ -16,81 +18,104 @@ __The purpose of this site is to :__
 ## __User stories__
 
 ### First time visitors goals 
-As a user of this site, i want to
 
-1.As a FirstTime Visitor, i want to be able to easy navegate through the site.
-2.As a FirstTime Visitor, it must be easy for me to understand what the site is about.
-3.As a FirstTime Visitor, i must be able to see different pages of the site .
-4.As a FirstTime Visitor, i must read and understand the texts.
-5.As a FirstTime Visitor, The site must be responsive in several devices
-6.As a FirstTime Visitor, the pictures must have a good resolution.
-7.As a FirstTime Visitor, i want to be able to manage information in an easy way
+1. As a FirstTime Visitor, i want to be able to easy navegate through the site.
+2. As a FirstTime Visitor, it must be easy for me to understand what the site is about.
+3. As a FirstTime Visitor, i must be able to see different pages of the site .
+4. As a FirstTime Visitor, i must read and understand the texts.
+5. As a FirstTime Visitor, The site must be responsive in several devices
+6. As a FirstTime Visitor, the pictures must have a good resolution.
+7. As a FirstTime Visitor, i want to be able to manage information in an easy way
 
 ### Returning time visitors goals
+
 1. As a Returning Visitor, i want to see improvments in the website.
 2. As a Returning Visitor, i want to see updates available.
 3. As a Returning Visitor, i want to see new features.
 
 ### Frequent time visitors goals
-1. As a Frequent User, it's important to see the development of the site, that makes it more interesting to come back to.
+
+1. As a Frequent User, it's important to see the development of the site, 
+   that makes it more interesting to come back to.
 2. As a Frequent User, i want to be able to comunicate with other members.
 3. As a Frequent User, i want to be able to manage my information as easy and fast as possible.
 
 + ### Design
-* _Color Scheme_
-    * The main color of the website is grey and white for the pages.
-    * Red and blue are for input, edit and delete buttons.
-    * Cyan is the color for the login and reg user buttons
-    * White with dark text shadow is for the navbar titles and footer texts.
-    * The rest of the text are in light-blue and black color.
+
+* __Color Scheme__
+
+* The main color of the website is grey and white for the pages.
+* Red and blue are for input, edit and delete buttons.
+* Cyan is the color for the login and reg user buttons
+* White with dark text shadow is for the navbar titles and footer texts.
+* The rest of the text are in light-blue and black color.
     
 * Typography
-    * **Dancing Script, cursive** is a lively casual script where the letters bounce and change size slightly. Caps are big, and goes below the baseline.
+
+* **Dancing Script, cursive** is a lively casual script where the letters bounce and change size slightly. Caps are big, and goes below the baseline.
     Dancing Script references popular scripts typefaces from the 50's.
     It relates to Murray Hill (Emil Klumpp. 1956) in his weight distribution, and to Mistral (Roger Excoffon. 1953) in his lively bouncing effect.
     This type of typography suits at it best in friendly, spontaneous and informal look.
 
-    * **Raleway** is an elegant sans-serif typeface family. It is a display face and the download features both old style and lining numerals, standard and discretionary ligatures, a pretty complete set of diacritics, as well as a stylistic alternate inspired by more geometric sans-serif typefaces than its neo-grotesque inspired default character set.
+* **Raleway** is an elegant sans-serif typeface family. It is a display face and the download features both old style and lining numerals, standard and discretionary ligatures, a pretty complete set of diacritics, as well as a stylistic alternate inspired by more geometric sans-serif typefaces than its neo-grotesque inspired default character set.
 
-    * **Sans serif** it is usually used for titles that seek to make an impact, for headlines that must be read from a distance or for reading bodies that are relatively short.
+* **Sans serif** it is usually used for titles that seek to make an impact, for headlines that must be read from a distance or for reading bodies that are relatively short.
     
 * Imagery
     * Imagery is used most for the carousel of the website. The images are the face of this site and reflect at an early stage the purpose of this site. The images are inspired in different cities around the world, each one representing a continent. 
     * For now the images are only availbale in the carousel, but in a near future the purpose is to be able to store pictures in tyhe database that every register user might be able to load up.
 
-* ## Wireframes ##
+## Wireframes ##
 
     + [Wireframe 1](static/wireframes/home.png)
+
     + [Wireframe 2](/static/wireframes/adventure.png)
+
     + [Wireframe 3](/static/wireframes/login.png)
+
     + [Wireframe 4](/static/wireframes/profile.png)
+
     + [Wireframe 5](/static/wireframes/register.png)
+
     + [Wireframe 6](/static/wireframes/responsive.png)
 
-* ## Features ##
+## Features ##
+
     * Responsive on all devices.
+
     * Interactive elements.
+
     * Responsive navbar.
+
     * Footer with link to pages related with what the system is about.
+
     * Carousel, making the site more attractive to users ad easy to understand what it is about.
+
     * Register page where users can register to make use of the website.
+
     * Login page where only register users can have access to.
 
-* # Technologies Used #
+# Technologies Used #
+
      Languages Used
+
     * [HTML5](https://en.wikipedia.org/wiki/HTML5)
+
     * [CSS3](https://en.wikipedia.org/wiki/CSS)
+
     * [Javascript](https://en.wikipedia.org/wiki/JavaScript)
+
     * [Python](https://www.python.org/)
 
-     Library Used
+# Library Used #
 
     * [Jquery](https://jquery.com/)   
 
-     Database Used 
+# Database Used 
+
     * [MongoDB](https://www.mongodb.com/3)
 
-  ## Frameworks, Libraries & Programs Used ## 
+## Frameworks, Libraries & Programs Used ## 
   
   For the making of this project, the following technologies has been used.
 
