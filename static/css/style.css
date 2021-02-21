@@ -20,11 +20,11 @@ nav .brand-logo.center{
 }
 
 .country-label {
-    margin: 5px;
+    margin: 20px;
 }
 
 .pais{
-    margin: 5px;
+    margin: 20px;
 }
 
 /* Carousel section*/
@@ -164,6 +164,9 @@ nav .brand-logo.center{
     border-radius: 20px;
     width: 130px;
     left: 10px;
+}
+.pais {
+    margin: 20px;
 }
 }
 @media screen and (max-width: 600px) {
