@@ -99,6 +99,7 @@ nav .brand-logo.center{
 .light-blue.darken-1 {
     background-color: #039be5 !important;
     margin-right: 15px;
+    margin-top: 15px;
 }
 
 .red.accent-4 {
@@ -131,19 +132,24 @@ nav .brand-logo.center{
     padding-bottom: 15px;
 }
 
+.text-shadow {
+    text-shadow: 2px 2px 2px black;
+    /* left: 40%; */
+    /* margin-bottom: 15px; */
+    margin-top: 15px;
+    left: 200px;
+}
+
 /*Input button*/
 .btn-large {
     border-radius: 20px;
     left: 1%;
 }
  
-
 .btn{
     border-radius: 20px;
     width: 130px;
 }
-
-
 
 @media screen and (max-width: 1024px) {
 .light-blue.darken-1 {
@@ -152,6 +158,12 @@ nav .brand-logo.center{
     margin-top: 5px;
     margin-bottom: 10px;
     margin-top: 15px;
+    left:15px;
+}
+.btn {
+    border-radius: 20px;
+    width: 130px;
+    left: 10px;
 }
 }
 @media screen and (max-width: 600px) {
@@ -163,11 +175,12 @@ nav .brand-logo.center{
 .btn {
     border-radius: 20px;
     margin-bottom: 10px;
-    /*left: 15%;*/
+    left: 15%;
 }
 .red {
     background-color: #F44336 !important;
     margin-left: 1px;
+    left: 12px;
 }
 .red.accent-4 {
     background-color: #D50000 !important;
@@ -178,6 +191,18 @@ nav .brand-logo.center{
     background-color: #29b6f6 !important;
     left: 1%;
     margin-bottom: 5px;
+}
+.collapsible-header {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    line-height: 1.1rem;
+    padding: 1.4rem;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
 }
 }
 
@@ -191,5 +216,18 @@ nav .brand-logo.center{
 .btn{
     border-radius: 20px;
     left: 1rem;
+}
+nav .brand-logo {
+    position: absolute;
+    color: #039be5;
+    display: inline-block;
+    font-size: 1.5rem;
+    padding: 0;
+}
+
+h5 {
+    font-size: 1.2rem;
+    line-height: 110%;
+    margin: 1.0933333333rem 0 .656rem 0;
 }
 }
