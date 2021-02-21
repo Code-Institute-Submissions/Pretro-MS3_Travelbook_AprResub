@@ -10,7 +10,7 @@ $(document).ready(function () {
         dist: -80,
         shift: 5,
         padding: 5,
-        numVisible: 3,
+        numVisible: 10,
         indicators: true,
         noWrap: false
 

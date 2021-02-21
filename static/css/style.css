@@ -114,8 +114,8 @@ nav .brand-logo.center{
 /*Search box*/
 .card-panel {
    padding: 5px;
-   margin: 3rem 5rem 3rem 5rem;
-    border-radius: 20px;
+   margin: rem 5rem 3rem 5rem;
+   border-radius: 20px;
 }
 
 .btn-small{
@@ -143,6 +143,17 @@ nav .brand-logo.center{
     width: 130px;
 }
 
+
+
+@media screen and (max-width: 1024px) {
+.light-blue.darken-1 {
+    background-color: #039be5 !important;
+    margin-right: 15px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
+}
 @media screen and (max-width: 600px) {
  nav .brand-logo.center {
     left: 35%;
@@ -152,7 +163,7 @@ nav .brand-logo.center{
 .btn {
     border-radius: 20px;
     margin-bottom: 10px;
-    left: 15%;
+    /*left: 15%;*/
 }
 .red {
     background-color: #F44336 !important;
@@ -170,11 +181,15 @@ nav .brand-logo.center{
 }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 375px) {
 .card-panel {
     padding: 5px;
-    margin: 3rem 5rem 3rem 2rem;
+   /* margin: 0, 0, 1rem, 0;*/
     border-radius: 20px;
-    width: 80%;
+   /* width: 80%;*/
+}
+.btn{
+    border-radius: 20px;
+    left: 1rem;
 }
 }
