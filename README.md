@@ -1,5 +1,7 @@
 # __Globe traveler__
 
++ [Globe traveler](https://ms3-traveler-project.herokuapp.com/)
+
 The project is inspired on the idea to make a website where everyone who is interested in traveling can have the opportunity to share his/her experience.
 This project is the third part of the milestone project. The system database is made in MongoDB. For the making of the functions it has been programing in Pyhton. The main focus was on the "crud" functions, 
 making the project available to create,read,update and delete data by the users who must register to be able to use the system. The porject has been deploy in Heroku. The technologies used for the making of this project are in this readme file later on.
@@ -75,8 +77,8 @@ __Color Scheme__
     
 ### __Imagery__
 
-    *Imagery is used most for the carousel of the website. The images are the face of this site and reflect at an early stage the purpose of this site. The images are inspired in different cities around the world, each one representing a continent.* 
-    *For now the images are only availbale in the carousel, but in a near future the purpose is to be able to store pictures in tyhe database that every register user might be able to load up.*
+Imagery is used most for the carousel of the website. The images are the face of this site and reflect at an early stage the purpose of this site. The images are inspired in different cities around the world, each one representing a continent.
+For now the images are only availbale in the carousel, but in a near future the purpose is to be able to store pictures in tyhe database that every register user might be able to load up.
 
 ## __Wireframes__
 
