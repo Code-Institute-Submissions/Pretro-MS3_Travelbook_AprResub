@@ -66,9 +66,9 @@ __Color Scheme__
     
 ### __Typography__
 
-**Dancing Script, cursive** is a lively casual script where the letters bounce and change size slightly. Caps are big, and goes below the baseline. Dancing Script references popular scripts typefaces from the 50's.
-  It relates to Murray Hill (Emil Klumpp. 1956) in his weight distribution, and to Mistral (Roger Excoffon. 1953) in his lively bouncing effect.
-  This type of typography suits at it best in friendly, spontaneous and informal look.
+**Dancing Script, cursive** is a lively casual script where the letters bounce and change size slightly. Caps are big, and goes below the baseline. 
+  Dancing Script references popular scripts typefaces from the 50's. It relates to Murray Hill (Emil Klumpp. 1956) in his weight distribution, 
+  and to Mistral (Roger Excoffon. 1953) in his lively bouncing effect. This type of typography suits at it best in friendly, spontaneous and informal look.
 
 **Raleway** is an elegant sans-serif typeface family. It is a display face and the download features both old style and lining numerals, standard and discretionary ligatures, a pretty complete set of diacritics, as well as a stylistic alternate inspired by more geometric sans-serif typefaces than it's neo-grotesque inspired default character set.
 
@@ -81,7 +81,7 @@ For now the images are only availbale in the carousel, but in a nea
 
 ## __Wireframes__
 
-+ [Wireframe 1](static/wireframes/home.png)
++ [Wireframe 1](/static/wireframes/home.png)
 
 + [Wireframe 2](/static/wireframes/adventure.png)
 
