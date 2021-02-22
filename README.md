@@ -368,7 +368,7 @@ Library used throughout the project in the making of the website and�
 
 + [W3C Valitor HTML](https://validator.w3.org/)
 + [JSHint](https://jshint.com/)
-+ [CSS](https://www.w3schools.com/css/default.asp)
++ [CSS](https://jigsaw.w3.org/css-validator/#validate_by_input)
 + [Pep8](http://pep8online.com/)
 
 __Content__
