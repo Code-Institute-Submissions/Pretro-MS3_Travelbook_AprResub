@@ -2,8 +2,7 @@
 
 + [Globe traveler](https://ms3-traveler-project.herokuapp.com/)
 
-The project is inspired on the idea to make a website where everyone who is interested in traveling can have the opportunity to share his/her experience.
-This project is the third part of the milestone project. The system database is made in MongoDB. For the making of the functions it has been programing in Pyhton. The main focus was on the "crud" functions, 
+The project is inspired on the idea to make a website where everyone who is interested in traveling can have the opportunity to share his/her experience.This project is the third part of the milestone project. The system database is made in MongoDB. For the making of the functions it has been programing in Pyhton. The main focus was on the "crud" functions, 
 making the project available to create,read,update and delete data by the users who must register to be able to use the system. The porject has been deploy in Heroku. The technologies used for the making of this project are in this readme file later on.
 The main goal of this project is to be able to share with other your traveling experiences, where you have been, what you did and if you would recommend the place you've been to anybody else who shares the same interest as you.
 
@@ -11,11 +10,11 @@ The main goal of this project is to be able to share with other yo
 
 __The purpose of this site is to :__
 
-+ Make available for people to share their travel stories.
++ Make available for people to share their travel stories.
 
-+ Exchange experiences about the places they have been to.
++ Exchange experiences about the places they have been to.
 
-+ Advice each other about places they should or not travel to.
++ Advice each other about places they should or not travel to.
 
 # __User stories__
 
@@ -82,17 +81,17 @@ For now the images are only availbale in the carousel, but in a nea
 
 ## __Wireframes__
 
-    + [Wireframe 1](static/wireframes/home.png)
++ [Wireframe 1](static/wireframes/home.png)
 
-    + [Wireframe 2](/static/wireframes/adventure.png)
++ [Wireframe 2](/static/wireframes/adventure.png)
 
-    + [Wireframe 3](/static/wireframes/login.png)
++ [Wireframe 3](/static/wireframes/login.png)
 
-    + [Wireframe 4](/static/wireframes/profile.png)
++ [Wireframe 4](/static/wireframes/profile.png)
 
-    + [Wireframe 5](/static/wireframes/register.png)
++ [Wireframe 5](/static/wireframes/register.png)
 
-    + [Wireframe 6](/static/wireframes/responsive.png)
++ [Wireframe 6](/static/wireframes/responsive.png)
 
 ## __Features__ 
 
