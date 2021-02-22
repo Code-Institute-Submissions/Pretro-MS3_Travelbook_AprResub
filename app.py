@@ -95,13 +95,22 @@ def delete_adventure(adventure_id):
     flash("Adventure deleted")
     return redirect(url_for("adventure"))
 
+
 # Search function
-
-
 @app.route("/search", methods=["GET", "POST"])
 def search():
     query = request.form.get("query")
     travels = list(mongo.db.travels.find({"$text": {"$search": query}}))
+    for travel in travels:
+        try:
+            continent_name = mongo.db.continents.find_one(
+                {"_id": travel["continent"]})
+            user_name = mongo.db.users.find_one({"_id": travel["created_by"]})
+            travel["continent"] = continent_name["continent"]
+            travel["created_by"] = user_name["username"]
+        except Exception as e:
+            print(e)
+            pass
     return render_template("adventure.html", travels=travels)
 
 
@@ -188,4 +197,4 @@ def globetrotter(username):
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
             port=int(os.environ.get("PORT")),
-            debug=True)
+            debug=False)

@@ -312,7 +312,7 @@ Friends and family tested the site by loggin in and writing about th
 
 + The footer changes places in the ipad when there are no registers in the profile page.
 + In the galaxy S5 the footer text in some parts appears one on top another. Also the buttons in the profile page appears not at the same space.
-+ The Titles of carousel such as "Where have you been?" appears in white color on responsive devices.
++ Sometimes the date that you have chosen, do not show, but the actaul date. To fix this, push the clear button on the calendary and try again.  
 
 ## __Deployment__ 
 
