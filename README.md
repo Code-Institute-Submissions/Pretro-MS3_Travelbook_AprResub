@@ -1,46 +1,43 @@
-# __Globe traveler__
+[Travel Journal]
 
-+ [Globe traveler](https://ms3-traveler-project.herokuapp.com/)
+(https://ms3-traveler-project.herokuapp.com/)
 
-The project is inspired on the idea to make a website where everyone who is interested in traveling can have the opportunity to share his/her experience.This project is the third part of the milestone project. The system database is made in MongoDB. For the making of the functions it has been programing in Pyhton. The main focus was on the "crud" functions, 
-making the project available to create,read,update and delete data by the users who must register to be able to use the system. The porject has been deploy in Heroku. The technologies used for the making of this project are in this readme file later on.
-The main goal of this project is to be able to share with other your traveling experiences, where you have been, what you did and if you would recommend the place you've been to anybody else who shares the same interest as you.
+The goal of this project is to give users the opportunity to keep a journal about the places they have been to and visited. This is possible by register and making a user profil. The user then will be able to create, update and delelte it's own stories. Also there is the possibility to read about other users stories. In the making of this project CRUD functionality where included progamed in pyhton. 
 
-## __UX__
+In future updates of this project, it is intended to expand the profile of the user giving it the ability to upload pictures from places they have been and also a profile picture. To protect the integrity of the user, as a security meature, the information shown as the name and picture profile, will only be available to register users.
 
-__The purpose of this site is to :__
+This is the third project out of four Milestone Projects at the Code Institute for the Full Stack Development Course.
 
-+ Make available for people to share their travel stories.
 
-+ Exchange experiences about the places they have been to.
+# Design Process __UX__
 
-+ Advice each other about places they should or not travel to.
 
-# __User stories__
+## __User stories__
 
-### __First time visitors goals__ 
+### First time visitors goals
+As a user of this site, i want to
 
-1. As a FirstTime Visitor, i want to be able to easy navegate through the site.
+1. As a user, i want to be able to understand what the site is about.
 
-2. As a FirstTime Visitor, it must be easy for me to understand what the site is about.
+2. As a user, i must be able to easy navegate through the different pages of the site.
 
-3. As a FirstTime Visitor, i must be able to see different pages of the site .
+3. As a user, i want to be able to register an account and a profile.
 
-4. As a FirstTime Visitor, i must read and understand the texts.
+4. As a user, i want the process of registration to be understandable.
 
-5. As a FirstTime Visitor, The site must be responsive in several devices
+5. As a user, i want to be able to easily sign up to the site.
 
-6. As a FirstTime Visitor, the pictures must have a good resolution.
+6. As a user, i want to see the pictures of the site have a good resolution.
 
-7. As a FirstTime Visitor, i want to be able to manage information in an easy way
+7. As a user, i want to be able to manage my information in an easy way.
 
-### __Returning time visitors goals__
+### __Returning time user goals__
 
-1. As a Returning Visitor, i want to see improvments in the website.
+1. As a Returning user, i want to see improvments in the website.
 
-2. As a Returning Visitor, i want to see updates available.
+2. As a Returning user, i want to see updates available.
 
-3. As a Returning Visitor, i want to see new features.
+3. As a Returning user, i want to see new features.
 
 ### __Frequent time visitors goals__
 
@@ -54,30 +51,31 @@ __The purpose of this site is to :__
 
 __Color Scheme__
 
-* The main color of the website is grey and white for the pages.
+The colors use in the making of this website:
 
-* Red and blue are for input, edit and delete buttons.
+Colour scheme
+The colours that are used for the start and game over screen are:
 
-* Cyan is the color for the login and reg user buttons.
+* (Yellow) For the main color of the buttons, the logo and the h1 titles. 
 
-* White with dark text shadow is for the navbar titles and footer texts.
+* (Orange) For the hoover effect on the buttons.
 
-* The rest of the text are in light-blue and black color.
+* (Black) Is used for the text shadows.
+
+* (White) Is use for the menu options in the navbar and for the paragraph in the home page.
+
+* (Lightgrey) Is used for the reg and login forms. 
+
+The reason why these colors were chosen is because since the background image is colorful, these colors give a more joyful tone and at the same time allow the user to be focused on what they are doing. Generating a more attractive effect not only for the frequent user but also for the one who visits the site for the first time.
     
 ### __Typography__
 
-**Dancing Script, cursive** is a lively casual script where the letters bounce and change size slightly. Caps are big, and goes below the baseline. 
-  Dancing Script references popular scripts typefaces from the 50's. It relates to Murray Hill (Emil Klumpp. 1956) in his weight distribution, 
-  and to Mistral (Roger Excoffon. 1953) in his lively bouncing effect. This type of typography suits at it best in friendly, spontaneous and informal look.
-
-**Raleway** is an elegant sans-serif typeface family. It is a display face and the download features both old style and lining numerals, standard and discretionary ligatures, a pretty complete set of diacritics, as well as a stylistic alternate inspired by more geometric sans-serif typefaces than it's neo-grotesque inspired default character set.
-
-**Sans serif** it is usually used for titles that seek to make an impact, for headlines that must be read from a distance or for reading bodies that are relatively short.
+"Roboto" and Sans-Serif font has been used in the website. The reason why this font was chosen is because it gives the text of the site a more clear. Roboto has a dual nature. It has a mechanical skeleton and the forms are largely geometric. Roboto also allows letters to be settled into their natural width. This makes the reading rhythm to be more natural.
     
 ### __Imagery__
 
-Imagery is used most for the carousel of the website. The images are the face of this site and reflect at an early stage the purpose of this site. The images are inspired in different cities around the world, each one representing a continent.
-For now the images are only availbale in the carousel, but in a near future the purpose is to be able to store pictures in tyhe database that every register user might be able to load up.
+The only image used in this project is the background image of the main page. The reason for this is because the project is more focused on fulfilling the function of a journal, for which it was not necessary to create a carousel or other type of features.
+Of course it is planned in a near future to be able to store pictures in the database that every register user might be able to load up.
 
 ## __Wireframes__
 
