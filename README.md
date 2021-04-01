@@ -11,10 +11,9 @@ This is the third project out of four Milestone Projects at the Code Institute f
 
 # Design Process __UX__
 
-
 ## __User stories__
 
-### First time visitors goals
+### First time users goals
 As a user of this site, i want to
 
 1. As a user, i want to be able to understand what the site is about.
@@ -99,17 +98,25 @@ Of course it is planned in a near future to be able to store pictures�
 
 * Responsive navbar.
 
-* Footer with link to pages related with what the system is about.
+* Designed with HTML5, CSS, Python3, JavaScript, Flask,Materalize, and MongoDB.
 
-* Carousel, making the site more attractive to users ad easy to understand what it is about.
+* Text messages(alerts) to keep the user informed when an operation like adding, updating, deleting, register, login in and out the system has been made succesfully .
+
+* Text alerts also been made for the search function and also to inform users when an operation has not been succesfully made.
 
 * Register page where users can register to make use of the website.
 
 * Login page where only register users can have access to.
 
+* Modal for users to write the information regarding to there travels.
+
+* Buttons for the operations of add, update, delete, search, login and register functions. 
+
 ## __Technologies Used__
 
-##### __Languages Used__
+####__For the making of this project, the following technologies has been used.__
+
+##### __Languages__
 
 * [HTML5](https://en.wikipedia.org/wiki/HTML5)
 
@@ -119,92 +126,86 @@ Of course it is planned in a near future to be able to store pictures�
 
 * [Python](https://www.python.org/)
 
-##### __Library Used__ 
+##### __Library__ 
 
 * [Jquery](https://jquery.com/)   
 
-# __Database Used__ 
+  Jquery is a JavaScript library designed to simplify HTML DOM tree traversal and manipulation, as well as event handling and CSS animation.
+
+#### __Database Used__ 
 
 * [MongoDB](https://www.mongodb.com/3)
 
-## __Frameworks, Libraries & Programs Used__
+  MongoDB is a source-available cross-platform document-oriented database program. Classified as a NoSQL database program, MongoDB uses JSON-like documents with optional schemas.
 
-##### For the making of this project, the following technologies has been used.
-
-+ [Gitpod](https://www.gitpod.io/) 
-
-    Gitpod is used as the enviroment program were the page was made.
-
-+ [Github](https://github.com/) 
-
-    Github is used as the development platform, you can upload your code and make repositories. This platform, gives other users
-    the opportunity to see your repositories if made as open source code.
-
-+ [HTML5](https://www.w3schools.com/)
-
-    HTML is the language use to make websites. Since it is the standard markup languages for webpages.
-
-+ [CSS](https://www.w3schools.com/css/default.asp)
-
-    CSS is the language used to style the pages made in HTML. 
-
-+ [W3C Valitor HTML](https://validator.w3.org/)
-
-    W3C validator is the tool we use to check the markup validity in HTML.
-
-+ [WC Valitor CSS](https://jigsaw.w3.org/css-validator/#validate_by_input)
-
-    As mentioned above, this tool is use to check for errors in the css code.
-
-+ [Materialize](https://materializecss.com/)
-
-    Materialize is a modern responsive CSS framework based on Material Design by Google.
-
-+ [Jquery](https://jquery.com/)
-    
-    jQuery is a JavaScript library designed to simplify HTML DOM tree traversal and manipulation, as well as event handling, CSS animation, and Ajax. It is free, open-source software using the permissive MIT License. 
-
-+ [Python](https://www.python.org/)
-
-    Python is an interpreted, high-level and general-purpose programming language. It's design philosophy emphasizes code readability with its notable use of significant whitespace. 
-
-+ [MongoDB](https://www.mongodb.com/3)
-
-    MongoDB is a source-available cross-platform document-oriented database program. Classified as a NoSQL database program, MongoDB uses JSON-like documents with optional schemas. 
-
-+ [Heroku](https://www.heroku.com/)
-
-    Heroku is a cloud platform as a service (PaaS) supporting several programming languages. Heroku has been in development since June 2007, when it supported only the Ruby programming language, 
-    but now supports Java, Node.js, Scala, Clojure, Python, PHP, and Go. Heroku is said to be a polyglot platform as it has features for a developer to build, run and scale applications in a similar manner across most languages.
-
-+ [Googlefonts](https://fonts.google.com/)
-
-    The fonts used in this project are taken from Googlefonts.
-
-+ [Youtube](https://www.youtube.com/)
-
-    I use this site to get inspiration from other projects and to search informtaion regarding source code. 
+#### __Integrations__
 
 + [Fontawesome](https://fontawesome.com/)
 
-    Font Awesome is a font and icon toolkit based on CSS and Less.
-
-+ [Reposinator](https://www.responsinator.com/)
-    
-    Reposinator is use to check how your website look in different devices in responsive mode.
-
-+ [Devtool](https://developers.google.com/web/tools/chrome-devtools)
-
-    Use to search for error in the making of the webpage.
-
-+ [Pep8](http://pep8online.com/)
-
-    PEP 8 is a comprehensive styling guide for your Python code. PEP 8’s aim is to bring all Python together under one styling guide. 
+  Font Awesome is a font and icon toolkit based on CSS and Less.
 
 + [Flask](https://flask.palletsprojects.com/en/1.1.x/)
 
-    Flask is a micro web framework written in Python. It is classified as a microframework because it does not require particular tools or libraries. It has no database abstraction layer, form validation, or any other components where pre-existing third-party libraries provide common functions. 
-    
+  Flask is a micro web framework written in Python. It is classified as a microframework because it does not require particular tools or libraries. 
+
++ [Googlefonts](https://fonts.google.com/)
+
+  Used in this project for typography.
+
++ [Materialize](https://materializecss.com/)
+
+  Materialize is a modern responsive CSS framework based on Material Design by Google.
+
++ [Bootstrap Material Design](https://mdbootstrap.github.io/bootstrap-material-design/)
+
+  Open source toolkit based on Bootstrap for developing Material Design apps with HTML, CSS, and JS.
+
+###__Repository, workspace__
+
++ [Gitpod](https://www.gitpod.io/) 
+
+  Gitpod is used as the enviroment program were the page was made.
+
++ [Github](https://github.com/) 
+
+  Github is used as the development platform. This platform, gives users the opportunity to see other users repositories and upload their own.
+
++ [Heroku](https://www.heroku.com/)
+
+  Heroku is a cloud platform as a service (PaaS) supporting several programming languages. 
+
+##__Resources__
+ 
++ [Balsamic](https://balsamiq.com/)
+
+  Program use for the making of the wireframes for this project.
+
++ [Youtube](https://www.youtube.com/)
+
+  I use this site to get inspiration from other projects and to search informtaion regarding source code. 
+
++  [Markdown](https://guides.github.com/features/mastering-markdown/)
+
+  Markdown is a easy-to-use syntax for styling all forms of writing on the GitHub platform.
+
++  [W3schools](https://www.w3schools.com/)
+
+  This site is use to get general information about different programming languages. 
+
+## The code was validated in the following pages for error correction:
+
++ [W3C Valitor HTML](https://validator.w3.org/)
+
++ [JSHint](https://jshint.com/)
+
++ [CSS](https://jigsaw.w3.org/css-validator/#validate_by_input)
+
++ [Pep8](http://pep8online.com/)
+
++ [Reposinator](https://www.responsinator.com/)
+
++ [Devtool](https://developers.google.com/web/tools/chrome-devtools)
+
 ## Testing
 
     The language this project such as HTML, CSS, Pyhton were tested for errors and warnings in the code.
@@ -362,12 +363,6 @@ __Code__
 * [Materialize](https://materializecss.com) 
 Library used throughout the project in the making of the website and to make it responsive.
 
-#### The code was validated in the following pages for error correction:
-
-+ [W3C Valitor HTML](https://validator.w3.org/)
-+ [JSHint](https://jshint.com/)
-+ [CSS](https://jigsaw.w3.org/css-validator/#validate_by_input)
-+ [Pep8](http://pep8online.com/)
 
 __Content__
 
