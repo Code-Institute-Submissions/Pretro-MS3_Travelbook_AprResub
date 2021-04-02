@@ -34,7 +34,6 @@ As a user of this site, i want to
 
 10. As a Frequent User, i want to be able to comunicate with other members.
 
-
 ## __The purpose of the travel journal is to :__
 
 + Create a community where people from all around the world can meet and interact.
