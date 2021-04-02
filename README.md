@@ -1,4 +1,4 @@
-[Travel Journal]
+#__Travel Journal__
 
 (https://ms3-traveler-project.herokuapp.com/)
 
@@ -8,12 +8,10 @@ In future updates of this project, it is intended to expand the profile of the u
 
 This is the third project out of four Milestone Projects at the Code Institute for the Full Stack Development Course.
 
-
 # Design Process __UX__
 
 ## __User stories__
 
-### First time users goals
 As a user of this site, i want to
 
 1. As a user, i want to be able to understand what the site is about.
@@ -24,27 +22,44 @@ As a user of this site, i want to
 
 4. As a user, i want the process of registration to be understandable.
 
-5. As a user, i want to be able to easily sign up to the site.
+5. As a user, i want to be able to easily log in to the site.
 
-6. As a user, i want to see the pictures of the site have a good resolution.
+6. As a user, i want to be able to manage my information in an easy way.
 
-7. As a user, i want to be able to manage my information in an easy way.
+7. As a Returning user, i want to see improvments in the website.
 
-### __Returning time user goals__
+8. As a Returning user, i want to see updates available.
 
-1. As a Returning user, i want to see improvments in the website.
+9. As a Returning user, i want to see new features.
 
-2. As a Returning user, i want to see updates available.
+10. As a Frequent User, i want to be able to comunicate with other members.
 
-3. As a Returning user, i want to see new features.
 
-### __Frequent time visitors goals__
+## __The purpose of the travel journal is to :__
 
-1. As a Frequent User, it's important to see the development of the site, that makes it more interesting to come back to.
++ Create a community where people from all around the world can meet and interact.
 
-2. As a Frequent User, i want to be able to comunicate with other members.
++ A fun way to write your stories and adventures and share it with others.
 
-3. As a Frequent User, i want to be able to manage my information as easy and fast as possible.
++ Give us the possibility in these difficult times to get a little closer and make life a little more entertaining.
+
+The idea was born now during the pandemic. It is believed that interest in travel will increase markedly after this difficult time is over. Choosing a destination is not always easy, but through a page where you can search for destinations and integrate with other travelers, 
+
+check their ratings and reviews of the different places they have been to, in some way the choice makes it easier to choose where you would like to go in the future.
+
+### __Project Strategy__
+
+To achieve the objective of this project, the following strategy has been implemented.
+
++ Provide CRUD functions are included making it possible for the user to handle their information.
+
++ The site is build to easy navigate and this makes it also easy to use.
+
++ Implemented messages that keep the user inform of every action they made.
+
++ The use of photos that is in accordance with the objective of the site, making an environment pleasant for the user.
+
++ The travel journal stories written by the user are only available to see by other resgiter users.
 
 ### __Design__
 
@@ -52,7 +67,8 @@ __Color Scheme__
 
 The colors use in the making of this website:
 
-Colour scheme
++ Colour scheme
+
 The colours that are used for the start and game over screen are:
 
 * (Yellow) For the main color of the buttons, the logo and the h1 titles. 
@@ -63,7 +79,7 @@ The colours that are used for the start and game over screen are:
 
 * (White) Is use for the menu options in the navbar and for the paragraph in the home page.
 
-* (Lightgrey) Is used for the reg and login forms. 
+* (Lightgrey) Is used for the register and login forms background. 
 
 The reason why these colors were chosen is because since the background image is colorful, these colors give a more joyful tone and at the same time allow the user to be focused on what they are doing. Generating a more attractive effect not only for the frequent user but also for the one who visits the site for the first time.
     
@@ -112,9 +128,21 @@ Of course it is planned in a near future to be able to store pictures�
 
 * Buttons for the operations of add, update, delete, search, login and register functions. 
 
+## __Features left to implement__
+
+* A function that makes it possible to recover the user password.
+
+* The upload of pictures to the profile section. 
+
+* The making of photo albums so that every user can share their experience with others with pictues.
+
+* A chat channel for all members to comunicate.
+
+* A map where the user can mark the cities and places he/she has visited.
+
 ## __Technologies Used__
 
-####__For the making of this project, the following technologies has been used.__
++ For the making of this project, the following technologies has been used__
 
 ##### __Languages__
 
@@ -142,7 +170,7 @@ Of course it is planned in a near future to be able to store pictures�
 
 + [Fontawesome](https://fontawesome.com/)
 
-  Font Awesome is a font and icon toolkit based on CSS and Less.
+  Font Awesome is a font and icon toolkit i use for the icons on different pages.
 
 + [Flask](https://flask.palletsprojects.com/en/1.1.x/)
 
@@ -168,11 +196,11 @@ Of course it is planned in a near future to be able to store pictures�
 
 + [Github](https://github.com/) 
 
-  Github is used as the development platform. This platform, gives users the opportunity to see other users repositories and upload their own.
+  Github is used as the development platform. This platform, gives us users the opportunity to see other users repositories and upload our own repositories.
 
 + [Heroku](https://www.heroku.com/)
 
-  Heroku is a cloud platform as a service (PaaS) supporting several programming languages. 
+  Heroku is a cloud platform as a service (PaaS) supporting several programming languages.And is used for the deployment of this project. 
 
 ##__Resources__
  
@@ -190,7 +218,7 @@ Of course it is planned in a near future to be able to store pictures�
 
 +  [W3schools](https://www.w3schools.com/)
 
-  This site is use to get general information about different programming languages. 
+  I use this site to get answers to questions about the programming languages used. 
 
 ## The code was validated in the following pages for error correction:
 
@@ -208,82 +236,119 @@ Of course it is planned in a near future to be able to store pictures�
 
 ## Testing
 
-    The language this project such as HTML, CSS, Pyhton were tested for errors and warnings in the code.
+    During the testing time, the following code validators were used. It is worth mentioning that there were errors in the html code due to the content blocks written in jinja. After talking to my mentor, he has informed me that this is normal.
 
-    1. W3C Validator HTML.
++ [W3C](https://validator.w3.org/) Validator HTML.
 
-    2. W3C validator CSS.
++ [W3C](https://jigsaw.w3.org/css-validator/#validate_by_input) validator CSS.
 
-    3. Pep8
++ [Pep8](http://pep8online.com/) validator Python
+
++ [JSHint](https://jshint.com/) Javascript
 
 ## __Testing User Stories from User Experience (UX) Section__ 
 
-* As a first time Visitor, i want to be able to easy navegate through the website.
+1. As a user, i want to be able to understand what the site is about.
 
-        a. Since the site is very simple build it makes it easy for the user to navigate.
++ When entering the page, it presents a title, a paragraph in which it is clearly read what the site is about. Background photography also helps to understand the purpose of the page.
 
-* As a FirstTime Visitor, it must be easy for me to understand what the site is about.
+2. As a user, i must be able to easy navegate through the different pages of the site.
 
-        a. The site is easy to understand what it is about due to the homepage that reflect with the carousel what it's about.
++ The main page contains a navigation menu in which there are two options, one for log in and the other for registration. Once the user is registered, the remaining options shows on the navmenu and this makes the navigation on the site possible for registered users.
 
-* As a FirstTime Visitor, i must be able to see different pages of the site.
+3. As a user, i want to be able to register an account and a profile.
 
-        a. The website is build with a navmenu that makes it possible for the user to navigate through the website.
-        b. There is also a search box where the user can search by contries that different travelers have been to.
++ This site has the option of registering a user account in the navigation menu. Once this is done, the user can enter their traveling information, which is shown in the user profile.
 
-* As a FirstTime Visitor, i must read and understand the texts.
+4. As a user, i want the process of registration to be understandable.
 
-        a. The text in this website are for the most labels and messages written in an easy way in english so that everyone can understand.
++ The registration form consists of two fields that allow you to choose a username of your choice and a password.
 
-* As a FirstTime Visitor, The site must be responsive in several devices.
+5. As a user, i want to be able to easily log in to the site.
 
-        a. The website has been tested in several devices like Iphone, Ipad, Android and Laptop.
++ When the user is registered and returns to the site, it will be possible for him to log in to the navigation menu, choose the option log in and fill in his username and password information.
 
-* As a FirstTime Visitor, the pictures must have a good resolution.
+6. As a user, i want to be able to manage my information in an easy way.
 
-        a. The pictures have been carefully selected and have a good resolution shown in the website.
++ Once logged into the system, the user can add information by choosing the "adventure" option in the navigation menu. The user can also go to "profile", see what it has entered. There are two buttons, one to edit the information and the other to delete it.
 
-* As a FirstTime Visitor, i want to be able to manage information in an easy way
+7. As a user, i expect to see improvments, updates and new features.
 
-        a. The site contain oth a register and login section. 
-        b. Once logged in, the user have access to other features in the navbar making it possible to manage information.
++ During the course of this project, the following has been structured
 
-* As a returning time visitor, i expect to see improvments, updates and new features.
+i. Creating a photo gallery for users to create their own albums
 
-        a. There will be updates like change of color, pictures and layouts.
-        b. Also new features like be able to make your own gallery with pictures
-        c. And the search feature will be able not only for countries but also for users and city names
+ii. The page layout such as button and text colors and new sections
 
-* As a Returning Visitor, i want to see updates available.
+iii. A map that will allow users to mark the places they have visited and thus be able to exchange ideas with other users
 
-        a. Updates will be done regulary to improve the system and also to make the use of it more interesting for all the members 
-           and at the same time make it more attractive for new visitors to join our page .
+8. As a user, i want to see updates available.
 
-* As a Returning Visitor, i want to see new features.
+i.  Updates will be done regulary to improve the system and also to make the use of it more interesting for all the members. 
 
-        a. We are planning in the development of the site like a personal profile page.
-        b. Also the possibbility to upload images
-        c. The making of a gallery photo album for each user to be able to set up their own pictures 
+ii. Users in future updates will have the option to enter their data as an email. The cuel will be used to send updates about the site in general.        
 
-* As a Frequent User, it's important to see the development of the site, that makes it more interesting to come back to.
+9. As a user, i want to see new features.
 
-        a. We are planning the possibbility to send messages between members.
-        b. Photo Galleries from different places available not only for members but for visitors as well
-        c. The possibility to log in as a member or as visitor if you just want to see the site and not become a member.
+i. The profile page will in a near future be updated so users can also enter personal information.
+        
+ii.The possibbility to upload images AND THE making of a gallery photo album for each user. 
 
-* As a Frequent User, i want to be able to comunicate with other members.
+10. As a user, it's important to see the development of the site, that makes it more interesting to come back to.
+    
+i. We are planning the possibbility to send messages between members.
 
-        a. The most ambitious project is to make a chat channel so members can communicate direct with each others.
-        b. There site is also expected to be able in different languages making it possible for more people to interact.
-
-* As a Frequent User, i want to be able to manage my information as easy and fast as possible.
-
-        a. Just as a first time visitor, Frequent users have also the possibbility to manage their information i an easy way.
-        b. To make this possible, updates will be done like extending the profile page. The sections for adding, update and delete will also be updated.
-        c. The frequent user will also as a member have access in the coming development of the website to the chat channel, not only to speak with other 
-           members but also with support in case of any questions.
+ii. A chat channel is the most ambitious project thought to be carried out in the short term.
 
 * During my test period i focus on the user stories.
+
+## The testing of the navbar 
+
+### __Home Page__
+
+1. Tests were carried out on the Login button 
+
++ Test result: The user was redirected to the login form
+
+2. Tests were carried out on the Register button.
+
++ Test result: The user was redirected to the register form
+
+3. Tests were carried out on the search button.
+
++ Test result: The user was able to make a search for city or country succesfully.
+
+4. Tests were carried out on the logo.
+
++ Test result: The user was return to the home page.
+
+### _Log in/Register page__
+
+5. Tests were carried out on the login page.
+
++ Test result: The user was able to log in.
+
+6. Tests were carried out on the register page.
+
++ Test result: The user registated succesfully.
+
+
+
+
+Tested if the Register button redirects to the Sign Up page.
+Tested if the search button redirects to the seached epics. I have Tv advert as my epic name and it gave me the list.
+Sign Up/Login Pages:
+Tested if the Sign-Up and Log in home page buttons redirect to the desired pages.
+Employee Profile Page:
+Tested if Add Epic Button add data to mongoDB.
+Tested if by clicking logo and image in employee welcome page redirects me back to home page.
+View Epics page and Epics manager page:
+Confirmed if the Done, Edit and Delete button work properly.
+Epic Category/products Page:
+Tested if the Add List Button add the epics to mongoDB when clicked.
+Tested if by clicking the cancel page i get redirected to the same page.
+search function:
+Tested if the search section on top of the epic list displays entered request and when reseted it functions well as desired:
     
 ### __The website has been checked in different browser, such as.__
 
@@ -309,9 +374,9 @@ Friends and family tested the site by loggin in and writing about th
 
 ## __Known Bugs__
 
-+ The footer changes places in the ipad when there are no registers in the profile page.
+
 + In the galaxy S5 the footer text in some parts appears one on top another. Also the buttons in the profile page appears not at the same space.
-+ Sometimes the date that you have chosen, do not show, but the actaul date. To fix this, push the clear button on the calendary and try again.  
++ Sometimes the date that you have chosen, do not show, but the actual date. To fix this, push the clear button on the calendary and try again.  
 
 ## __Deployment__ 
 
@@ -324,7 +389,7 @@ The Project was deployed to Heroku using the following steps...
 1. Log in to your Heroku account
 2. Choose the project you want to deploy
 3. Go to the settings tab and at the domains section, you find the link to deploy your project 
-4. Copy your app link and paste it in your browser or push the link to direct come toyour project
+4. Copy your app link and paste it in your browser or push the link to direct come to your project
 
 ### __Forking the GitHub Repository__ 
 By forking the GitHub Repository we make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original repository by using the following steps...
