@@ -33,6 +33,7 @@ As a user of this site, i want to
 9. As a Returning user, i want to see new features.
 
 10. As a Frequent User, i want to be able to comunicate with other members.
+<<<<<<< HEAD
 
 
 ## __The purpose of the travel journal is to :__
@@ -59,6 +60,34 @@ To achieve the objective of this project, the following strategy has been implem
 
 + The use of photos that is in accordance with the objective of the site, making an environment pleasant for the user.
 
+=======
+
+
+## __The purpose of the travel journal is to :__
+
++ Create a community where people from all around the world can meet and interact.
+
++ A fun way to write your stories and adventures and share it with others.
+
++ Give us the possibility in these difficult times to get a little closer and make life a little more entertaining.
+
+The idea was born now during the pandemic. It is believed that interest in travel will increase markedly after this difficult time is over. Choosing a destination is not always easy, but through a page where you can search for destinations and integrate with other travelers, 
+
+check their ratings and reviews of the different places they have been to, in some way the choice makes it easier to choose where you would like to go in the future.
+
+### __Project Strategy__
+
+To achieve the objective of this project, the following strategy has been implemented.
+
++ Provide CRUD functions are included making it possible for the user to handle their information.
+
++ The site is build to easy navigate and this makes it also easy to use.
+
++ Implemented messages that keep the user inform of every action they made.
+
++ The use of photos that is in accordance with the objective of the site, making an environment pleasant for the user.
+
+>>>>>>> 1fbc4e001b22a3b844b447d875d9063fd07a1c3d
 + The travel journal stories written by the user are only available to see by other resgiter users.
 
 ### __Design__
@@ -302,6 +331,7 @@ ii. A chat channel is the most ambitious project thought to be carried out in th
 
 * During my test period i focus on the user stories.
 
+<<<<<<< HEAD
 ## The testing of the Navbar. 
 
 ### __Home Page___
@@ -334,6 +364,55 @@ ii. A chat channel is the most ambitious project thought to be carried out in th
 
 + Test result: The add button worked as expected. alert messages triggered when trying to add incomplete information written in the adventure form. 
 
+=======
+## The testing of the navbar 
+
+### __Home Page__
+
+1. Tests were carried out on the Login button 
+
++ Test result: The user was redirected to the login form
+
+2. Tests were carried out on the Register button.
+
++ Test result: The user was redirected to the register form
+
+3. Tests were carried out on the search button.
+
++ Test result: The user was able to make a search for city or country succesfully.
+
+4. Tests were carried out on the logo.
+
++ Test result: The user was return to the home page.
+
+### _Log in/Register page__
+
+5. Tests were carried out on the login page.
+
++ Test result: The user was able to log in.
+
+6. Tests were carried out on the register page.
+
++ Test result: The user registated succesfully.
+
+
+
+
+Tested if the Register button redirects to the Sign Up page.
+Tested if the search button redirects to the seached epics. I have Tv advert as my epic name and it gave me the list.
+Sign Up/Login Pages:
+Tested if the Sign-Up and Log in home page buttons redirect to the desired pages.
+Employee Profile Page:
+Tested if Add Epic Button add data to mongoDB.
+Tested if by clicking logo and image in employee welcome page redirects me back to home page.
+View Epics page and Epics manager page:
+Confirmed if the Done, Edit and Delete button work properly.
+Epic Category/products Page:
+Tested if the Add List Button add the epics to mongoDB when clicked.
+Tested if by clicking the cancel page i get redirected to the same page.
+search function:
+Tested if the search section on top of the epic list displays entered request and when reseted it functions well as desired:
+>>>>>>> 1fbc4e001b22a3b844b447d875d9063fd07a1c3d
     
 ### __The website has been checked in different browser, such as.__
 
