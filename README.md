@@ -33,8 +33,6 @@ As a user of this site, i want to
 9. As a Returning user, i want to see new features.
 
 10. As a Frequent User, i want to be able to comunicate with other members.
-<<<<<<< HEAD
-
 
 ## __The purpose of the travel journal is to :__
 
@@ -60,9 +58,6 @@ To achieve the objective of this project, the following strategy has been implem
 
 + The use of photos that is in accordance with the objective of the site, making an environment pleasant for the user.
 
-=======
-
-
 ## __The purpose of the travel journal is to :__
 
 + Create a community where people from all around the world can meet and interact.
@@ -87,7 +82,6 @@ To achieve the objective of this project, the following strategy has been implem
 
 + The use of photos that is in accordance with the objective of the site, making an environment pleasant for the user.
 
->>>>>>> 1fbc4e001b22a3b844b447d875d9063fd07a1c3d
 + The travel journal stories written by the user are only available to see by other resgiter users.
 
 ### __Design__
@@ -331,7 +325,6 @@ ii. A chat channel is the most ambitious project thought to be carried out in th
 
 * During my test period i focus on the user stories.
 
-<<<<<<< HEAD
 ## The testing of the Navbar. 
 
 ### __Home Page___
@@ -395,24 +388,6 @@ ii. A chat channel is the most ambitious project thought to be carried out in th
 
 + Test result: The user registated succesfully.
 
-
-
-
-Tested if the Register button redirects to the Sign Up page.
-Tested if the search button redirects to the seached epics. I have Tv advert as my epic name and it gave me the list.
-Sign Up/Login Pages:
-Tested if the Sign-Up and Log in home page buttons redirect to the desired pages.
-Employee Profile Page:
-Tested if Add Epic Button add data to mongoDB.
-Tested if by clicking logo and image in employee welcome page redirects me back to home page.
-View Epics page and Epics manager page:
-Confirmed if the Done, Edit and Delete button work properly.
-Epic Category/products Page:
-Tested if the Add List Button add the epics to mongoDB when clicked.
-Tested if by clicking the cancel page i get redirected to the same page.
-search function:
-Tested if the search section on top of the epic list displays entered request and when reseted it functions well as desired:
->>>>>>> 1fbc4e001b22a3b844b447d875d9063fd07a1c3d
     
 ### __The website has been checked in different browser, such as.__
 
