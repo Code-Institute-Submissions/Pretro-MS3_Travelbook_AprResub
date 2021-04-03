@@ -64,11 +64,7 @@ To meet the goal of this project, the following strategy has been implemented.
 
 __Color Scheme__
 
-The colors use in the making of this website:
-
-+ Colour scheme
-
-The colours that are used for the start and game over screen are:
+The colours that I used for the site:
 
 * (Yellow) For the main color of the buttons, the logo and the h1 titles. 
 
@@ -84,11 +80,12 @@ The reason why these colors were chosen is because since the background image is
     
 ### __Typography__
 
-"Roboto" and Sans-Serif font has been used in the website. The reason why this font was chosen is because it gives the text of the site a more clear. Roboto has a dual nature. It has a mechanical skeleton and the forms are largely geometric. Roboto also allows letters to be settled into their natural width. This makes the reading rhythm to be more natural.
+"Roboto" and Sans-Serif font has been used in the website. The reason why this font was chosen is because it makes the text of the site more clear. Roboto has a dual nature. It has a mechanical skeleton and the forms are largely geometric. Roboto also allows letters to be settled into their natural width. This makes the reading rhythm to be more natural.
     
 ### __Imagery__
 
 The only image used in this project is the background image of the main page. The reason for this is because the project is more focused on fulfilling the function of a journal, for which it was not necessary to create a carousel or other type of features.
+
 Of course it is planned in a near future to be able to store pictures in the database that every register user might be able to load up.
 
 ## __Wireframes__
@@ -187,7 +184,7 @@ Of course it is planned in a near future to be able to store pictures�
 
   Open source toolkit based on Bootstrap for developing Material Design apps with HTML, CSS, and JS.
 
-###__Repository, workspace__
+### __Repository, workspace__
 
 + [Gitpod](https://www.gitpod.io/) 
 
@@ -201,7 +198,7 @@ Of course it is planned in a near future to be able to store pictures�
 
   Heroku is a cloud platform as a service (PaaS) supporting several programming languages.And is used for the deployment of this project. 
 
-##__Resources__
+## __Resources__
  
 + [Balsamic](https://balsamiq.com/)
 
@@ -251,9 +248,9 @@ Of course it is planned in a near future to be able to store pictures�
 
 + When entering the page, it presents a title, a paragraph in which it is clearly read what the site is about. Background photography also helps to understand the purpose of the page.
 
-2. As a user, i must be able to easy navegate through the different pages of the site.
+2. As a user, i must be able to easy navigate through the different pages of the site.
 
-+ The main page contains a navigation menu in which there are two options, one for log in and the other for registration. Once the user is registered, the remaining options shows on the navmenu and this makes the navigation on the site possible for registered users.
++ The main page has a navigation menu in which there are two options, one for log in and the other for registration. Once the user is registered, the remaining options shows on the navmenu and this makes the navigation on the site possible for registered users.
 
 3. As a user, i want to be able to register an account and a profile.
 
@@ -283,13 +280,13 @@ Of course it is planned in a near future to be able to store pictures�
 
 + Test result: The user was directed to the register form when pressing the option "Log in" in the navbar.
 
-+ Test result: The user was able to make a search for city or country succesfully in the search form.
++ Test result: The user was able to make a search for city or country successfully in the search form.
 
 + Test result: The alert messages in the search form worked as expected showing up when the user try to make a search without writting anything.
 
 ### _Log in/Register page__
 
-+ Test result: The user could log in by writting his user information in the login form.
++ Test result: The user could log in by writing his user information in the login form.
 
 + Test result: The user could register by filling the register form.
 
@@ -301,7 +298,7 @@ Of course it is planned in a near future to be able to store pictures�
 
 + Test result: The user was directed to the adventure page when pressing the "Adventure" option in the navbar.
 
-+ Test result: The user could add information succesfully in the Add adventure form.
++ Test result: The user could add information successfully in the Add adventure form.
 
 + Test result: Alert messages were triggered during the "Add adventure" fields test.
 
@@ -327,17 +324,17 @@ Of course it is planned in a near future to be able to store pictures�
 
 4. Laptop
 
-Friends and family tested the site by loggin in and writing about there stories. This was also made to point out any bugs and/or user experience issues.
+Friends and family tested the site by login in and writing about their stories. This was also made to point out any bugs and/or user experience issues.
 
 ## __Known Bugs__
 
 
 + In the galaxy S5 the footer text in some parts appears one on top another. Also the buttons in the profile page appears not at the same space.
-+ Sometimes the date that you have chosen, do not show, but the actual date. To fix this, push the clear button on the calendary and try again.  
++ Sometimes the date that you have chosen, do not show, but the actual date. To fix this, push the clear button on the calendar and try again.  
 
 ## __Deployment__ 
 
-To deploy this porject, i used the hosting platform of Github and heroku
+To deploy this project, I used the hosting platform of Github and heroku
 The step to deploy this project were as follows.
 
 ### __Heroku__
@@ -351,7 +348,7 @@ The Project was deployed to Heroku using the following steps...
 ### __Forking the GitHub Repository__ 
 By forking the GitHub Repository we make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original repository by using the following steps...
 
-Log in to GitHub and locate the GitHub Repository
+Log in to GitHub and find the GitHub Repository
 
 At the top of the Repository (not top of page) just above the "Settings" Button on the menu, locate the "Fork" Button.
 
@@ -367,7 +364,7 @@ You should now have a copy of the original repository in your GitHub
 
 4. Open Git Bash
 
-5. Change the current working directory to the location where you want the cloned directory to be made.
+5. Change the current working directory to the place where you want the cloned directory to be made.
    Type  "git clone", and then paste the URL you copied.
 
     $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
@@ -376,7 +373,7 @@ You should now have a copy of the original repository in your GitHub
 
     ![example image of git clone](images/git-clone.png)
 
-7. Open the index.html in the folder that you clone the poject.
+7. Open the index.html in the folder that you clone the project.
 
 ### __Credits__
 
@@ -387,11 +384,11 @@ Library used throughout the project in the making of the website and�
 
 __Content__
 
-The content (this means the coding) for this project was taken from the mini project tutorial from Code Institute, also part of the code is my own code and ideas and guidence from my mentor Antonio Rodriguez.
+The content (this means the coding) for this project was taken from the mini project tutorial from Code Institute, also part of the code is my code and ideas and guidance from my mentor Antonio Rodriguez.
 
 __Media__
 
-All Images were taken from the following site:
+All Images are from the following site:
 + [Pexels](https://www.pexels.com/sv-se/)
 
 __Acknowledgements__
@@ -400,4 +397,4 @@ My Mentor Antonio Rodriguez for continuous helpful feedback.
 
 Tutor support at Code Institute for their support and help.
 
-Tim Nelson for the easy to understand tutorial from Code Institute that i use for guidence in this project.
+Tim Nelson for the easy to understand tutorial from Code Institute that i use for guidance in this project.
