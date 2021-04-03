@@ -2,9 +2,9 @@
 
 (https://ms3-traveler-project.herokuapp.com/)
 
-The goal of this project is to give users the opportunity to keep a journal about the places they have been to and visited. This is possible by register and making a user profil. The user then will be able to create, update and delelte it's own stories. Also there is the possibility to read about other users stories. In the making of this project CRUD functionality where included progamed in pyhton. 
+The goal of this project is to give users the opportunity to keep a journal about the places they have been to and visited. This is possible by register and making a user profile. The user then will be able to create, update and delete it's own stories. Also there is the possibility to read about other users stories. In the making of this project CRUD functionality where included programmed in python.
 
-In future updates of this project, it is intended to expand the profile of the user giving it the ability to upload pictures from places they have been and also a profile picture. To protect the integrity of the user, as a security meature, the information shown as the name and picture profile, will only be available to register users.
+In future updates of this project, it is intended to expand the profile of the user giving it the ability to upload pictures from places they have been and also a profile picture. To protect the integrity of the user, as a security measure, the information shown as the name and picture profile, will only be available to register users.
 
 This is the third project out of four Milestone Projects at the Code Institute for the Full Stack Development Course.
 
@@ -12,55 +12,27 @@ This is the third project out of four Milestone Projects at the Code Institute f
 
 ## __User stories__
 
-As a user of this site, i want to
+As a user of this site, I want to
 
 1. As a user, i want to be able to understand what the site is about.
 
-2. As a user, i must be able to easy navegate through the different pages of the site.
+2. As a user, i must be able to easy navigate through the different pages of the site.
 
 3. As a user, i want to be able to register an account and a profile.
 
-4. As a user, i want the process of registration to be understandable.
+4. As a user, i want the process of registration to be simple.
 
 5. As a user, i want to be able to easily log in to the site.
 
-6. As a user, i want to be able to manage my information in an easy way.
+6. As a user, i want to be able to administer travel journal stories.
 
-7. As a Returning user, i want to see improvments in the website.
+7. As a user, i want to be able to add travel journal stories.
 
-8. As a Returning user, i want to see updates available.
+8. As a user, i want to be able to read other members travel journal stories.
 
-9. As a Returning user, i want to see new features.
+9. As a user, i want to be able to search other members travel journal stories.
 
-10. As a Frequent User, i want to be able to comunicate with other members.
-<<<<<<< HEAD
-
-## __The purpose of the travel journal is to :__
-
-+ Create a community where people from all around the world can meet and interact.
-
-+ A fun way to write your stories and adventures and share it with others.
-
-+ Give us the possibility in these difficult times to get a little closer and make life a little more entertaining.
-
-The idea was born now during the pandemic. It is believed that interest in travel will increase markedly after this difficult time is over. Choosing a destination is not always easy, but through a page where you can search for destinations and integrate with other travelers, 
-
-check their ratings and reviews of the different places they have been to, in some way the choice makes it easier to choose where you would like to go in the future.
-
-### __Project Strategy__
-
-To achieve the objective of this project, the following strategy has been implemented.
-
-+ Provide CRUD functions are included making it possible for the user to handle their information.
-
-+ The site is build to easy navigate and this makes it also easy to use.
-
-+ Implemented messages that keep the user inform of every action they made.
-
-+ The use of photos that is in accordance with the objective of the site, making an environment pleasant for the user.
-
-=======
-
+10. As a User, i want to chat with other members.
 
 ## __The purpose of the travel journal is to :__
 
@@ -70,7 +42,7 @@ To achieve the objective of this project, the following strategy has been implem
 
 + Give us the possibility in these difficult times to get a little closer and make life a little more entertaining.
 
-The idea was born now during the pandemic. It is believed that interest in travel will increase markedly after this difficult time is over. Choosing a destination is not always easy, but through a page where you can search for destinations and integrate with other travelers, 
+The idea was born during the pandemic. It is believed that interest in travel will increase markedly after this difficult time is over. Choosing a destination is not always easy, but through a page where you can search for destinations and integrate with other travelers, 
 
 check their ratings and reviews of the different places they have been to, in some way the choice makes it easier to choose where you would like to go in the future.
 
@@ -80,14 +52,13 @@ To achieve the objective of this project, the following strategy has been implem
 
 + Provide CRUD functions are included making it possible for the user to handle their information.
 
-+ The site is build to easy navigate and this makes it also easy to use.
++ The site is built to easy navigate and this makes it also easy to use.
 
 + Implemented messages that keep the user inform of every action they made.
 
 + The use of photos that is in accordance with the objective of the site, making an environment pleasant for the user.
 
->>>>>>> 1fbc4e001b22a3b844b447d875d9063fd07a1c3d
-+ The travel journal stories written by the user are only available to see by other resgiter users.
++ The travel journal stories written by the user are only available to see by other register users.
 
 ### __Design__
 
@@ -101,7 +72,7 @@ The colours that are used for the start and game over screen are:
 
 * (Yellow) For the main color of the buttons, the logo and the h1 titles. 
 
-* (Orange) For the hoover effect on the buttons.
+* (Orange) For the hover effect on the buttons.
 
 * (Black) Is used for the text shadows.
 
@@ -144,15 +115,15 @@ Of course it is planned in a near future to be able to store pictures�
 
 * Designed with HTML5, CSS, Python3, JavaScript, Flask,Materalize, and MongoDB.
 
-* Text messages(alerts) to keep the user informed when an operation like adding, updating, deleting, register, login in and out the system has been made succesfully .
+* Text messages(alerts) to keep the user informed when an operation like adding, updating, deleting, register, login in and out the system has been made successfully.
 
-* Text alerts also been made for the search function and also to inform users when an operation has not been succesfully made.
+* Text alerts also been made for the search function and to tell users when an operation is successfully made.
 
 * Register page where users can register to make use of the website.
 
 * Login page where only register users can have access to.
 
-* Modal for users to write the information regarding to there travels.
+* Modal for users to write the information about to their travels.
 
 * Buttons for the operations of add, update, delete, search, login and register functions. 
 
@@ -162,9 +133,9 @@ Of course it is planned in a near future to be able to store pictures�
 
 * The upload of pictures to the profile section. 
 
-* The making of photo albums so that every user can share their experience with others with pictues.
+* The making of photo albums so that every user can share their experience with others with pictures.
 
-* A chat channel for all members to comunicate.
+* A chat channel for all members to communicate.
 
 * A map where the user can mark the cities and places he/she has visited.
 
@@ -178,15 +149,15 @@ Of course it is planned in a near future to be able to store pictures�
 
 * [CSS3](https://en.wikipedia.org/wiki/CSS)
 
-* [Javascript](https://en.wikipedia.org/wiki/JavaScript)
+* [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
 
 * [Python](https://www.python.org/)
 
 ##### __Library__ 
 
-* [Jquery](https://jquery.com/)   
+* [jQuery](https://jquery.com/)   
 
-  Jquery is a JavaScript library designed to simplify HTML DOM tree traversal and manipulation, as well as event handling and CSS animation.
+  jQuery is a JavaScript library designed to simplify HTML DOM tree traversal and manipulation, as well as event handling and CSS animation.
 
 #### __Database Used__ 
 
@@ -202,7 +173,7 @@ Of course it is planned in a near future to be able to store pictures�
 
 + [Flask](https://flask.palletsprojects.com/en/1.1.x/)
 
-  Flask is a micro web framework written in Python. It is classified as a microframework because it does not require particular tools or libraries. 
+  Flask is a micro web framework written in Python. It is classified as a microframework because it does not need particular tools or libraries. 
 
 + [Googlefonts](https://fonts.google.com/)
 
@@ -236,9 +207,9 @@ Of course it is planned in a near future to be able to store pictures�
 
   Program use for the making of the wireframes for this project.
 
-+ [Youtube](https://www.youtube.com/)
++ [YouTube](https://www.youtube.com/)
 
-  I use this site to get inspiration from other projects and to search informtaion regarding source code. 
+  I use this site to get inspiration from other projects and to search information about source code. 
 
 +  [Markdown](https://guides.github.com/features/mastering-markdown/)
 
@@ -248,9 +219,9 @@ Of course it is planned in a near future to be able to store pictures�
 
   I use this site to get answers to questions about the programming languages used. 
 
-## The code was validated in the following pages for error correction:
+## The code is validated in the following pages for error correction:
 
-+ [W3C Valitor HTML](https://validator.w3.org/)
++ [W3C Validator HTML](https://validator.w3.org/)
 
 + [JSHint](https://jshint.com/)
 
@@ -264,7 +235,7 @@ Of course it is planned in a near future to be able to store pictures�
 
 ## Testing
 
-    During the testing time, the following code validators were used. It is worth mentioning that there were errors in the html code due to the content blocks written in jinja. After talking to my mentor, he has informed me that this is normal.
+    During the testing time, the following code validates are use. It is worth mentioning that there were errors in the html code due to the content blocks written in jinja. After talking to my mentor, he has informed me that this is normal.
 
 + [W3C](https://validator.w3.org/) Validator HTML.
 
@@ -272,7 +243,7 @@ Of course it is planned in a near future to be able to store pictures�
 
 + [Pep8](http://pep8online.com/) validator Python
 
-+ [JSHint](https://jshint.com/) Javascript
++ [JSHint](https://jshint.com/) JavaScript
 
 ## __Testing User Stories from User Experience (UX) Section__ 
 
@@ -300,38 +271,11 @@ Of course it is planned in a near future to be able to store pictures�
 
 + Once logged into the system, the user can add information by choosing the "adventure" option in the navigation menu. The user can also go to "profile", see what it has entered. There are two buttons, one to edit the information and the other to delete it.
 
-7. As a user, i expect to see improvments, updates and new features.
 
-+ During the course of this project, the following has been structured
-
-i. Creating a photo gallery for users to create their own albums
-
-ii. The page layout such as button and text colors and new sections
-
-iii. A map that will allow users to mark the places they have visited and thus be able to exchange ideas with other users
-
-8. As a user, i want to see updates available.
-
-i.  Updates will be done regulary to improve the system and also to make the use of it more interesting for all the members. 
-
-ii. Users in future updates will have the option to enter their data as an email. The cuel will be used to send updates about the site in general.        
-
-9. As a user, i want to see new features.
-
-i. The profile page will in a near future be updated so users can also enter personal information.
-        
-ii.The possibbility to upload images AND THE making of a gallery photo album for each user. 
-
-10. As a user, it's important to see the development of the site, that makes it more interesting to come back to.
-    
-i. We are planning the possibbility to send messages between members.
-
-ii. A chat channel is the most ambitious project thought to be carried out in the short term.
 
 * During my test period i focus on the user stories.
 
-<<<<<<< HEAD
-## The testing of the Navbar. 
+## The testing of the Navbar and pages. 
 
 ### __Home Page___
 
@@ -363,55 +307,6 @@ ii. A chat channel is the most ambitious project thought to be carried out in th
 
 + Test result: The add button worked as expected. alert messages triggered when trying to add incomplete information written in the adventure form. 
 
-=======
-## The testing of the navbar 
-
-### __Home Page__
-
-1. Tests were carried out on the Login button 
-
-+ Test result: The user was redirected to the login form
-
-2. Tests were carried out on the Register button.
-
-+ Test result: The user was redirected to the register form
-
-3. Tests were carried out on the search button.
-
-+ Test result: The user was able to make a search for city or country succesfully.
-
-4. Tests were carried out on the logo.
-
-+ Test result: The user was return to the home page.
-
-### _Log in/Register page__
-
-5. Tests were carried out on the login page.
-
-+ Test result: The user was able to log in.
-
-6. Tests were carried out on the register page.
-
-+ Test result: The user registated succesfully.
-
-
-
-
-Tested if the Register button redirects to the Sign Up page.
-Tested if the search button redirects to the seached epics. I have Tv advert as my epic name and it gave me the list.
-Sign Up/Login Pages:
-Tested if the Sign-Up and Log in home page buttons redirect to the desired pages.
-Employee Profile Page:
-Tested if Add Epic Button add data to mongoDB.
-Tested if by clicking logo and image in employee welcome page redirects me back to home page.
-View Epics page and Epics manager page:
-Confirmed if the Done, Edit and Delete button work properly.
-Epic Category/products Page:
-Tested if the Add List Button add the epics to mongoDB when clicked.
-Tested if by clicking the cancel page i get redirected to the same page.
-search function:
-Tested if the search section on top of the epic list displays entered request and when reseted it functions well as desired:
->>>>>>> 1fbc4e001b22a3b844b447d875d9063fd07a1c3d
     
 ### __The website has been checked in different browser, such as.__
 

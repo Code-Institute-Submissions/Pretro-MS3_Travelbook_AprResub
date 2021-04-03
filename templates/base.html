@@ -62,7 +62,7 @@
             </p>
     </section>
   
-    <section>
+    <div>
         <!-- flash messages -->
         {% with messages = get_flashed_messages() %}
         <!--Checks if there are messages-->
@@ -75,7 +75,7 @@
         {% endfor %}
         {% endif %}
         {% endwith %}
-    </section>
+    </div>
 
     <main class="container">
         {% block content %}
