@@ -1,43 +1,18 @@
 {% extends "base.html" %}
 {% block content %}
-
-<h3 class="center-align light-blue-text text-darken-4">Register Traveler</h3>
-
-<div class="row">
-    <form class="col s12 m8 offset-m2 center-align" method="POST" action="{{ url_for('reg_user') }}">
-        <!-- username -->
-        <div class="row ">
-            <div class="input-field col s12">
-                <i class="fas fa-user-plus prefix cyan-text text-darken-2"></i>
-                <input id="username" name="username" type="text" minlength="3" maxlength="20"
-                    pattern="^[a-zA-Z0-9]{5,20}$" class="validate" required>
-                <label for="username">Username</label>
-            </div>
-        </div>
-        <!-- passowrd -->
-        <div class="row">
-            <div class="input-field col s12">
-                <i class="fas fa-user-lock prefix cyan-text text-darken-2"></i>
-                <input id="password" name="password" type="password" minlength="5" maxlength="20"
-                    pattern="^[a-zA-Z0-9]{5,20}$" class="validate" required>
-                <label for="password">Password</label>
-            </div>
-        </div>
-        <!-- register -->
-        <div class="row">
-            <button type="submit" class="col s12 btn-large cyan darken-2 text-shadow waves-effect waves-light">
-                Register <i class="fas fa-sign-in-alt"></i>
-            </button>
-        </div>
-    </form>
-</div>
-<div class="row">
-    <div class="col s12">
+<div class="loginbox">
+    <h3 class="member">Register User</h3>
+    <form class="col s12 m8 offset-m2" method="POST" action="{{ url_for('reg_user') }}">
+        <p>Username</p>
+        <input id="username" name="username" type="text" minlength="3" maxlength="20" pattern="^[a-zA-Z0-9]{5,20}$"
+            class="validate" required>
+        <p>Password</p>
+        <input id="password" name="password" type="password" minlength="5" maxlength="20" pattern="^[a-zA-Z0-9]{5,20}$"
+            class="validate" placeholder="*****" required>
+        <input type="submit" name="" value="Sign In">
         <p class="center-align">
             Are you already register?
-            <a href="{{ url_for('login') }}" class="light-blue-text text-darken-4">Log in</a>
+            <a href="{{ url_for('login') }}" class="white-text text-darken-4">Log in</a>
         </p>
-    </div>
-</div>
-
-{% endblock %}
+    </form>
+    {% endblock %}

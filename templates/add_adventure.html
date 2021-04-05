@@ -1,69 +1,62 @@
-<!DOCTYPE html>
 {% extends "base.html" %}
 {% block content %}
-
-<h3 class="light-blue-text text-darken-4 center-align">What's your Adventure
-    </h3>
-        <div class="row">
-            <form class="col s12" method="POST" action="{{ url_for('add_adventure') }}">
+        
+        <div class="loginbox2">
+            <div class="admin">
+            <h3>Add your adventures</h3>
+                <form class="col s12" method="POST" action="{{ url_for('add_adventure') }}">
                 <!--continent section-->
-                <div class="row ">
+                <div class="row100">
                     <div class="input-field col s6 ">
-                        <i class="fas fa-folder-open prefix cyan-text text-darken-2"></i>
+                        <i class="fas fa-folder-open prefix yellow-text text-white"></i>
                         <select id="continent" name="continent" class="validate" required>
-                            <option value="" disabled selected>Choose Continent</option>
+                            <option value="" disabled selected >Choose Continent</option>
                             {% for cont in continents %}
                             <option value="{{ cont.continent }}">{{ cont.continent }}</option>
                             {% endfor %}
                         </select>
-                        <label for="continent">Continent</label>
                     </div>
                 
                 <!--Country-->
-                
                     <div class="input-field col s6">
-                        <i class="fas fa-globe prefix cyan-text text-darken-2">
+                        <i class="fas fa-globe prefix yellow-text text-darken-2">
                         </i>
-                        <input id="country" name="country" minlength="3" maxlength="20" type="text" class="validate" data-length="20"
-                            required>
-                        <label for="country">Country</label>
+                        <input id="country" name="country" minlength="3" maxlength="20" type="text" class="validate white-text text-darken-4" data-length="20" required>
+                        <label for="country" class="white-text text-darken-4">Country</label>
                     </div>
                 </div>
                 <!--City-->
                 <div class="row">
                     <div class="input-field col s6">
-                        <i class="fas fa-city prefix cyan-text text-darken-2">
+                        <i class="fas fa-city prefix yellow-text text-darken-2">
                         </i>
-                        <input id="city" name="city" minlength="3" maxlength="40" type="text" class="validate"
-                            data-length="40" required>
-                        <label for="city">City</label>
+                        <input id="city" name="city" minlength="3" maxlength="40" type="text" class="validate white-text text-darken-4" data-length="40" required>
+                        <label for="city" class="white-text text-darken-4">City</label>
                     </div>
                 
                 <!--Date of travel-->
-                
                     <div class="input-field col s6">
-                        <i class="fas fa-calendar-alt prefix cyan-text text-darken-2"></i>
+                        <i class="fas fa-calendar-alt prefix yellow-text text-darken-2"></i>
                         <input id="date" name="date" type="text" class="datepicker validate" required maxlength="30" data-length="30">
-                        <label for="date">Date of travel</label>
+                        <label for="date" class="white-text text-darken-4">Date of travel</label>
                     </div>
                 </div>
                 <!--Description-->
                 <div class="row">
                     <div class="input-field col s12">
-                        <i class="fas fa-align-left prefix cyan-text text-darken-2"></i>
+                        <i class="fas fa-align-left prefix yellow-text text-darken-2"></i>
                         <textarea id="description" name="description" minlength="5" maxlength="200"
-                            class="materialize-textarea validate" data-length="200" required></textarea>
-                        <label for="description">Description</label>
+                            class="materialize-textarea validate white-text text-darken-4" data-length="200" required></textarea>
+                        <label for="description" class="white-text text-darken-4">Description</label>
                     </div>
                 </div>
                 <!-- submit button -->
                 <div class="row">
                     <div class="col s12 center-align">
-                        <button type="submit" class="btn-large light-blue darken-1 text-shadow waves-effect waves-light">
-                            Input <i class="fas fa-plus-square right"></i>
-                        </button>
+                    <input type="submit" name="" value="Sign In">
                     </div>
                 </div>
             </form>
+            </div>
         </div>
         {% endblock %}

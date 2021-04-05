@@ -15,14 +15,14 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css">
     {% block styles %}
     {% endblock %}
-    <title>Travel Guide</title>
+    <title>Travel Journal</title>
 </head>
 <body>
     <header>
         <!--Top Navbar-->
         <nav class="nav-extended text-shadow brown">
             <div class="nav-wrapper">
-                <a href="{{url_for('adventure')}}" class=" brand-logo center"> Travel Jounal</a>
+                <a href="{{url_for('adventure')}}" class=" brand-logo center"> Travel Journal</a>
                 <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="fas fa-bars"></i></a>
                 <ul class="right hide-on-med-and-down">
                     <li><a href="{{url_for('adventure')}}">Home</a></li>
@@ -41,7 +41,7 @@
         <!--Mobile Navbar-->
         <ul class="sidenav" id="mobile-demo">
             <li>
-                <h4 class="center-align light-blue-text text-darken 4">Globe Traveler</h4>
+                <h4 class="center-align light-blue-text text-darken 4">Travel Journal</h4>
             </li>
             <li><a href="{{ url_for('adventure') }}">Home</a></li>
             <!-- If user is true-->
@@ -56,9 +56,8 @@
         </ul>
     </header>
      <section class="titles">
-        <h1>Travel Journal</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-               Aliquam assumenda magnam excepturi aperiam odit.
+        <h1>Travel Journal</h1><br>
+            <p>Welcome to Travel journal. In this place you can write about your travel adventures, places you have been to and exchange experiences with other users.
             </p>
     </section>
   
@@ -70,7 +69,7 @@
         <!--Check if there are more than one message-->
         {% for message in messages %}
         <div class="row flashes">
-            <h4 class="center-align">{{ message }}</h4>
+            <h3 class="alertas center-align">{{ message }}</h3>
         </div>
         {% endfor %}
         {% endif %}

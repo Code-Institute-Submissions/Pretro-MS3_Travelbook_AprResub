@@ -1,71 +1,77 @@
 {% extends "base.html" %}
 {% block content %}
 
-<h3 class="light-blue-text text-darken-4 center-align">Edit your Adventure?</h3>
-        <div class="row">
-            <form class="col s12" method="POST" action="{{ url_for('edit_adventure', adventure_id=traveler._id) }}">
-                <div class="row">
-                    <div class="input-field col s6">
-                        <i class="fas fa-folder-open prefix cyan-text text-darken-2"></i>
-                        <select id="continent" name="continent" class="validate" required>
-                            <option value="" disabled>Choose Continent</option>
-                            {% for cont in continents %}
-                                {% if cont._id == traveler.continent%}
-                            <option value="{{ cont.continent }}" selected>{{ cont.continent }}</option>
-                            {% else %}
-                            <option value="{{ cont.continent }}">{{ cont.continent }}</option>
-                            {% endif %}
-                            {% endfor %}
-                        </select>
-                        <label for="continent">Continent</label>
-                    </div>
-               
+<div class="loginbox2">
+    <div class="admin">
+        <h3>Edit your adventures</h3>
+        <form class="col s12" method="POST" action="{{ url_for('edit_adventure', adventure_id=traveler._id) }}">
+            <div class="row">
+                <div class="input-field col s6">
+                    <i class="fas fa-folder-open prefix yellow-text text-white"></i>
+                    <select id="continent" name="continent" class="validate" required>
+                        <option value="" disabled>Choose Continent</option>
+                        {% for cont in continents %}
+                        {% if cont._id == traveler.continent%}
+                        <option value="{{ cont.continent }}" selected>{{ cont.continent }}</option>
+                        {% else %}
+                        <option value="{{ cont.continent }}">{{ cont.continent }}</option>
+                        {% endif %}
+                        {% endfor %}
+                    </select>
+                    
+                </div>
+
                 <!--Country-->
-                
-                    <div class="input-field col s6">
-                        <i class="fas fa-globe prefix cyan-text text-darken-2"></i>
-                        <input id="country" name="country" minlength="5" maxlength="20" value="{{traveler.country}}" type="text" class="validate" data-length="20"
-                            required>
-                        <label for="country">Country</label>
-                    </div>
+
+                <div class="input-field col s6">
+                    <i class="fas fa-globe prefix yellow-text text-white"></i>
+                    <input id="country" name="country" minlength="5" maxlength="20" value="{{traveler.country}}"
+                        type="text" class="validate white-text text-darken-4" data-length="20" required>
+                    <label for="country" class="white-text text-darken-4">Country</label>
                 </div>
-                <!--City-->
-                <div class="row">
-                    <div class="input-field col s6">
-                        <i class="fas fa-city prefix cyan-text text-darken-2"></i>
-                        <input id="city" name="city" minlength="5" maxlength="40" value="{{traveler.city}}" type="text" class="validate" required data-length="40">
-                        <label for="city">City</label>
-                    </div>
-                
+            </div>
+            <!--City-->
+            <div class="row">
+                <div class="input-field col s6">
+                    <i class="fas fa-city prefix yellow-text text-white"></i>
+                    <input id="city" name="city" minlength="5" maxlength="40" value="{{traveler.city}}" type="text"
+                        class="validate white-text text-darken-4" required data-length="40">
+                    <label for="city" class="white-text text-darken-4">City</label>
+                </div>
+
                 <!--Date of travel-->
-               
-                    <div class="input-field col s6">
-                        <i class="fas fa-calendar-alt prefix cyan-text text-darken-2"></i>
-                        <input id="date" name="date" type="text" value="{{traveler.date}}" class="datepicker validate" required maxlength="30" data-length="30">
-                        <label for="date">Date of travel</label>
-                    </div>
+
+                <div class="input-field col s6">
+                    <i class="fas fa-calendar-alt prefix yellow-text text-white"></i>
+                    <input id="date" name="date" type="text" value="{{traveler.date}}" class="datepicker validate white-text text-darken-4"
+                        required maxlength="30" data-length="30">
+                    <label for="date" class="white-text text-darken-4">Date of travel</label>
                 </div>
-                <!--Description-->
-                <div class="row">
-                    <div class="input-field col s12">
-                        <i class="fas fa-align-left prefix cyan-text text-darken-2"></i>
-                        <textarea id="description" name="description" minlength="5" maxlength="200" data-length="200"
-                            class="materialize-textarea validate" required>{{-traveler.description-}}</textarea>
-                        <label for="description">Description</label>
-                    </div>
+            </div>
+            <!--Description-->
+            <div class="row">
+                <div class="input-field col s12">
+                    <i class="fas fa-align-left prefix yellow-text text-white"></i>
+                    <textarea id="description" name="description" minlength="5" maxlength="200" data-length="200"
+                        class="materialize-textarea validate white-text text-darken-4" required>{{-traveler.description-}}</textarea>
+                    <label for="description" class="white-text text-darken-4">Description</label>
                 </div>
-                <!-- submit button -->
-                <div class="row">
+            </div>
+            <!-- submit button -->
+            <div class="row">
+                <div class="col s12 center-align">
                     <div class="col s12 center-align">
-                        <button type="submit" class="btn-large light-blue darken-1 text-shadow waves-effect waves-light">
-                            Edit <i class="fas fa-edit right"></i>
-                        </button>
-                         <!-- cancel button -->
-                        <a href="{{ url_for('adventure') }}" class="btn-large red text-shadow waves-effect waves-light">
-                        Cancel <i class="fas fa-times-circle right"></i>
-                        </a>
-                    </div>
+                    <input type="submit" name="" value="Edit">
+                    <!--<button type="submit" class="btn-large light-blue darken-1 text-shadow waves-effect waves-light">
+                        Edit <i class="fas fa-edit right"></i>
+                    </button>-->
+                    <!-- cancel button -->
+                    <a href="{{ url_for('adventure') }}" class="btn-large">
+                        Cancel
+                    </a>
                 </div>
-            </form>
-        </div>
+            </div>
+        </form>
+    </div>
+</div>
         {% endblock %}

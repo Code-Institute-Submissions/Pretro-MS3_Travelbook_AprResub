@@ -1,7 +1,5 @@
 {% extends "base.html" %}
 {% block content %}
-
-
         <div class="loginbox">
             <h3 class="member">Log in User</h3>
             <form class="col s12 m8 offset-m2" method="POST" action="{{ url_for('login') }}">
@@ -11,41 +9,11 @@
                 <p>Password</p>
                 <input id="password" name="password" type="password" minlength="5" 
                         maxlength="20" pattern="^[a-zA-Z0-9]{5,20}$" class="validate" placeholder="*****" required>
-                <input type="submit" name="" value="Sign In">
+                        <input type="submit" name="" value="Sign In">
                 <p class="center-align">
             Is this your first time here?<br>
             <a href="{{ url_for('reg_user') }}" class="white-text text-darken-4 center-align">Register Account</a>
-        </p>
+            </p>
             </form>
-       
-
-        <!-- username --
-                <div class="row">
-					<div class="input-field col s12">
-						<i class="fas fa-user-plus prefix cyan-text  text-darken-2"></i>
-                        <input id="username" name="username" type="text" minlength="3" 
-                        maxlength="20" pattern="^[a-zA-Z0-9]{5,20}$" class="validate" required>
-						<label for="username">Username</label>
-					</div>
-                </div>
-                <!-- passowrd --
-                <div class="row">
-                    <div class="input-field col s12">
-						<i class="fas fa-user-lock prefix cyan-text  text-darken-2"></i>
-                        <input id="password" name="password" type="password" minlength="5" 
-                        maxlength="20" pattern="^[a-zA-Z0-9]{5,20}$" class="validate" required>
-                        <label for="password">Password</label>
-                    </div>
-                </div>
-                <!-- login --
-                <div class="row">
-                    <button type="submit" class="col s12 btn-large cyan darken-2 text-shadow waves-effect waves-light">
-                        Login <i class="fas fa-sign-in-alt"></i>
-                    </button>
-                </div>-->
-
-    </form>
-
-
-
+        </div>        
 {% endblock %}

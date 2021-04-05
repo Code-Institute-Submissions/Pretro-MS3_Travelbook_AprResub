@@ -1,4 +1,5 @@
 import os
+import json
 from flask import (
     Flask, flash, render_template,
     redirect, request, session, url_for)
@@ -57,7 +58,7 @@ def add_adventure():
             "created_by":  ObjectId(user["_id"])
         }
         mongo.db.travels.insert_one(traveler)
-        flash("Travel destination ready!")
+        flash("Information Saved")
         return redirect(url_for("adventure"))
 
     continents = mongo.db.continents.find().sort("continent", 1)
@@ -80,12 +81,46 @@ def edit_adventure(adventure_id):
             "created_by": ObjectId(user["_id"])
         }
         mongo.db.travels.update({"_id": ObjectId(adventure_id)}, enviar)
-        flash("Information Updated Successfully")
+        flash("Information Updated")
 
     traveler = mongo.db.travels.find_one({"_id": ObjectId(adventure_id)})
     continents = mongo.db.continents.find().sort("continent", 1)
     return render_template("edit_adventure.html", traveler=traveler,
                            continents=continents)
+
+
+# Add Commnent
+@app.route("/add_adventure_comment/<adventure_id>", methods=["POST"])
+def add_adventure_comment(adventure_id):
+    if request.method == "POST":
+        print("You sent ", request.form.get('comment'))
+        adventure = mongo.db.travels.find_one({"_id": ObjectId(adventure_id)})
+        try:
+            comments = adventure["comments"] 
+        except:
+            comments = []
+        if "user" in session:
+            author=  session["user"] 
+        else:
+            author="Anonymous"
+        #author="user" in session if session["user"] else "Anonymous"
+        comment = {
+            "comment": request.form.get('comment'),
+            "author": author
+        }
+        comments.append(comment)
+        data = {
+            "continent": ObjectId(adventure["continent"]),
+            "country": adventure["country"],
+            "city": adventure["city"],
+            "date": adventure["date"],
+            "description": adventure["description"],
+            "created_by": ObjectId(adventure["created_by"]),
+            "comments": comments
+        }
+        mongo.db.travels.update({"_id": ObjectId(adventure_id)}, data) 
+    #return json.dumps({'success':True}), 201, {'ContentType':'application/json'}
+    return "<p>{}<br> by: {}</p>".format(comment["comment"],comment["author"]), 201, {'ContentType':'text/html'} 
 
 
 # Delete function
@@ -136,6 +171,7 @@ def reg_user():
         # put the new user into 'session' cookie
         session["user"] = request.form.get("username").lower()
         flash("Registration Successful!")
+        return redirect(url_for("add_adventure"))
     return render_template("reg_user.html")
 
 
@@ -154,6 +190,7 @@ def login():
                 session["user"] = request.form.get("username").lower()
                 flash("Welcome, {}".format(
                     request.form.get("username")))
+                return redirect(url_for("globetrotter",username=session["user"]))
             else:
                 # invalid password match
                 flash("Incorrect Username and/or Password")
@@ -162,7 +199,6 @@ def login():
             # username doesn't exist
             flash("Incorrect Username and/or Password")
             return redirect(url_for("login"))
-
     return render_template("login.html")
 
 
@@ -170,9 +206,9 @@ def login():
 @app.route("/logout")
 def logout():
     # remove user from session cookie
-    flash("Goodbye, Have a nice travel!")
+    flash("Goodbye, Have a nice day!")
     session.pop("user")
-    return redirect(url_for("login"))
+    return redirect(url_for("adventure"))
 
 
 # Profile function

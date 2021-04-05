@@ -50,6 +50,20 @@ $(document).ready(function () {
             }
         });
     }
+
+    $('.add_comment').click(function(event){
+
+        inputId = '#' + $(this).attr('data-comment-id');
+        ulId = '#comments' + $(this).attr('data-comment-id');
+        comment = $(inputId).val();
+        url = "/add_adventure_comment/" + $(this).attr('data-comment-id');
+        $.post( url, {"comment": comment}).done(function( data ) {
+            $(inputId).val("");
+            $(ulId).append('<li class="collection-item avatar"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/OOjs_UI_icon_userAvatar-constructive.svg/1024px-OOjs_UI_icon_userAvatar-constructive.svg.png" alt="" class="circle"> <p>'+ data +'</p></li>');
+        }); 
+    }); 
+
+
 });
 
 

@@ -268,8 +268,6 @@ Of course it is planned in a near future to be able to store pictures�
 
 + Once logged into the system, the user can add information by choosing the "adventure" option in the navigation menu. The user can also go to "profile", see what it has entered. There are two buttons, one to edit the information and the other to delete it.
 
-
-
 * During my test period i focus on the user stories.
 
 ## The testing of the Navbar and pages. 

@@ -8,9 +8,9 @@
 }
 
 body { 
-    min-height: 100vh;
     background: url('/static/images/bg_1.jpg') no-repeat;
     font-family: 'Roboto', sans-serif;
+    background-size: cover;
 }
 /*Navbar section*/
 nav .brand-logo.center{
@@ -115,6 +115,7 @@ input[type="text"]{
     box-sizing: border-box;
     background: rgba(0, 0, 0, .5);
     padding: 80px 40px;
+    margin-top: 100px;
 
 }
 .member{
@@ -122,6 +123,14 @@ input[type="text"]{
     padding: 0 0 20px;
     color: #efed40;
     text-align: center;
+    padding-bottom: 60px;
+}
+
+h3{
+line-height: 5%;
+color: #efed40;
+text-align: center;
+margin-bottom: 150px;
 }
 .loginbox p{
     margin: 0;
@@ -166,4 +175,113 @@ input[type="text"]{
     font-size: 14px;
     font-weight: bold;
     text-decoration: none;
+}
+.alertas{
+    color: #fff;
+    font-weight: 600;
+}
+.travel-card .card{
+    background-color: rgba(255,255,255,1); 
+}
+.card .card-content{
+    height: 200px !important;
+}
+.travel-card{
+    height: 350px;
+}
+.travel-card .header{
+    color: #ffab40;
+
+}
+.collection, .collection .collection-item{
+
+    border: solid 0px;
+    border-right: solid 1px black;
+}
+
+/*Adding Adventure Section*/
+.loginbox2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: rgba(0, 0, 0, .5);
+    width: 100%;
+    padding: 20px;
+}
+
+.loginbox2 h2{
+    width: 100%;
+    color: #45f3ff;
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.loginbox2 .row100{
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(autofit,minmax(300px,1fr));
+}
+
+.loginbox2 .row100 .input-field{
+    position: relative;
+    width: 100%;
+    padding: 0 10px;
+    margin: 30px 0 10px;
+    transition: 0.5s;
+} 
+
+.select-wrapper input.select-dropdown{
+    color: #ffc107;
+}
+
+.adding_Adventure .add_button{
+    border: none;
+    outline: none;
+    height: 40px;
+    color: white;
+    font-size: 16px;
+    background: #ffc107;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.adding_Adventure .add_button:hover{
+    background: #ff5722;
+    color: #262626;
+}
+
+.loginbox2 input[type="submit"]{
+    border: none;
+    outline: none;
+    height: 40px;
+    color: white;
+    font-size: 16px;
+    background: #ffc107;
+    cursor: pointer;
+    border-radius: 10px;
+    width: 200px;
+    margin-left: 50px;
+}
+.admin{
+    margin: 0px auto;
+}
+.btn-large{
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    width: 200px;
+    background: red;
+    margin-bottom: 4px;
+    margin-left: 50px;
+}
+
+a {
+    text-decoration: none;
+    margin-left: 30px;
 }
