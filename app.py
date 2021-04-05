@@ -1,5 +1,6 @@
 import os
 import json
+import uuid
 from flask import (
     Flask, flash, render_template,
     redirect, request, session, url_for)
@@ -106,7 +107,8 @@ def add_adventure_comment(adventure_id):
         #author="user" in session if session["user"] else "Anonymous"
         comment = {
             "comment": request.form.get('comment'),
-            "author": author
+            "author": author,
+            "id": str(uuid.uuid4())
         }
         comments.append(comment)
         data = {
@@ -121,6 +123,34 @@ def add_adventure_comment(adventure_id):
         mongo.db.travels.update({"_id": ObjectId(adventure_id)}, data) 
     #return json.dumps({'success':True}), 201, {'ContentType':'application/json'}
     return "<p>{}<br> by: {}</p>".format(comment["comment"],comment["author"]), 201, {'ContentType':'text/html'} 
+
+
+
+
+#Delete Commnent
+@app.route("/remove_adventure_comment/<adventure_id>", methods=["POST"])
+def remove_adventure_comment(adventure_id):
+    if request.method == "POST":
+        comment_id =  request.form.get('comment')
+        adventure = mongo.db.travels.find_one({"_id": ObjectId(adventure_id)})
+        try:
+            comments = adventure["comments"]
+            comments_deleted = list(filter(lambda x: x['id']!=comment_id, comments))
+        except:
+            raise Exception('Adventure has no comments')
+        data = {
+            "continent": ObjectId(adventure["continent"]),
+            "country": adventure["country"],
+            "city": adventure["city"],
+            "date": adventure["date"],
+            "description": adventure["description"],
+            "created_by": ObjectId(adventure["created_by"]),
+            "comments": comments_deleted
+        }
+        mongo.db.travels.update({"_id": ObjectId(adventure_id)}, data) 
+    # return json.dumps({'success':True}, 200, {'ContentType':'application/json'})
+    return "<p>{}<br> by: {}</p>".format("Deleted ",comment_id), 200, {'ContentType':'text/html'} 
+
 
 
 # Delete function

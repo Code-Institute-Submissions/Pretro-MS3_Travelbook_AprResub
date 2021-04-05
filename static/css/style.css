@@ -285,3 +285,206 @@ a {
     text-decoration: none;
     margin-left: 30px;
 }
+
+span.activator{
+    color: #FFAB40;
+}
+
+@media (max-width: 280px){
+    .collection .collection-item.avatar:not(.circle-clipper)>.circle, 
+    .collection .collection-item.avatar :not(.circle-clipper)>.circle{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: middle;
+    right: 123px;
+    }
+    .collection .collection-item.avatar{
+    min-height: 84px;
+    padding-left: 42px;
+    position: relative;
+    }
+      a.brand-logo.center{
+    left: 25%;
+    font-size: 20px;
+ }
+    .btn-large{
+    margin-left: 0px;
+    margin-top: 25px;
+ }
+ .loginbox2 input[type="submit"]{
+    margin-left: 0;
+ }
+ 
+}
+
+@media (max-width: 320px){
+    .loginbox{
+        top: 80%;
+    }
+}
+
+
+@media (max-width: 360px){
+    body{
+        height: 180vh;
+    }
+    .loginbox2 input[type="submit"]{
+        margin-left: 20px;
+    }
+    .red.accent-4{
+        margin-left: -50px;
+    }
+    .card .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating)
+ {
+     margin-left: 5px;
+ }
+}
+
+@media (max-width: 375px)
+{
+     .red.accent-4{
+        margin-left: -20px;
+    }
+ .loginbox{
+        top: 80%;
+    }
+ .titles h1 {
+     color: #ffc107;
+     font-size: 2rem;
+ }   
+ .boton{
+     margin-left: 100px;
+ }
+ 
+  a.brand-logo.center{
+    left: 25%;
+ }
+    .loginbox{
+        margin-top: 360px;
+    }
+    .center, .center-align{
+        font-size: 16px;
+    }
+     .card .card-content {
+        height: 220px !important;
+    }
+    .card .card-content p {
+        margin: 0;
+        font-size: 10px;
+    }
+
+    h3{
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
+    .collection .collection-item:last-child{
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 411px){
+     body{
+        height: 180vh;
+    }
+    .alertas{
+        font-size: 20px;
+    }
+    .titles h1{
+        font-size: 20px;
+    }
+    .loginbox{
+        margin-top: 180px;
+    }
+    h3{
+        font-size: 20px;
+    }
+    .loginbox2 input[type="submit"]{
+        margin-bottom: 15px;
+    }
+    nav .brand-logo.center{
+        left: 95px;
+    }
+}
+
+@media (max-width: 414px){
+    h3{
+        font-size: 20px;
+    }
+    nav .brand-logo.center{
+        left: 95px;
+    }
+        .btn-large{
+    margin-left: 0px;
+    margin-top: 25px;
+ }
+ .loginbox2 input[type="submit"]{
+        margin-left: 0;
+    }
+    h1{
+        font-size: 20px;
+    }
+    .loginbox{
+        top: 90%;
+    }
+    body{
+        height: 200vh;
+    }
+}
+
+
+@media (max-width: 540px){
+    body{
+        height: 180vh;
+    }
+    .loginbox{
+        top: 60%;
+    }
+}
+
+@media (max-width: 768px){
+    .titles h1{
+        font-size: 20px;
+    }
+    .travel-card .header{
+        font-size: 12px;
+    }
+    .card .card-content .card-title{
+        font-size: 12px;
+    }
+    .card .card-content{
+        height: 230px !important;
+    }
+    .card .card-reveal .card-title{
+        font-size: 12px;
+    }
+    body{
+        height: 130vh;
+    }
+    .loginbox2{
+        min-height: 80vh;
+    }
+}
+
+@media (max-width: 1024px){
+    body{
+        height: 135vh;
+    } 
+    .travel-card .header{
+        font-size: 14px;
+    }
+    .card .card-reveal .card-title{
+        font-size: 14px;
+    }
+        .travel-card .header{
+        font-size: 14px;
+    }
+      .card .card-content .card-title{
+        font-size: 14px;
+    }
+    .titles h1{
+        font-size: 22px;
+    }
+}

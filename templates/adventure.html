@@ -31,6 +31,7 @@
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/OOjs_UI_icon_userAvatar-constructive.svg/1024px-OOjs_UI_icon_userAvatar-constructive.svg.png"
                             alt="" class="circle">
                         <p>{{comment["comment"]}}<br>by: {{comment["author"]}}</p>
+                        <i class="material-icons right delete_comment" travel-id="{{traveler._id}}" id="{{comment.id}}">delete</i>
                     </li>
                     {% endfor %}
                 </ul>

@@ -52,7 +52,6 @@ $(document).ready(function () {
     }
 
     $('.add_comment').click(function(event){
-
         inputId = '#' + $(this).attr('data-comment-id');
         ulId = '#comments' + $(this).attr('data-comment-id');
         comment = $(inputId).val();
@@ -61,9 +60,22 @@ $(document).ready(function () {
             $(inputId).val("");
             $(ulId).append('<li class="collection-item avatar"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/OOjs_UI_icon_userAvatar-constructive.svg/1024px-OOjs_UI_icon_userAvatar-constructive.svg.png" alt="" class="circle"> <p>'+ data +'</p></li>');
         }); 
-    }); 
+    });
+    
+    $('.delete_comment').click(function(event){
+        console.log("delete");
+        commentId = $(this).attr('id');
+        travelId = $(this).attr('travel-id')
+        url = "/remove_adventure_comment/" + travelId;
+        var comment = $(this);
+        $.post(url, {"comment": commentId}).done(function( data ) {
+            console.log('response', data);
+            comment.remove();
+            // $(inputId).val("");
+            // $(ulId).append('<li class="collection-item avatar"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/OOjs_UI_icon_userAvatar-constructive.svg/1024px-OOjs_UI_icon_userAvatar-constructive.svg.png" alt="" class="circle"> <p>'+ data +'</p></li>');
+        }); 
 
-
+    });
 });
 
 
