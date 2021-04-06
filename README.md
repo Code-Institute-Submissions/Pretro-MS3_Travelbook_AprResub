@@ -18,13 +18,13 @@ As a user of this site, I want to
 
 2. As a user, i must be able to easy navigate through the different pages of the site.
 
-3. As a user, i want to be able to register an account and a profile.
+3. As a user, i want to be able to register an account.
 
 4. As a user, i want the process of registration to be simple.
 
 5. As a user, i want to be able to easily log in to the site.
 
-6. As a user, i want to be able to administer travel journal stories.
+6. As a user, i want to be able to manage my travel journal information in an easy way.
 
 7. As a user, i want to be able to add travel journal stories.
 
@@ -32,7 +32,9 @@ As a user of this site, I want to
 
 9. As a user, i want to be able to search other members travel journal stories.
 
-10. As a User, i want to chat with other members.
+10. As a user, i want to comment other members travel stories.
+
+11. As a User, i want to chat with other members.
 
 ## __The purpose of the travel journal is to :__
 
@@ -44,7 +46,7 @@ As a user of this site, I want to
 
 The idea was born during the pandemic. It is believed that interest in travel will increase markedly after this difficult time is over. Choosing a destination is not always easy, but through a page where you can search for destinations and integrate with other travelers, 
 
-check their ratings and reviews of the different places they have been to, in some way the choice makes it easier to choose where you would like to go in the future.
+check their comments and reviews of the different places they have been to, in some way it makes it easier to choose where you would like to travel to in the future.
 
 ### __Project Strategy__
 
@@ -58,7 +60,7 @@ To meet the goal of this project, the following strategy has been implemented.
 
 + The use of photos that is in accordance with the objective of the site, making an environment pleasant for the user.
 
-+ The travel journal stories written by the user are only available to see by other register users.
++ The travel journal stories written by the users are available for everyone to read and leave a comment.
 
 ### __Design__
 
@@ -66,15 +68,17 @@ __Color Scheme__
 
 The colours that I used for the site:
 
-* (Yellow) For the main color of the buttons, the logo and the h1 titles. 
+* (Yellow) For the main color of the buttons, the logo, icons and the h1, h3 titles. 
 
 * (Orange) For the hover effect on the buttons.
 
 * (Black) Is used for the text shadows.
 
-* (White) Is use for the menu options in the navbar and for the paragraph in the home page.
+* (White) Is use for the menu options in the navbar and for the paragraph in the home , log in and register, add and edit adventure page textfields .
 
-* (Lightgrey) Is used for the register and login forms background. 
+* (Lightgrey) Is used for background forms in all of the sites pages.
+
+* (Green) is the default color of the icon in the comment feature.
 
 The reason why these colors were chosen is because since the background image is colorful, these colors give a more joyful tone and at the same time allow the user to be focused on what they are doing. Generating a more attractive effect not only for the frequent user but also for the one who visits the site for the first time.
     
@@ -84,9 +88,9 @@ The reason why these colors were chosen is because since the background image is
     
 ### __Imagery__
 
-The only image used in this project is the background image of the main page. The reason for this is because the project is more focused on fulfilling the function of a journal, for which it was not necessary to create a carousel or other type of features.
+The only image used in this project is the background image of the main page. The reason for this is because the project is more focused on fulfilling the function of a journal, for which it was not necessary to create a carousel or other type of features related to images.
 
-Of course it is planned in a near future to be able to store pictures in the database that every register user might be able to load up.
+In the future it is planned to make an application that allows users to upload profile photos and also add photos to their travel stories.
 
 ## __Wireframes__
 
@@ -112,9 +116,7 @@ Of course it is planned in a near future to be able to store pictures�
 
 * Designed with HTML5, CSS, Python3, JavaScript, Flask,Materalize, and MongoDB.
 
-* Text messages(alerts) to keep the user informed when an operation like adding, updating, deleting, register, login in and out the system has been made successfully.
-
-* Text alerts also been made for the search function and to tell users when an operation is successfully made.
+* Alert messages that inform the user about the different operations carried out in the system.
 
 * Register page where users can register to make use of the website.
 
@@ -122,11 +124,13 @@ Of course it is planned in a near future to be able to store pictures�
 
 * Modal for users to write the information about to their travels.
 
-* Buttons for the operations of add, update, delete, search, login and register functions. 
+* Buttons for the operations of add, update, delete, search, login and register functions.
 
-## __Features left to implement__
+* Cards where registered members such as site-only visitors can leave comments about registered members travel stories.
 
-* A function that makes it possible to recover the user password.
+## __Features left to implement in the future__
+
+* A function that makes it possible to recover user password.
 
 * The upload of pictures to the profile section. 
 
@@ -188,15 +192,15 @@ Of course it is planned in a near future to be able to store pictures�
 
 + [Gitpod](https://www.gitpod.io/) 
 
-  Gitpod is used as the enviroment program were the page was made.
+  Gitpod is used as the enviroment program were the page was made and for the writing of the code.
 
 + [Github](https://github.com/) 
 
-  Github is used as the development platform. This platform, gives us users the opportunity to see other users repositories and upload our own repositories.
+  I use Github to host the deployed website. Also in Github you can track your code and go back to previous versions to keep track of what you've done.
 
 + [Heroku](https://www.heroku.com/)
 
-  Heroku is a cloud platform as a service (PaaS) supporting several programming languages.And is used for the deployment of this project. 
+  Platform used for the deployments and running the apps. 
 
 ## __Resources__
  
@@ -252,55 +256,92 @@ Of course it is planned in a near future to be able to store pictures�
 
 + The main page has a navigation menu in which there are two options, one for log in and the other for registration. Once the user is registered, the remaining options shows on the navmenu and this makes the navigation on the site possible for registered users.
 
-3. As a user, i want to be able to register an account and a profile.
+3. As a user, i want to be able to register an account.
 
-+ This site has the option of registering a user account in the navigation menu. Once this is done, the user can enter their traveling information, which is shown in the user profile.
++ The user has the option of registering a user account in the navigation menu. Once this is done, the user is directed to the add adventure page where he can start adding his information
 
-4. As a user, i want the process of registration to be understandable.
+4. As a user, i want the process of registration to be simple.
 
 + The registration form consists of two fields that allow you to choose a username of your choice and a password.
 
 5. As a user, i want to be able to easily log in to the site.
 
-+ When the user is registered and returns to the site, it will be possible for him to log in to the navigation menu, choose the option log in and fill in his username and password information.
++ Like the registration process. The login process also consists of filling in the username and password already registered by the user in the login form in the login page.
 
-6. As a user, i want to be able to manage my information in an easy way.
+6. As a user, i want to be able to manage my travel journal information in an easy way.
 
-+ Once logged into the system, the user can add information by choosing the "adventure" option in the navigation menu. The user can also go to "profile", see what it has entered. There are two buttons, one to edit the information and the other to delete it.
++ Once entered into the system, the user can perform different operations such as input, editing and deleting the information entered.
+
+7. As a user, i want to be able to add travel journal stories.
+
++ Once the user is logged in, by pressing the adventure option in the navigation menu, the user is directed to the add adventures page.
+
+8. As a user, i want to be able to read other members travel journal stories.
+
++ On the main page all the stories of the members of the page are shown on cards. And it is also possible to write your own comments as a visitor to the page.
+
+9. As a user, i want to be able to search other members travel journal stories.
+
++ At the moment it is only possible to search other members travel journals by country.
+
+10. As a user, i want to comment other members travel stories.
+
++ Upon entering the system, a modal is displayed where the travel history cards of the members appear. By clicking on the comments option it is possible to leave a comment whether you are a visitor or a member of the page.
+
+11. As a User, i want to chat with other members.
+
++ This option is not available at the moment, but it is a project to be carried out in the near future.
+
 
 * During my test period i focus on the user stories.
 
 ## The testing of the Navbar and pages. 
 
-### __Home Page___
+### __Adventure Page__
 
 + Test result: The user was directed to the login form when pressing the option "Log in" in the navbar. 
 
-+ Test result: The user was directed to the register form when pressing the option "Log in" in the navbar.
++ Test result: The user was directed to the register form when pressing the option "Register" in the navbar.
 
-+ Test result: The user was able to make a search for city or country successfully in the search form.
++ Test result: The user was able to make a search for country successfully in the search form.
 
-+ Test result: The alert messages in the search form worked as expected showing up when the user try to make a search without writting anything.
++ Test result: The alert messages in the search form worked as expected.
 
-### _Log in/Register page__
+### __Log in__
 
 + Test result: The user could log in by writing his user information in the login form.
 
 + Test result: The user could register by filling the register form.
 
-+ Test results: Alert messages were triggered when the registration of an existing user was tested.
++ Test results: Alert messages were triggered when a non existing user was tested.
 
-+ Test results: Also alert messages worked when the login of an non-existing user tested.
+### __Register page__
 
-### _The adventure page__
++ Test result: The user could register in the register form.
+
++ Test result: Alert messages were triggered when trying to register an existing user.
+
+### __The adventure page__
 
 + Test result: The user was directed to the adventure page when pressing the "Adventure" option in the navbar.
 
 + Test result: The user could add information successfully in the Add adventure form.
 
-+ Test result: Alert messages were triggered during the "Add adventure" fields test.
++ Test result: Alert messages were triggered during the "Add adventure" fields test. This means, leave a field blank and try to make an entry of information.
 
 + Test result: The add button worked as expected. alert messages triggered when trying to add incomplete information written in the adventure form. 
+
+### __Edit Adventure page__
+
++ Test result: The user could edit information successfully in the edit adventure form.
+
++ Test result: Alert messages were triggered during the "Edit adventure" fields test. The result was the same as mentioned above, only this time the operation was editing information. 
+
+### __Profile page__
+
++ Test result: The warning modal is activated when the delete button is pressed.
+
++ Test result: The user is directed to the edit adventure page when pressing the edit button.
     
 ### __The website has been checked in different browser, such as.__
 
