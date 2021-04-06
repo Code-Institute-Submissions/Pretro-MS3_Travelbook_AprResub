@@ -9,10 +9,11 @@
         <p>Password</p>
         <input id="password" name="password" type="password" minlength="5" maxlength="20" pattern="^[a-zA-Z0-9]{5,20}$"
             class="validate" placeholder="*****" required>
-        <input type="submit" name="" value="Sign In">
+        <input type="submit" name="submit" value="Sign In">
         <p class="center-align">
             Are you already register?
             <a href="{{ url_for('login') }}" class="white-text text-darken-4">Log in</a>
         </p>
     </form>
+    </div>
     {% endblock %}

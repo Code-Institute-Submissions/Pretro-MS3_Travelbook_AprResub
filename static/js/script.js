@@ -52,10 +52,10 @@ $(document).ready(function () {
     }
 
     $('.add_comment').click(function(event){
-        inputId = '#' + $(this).attr('data-comment-id');
-        ulId = '#comments' + $(this).attr('data-comment-id');
-        comment = $(inputId).val();
-        url = "/add_adventure_comment/" + $(this).attr('data-comment-id');
+        const inputId = '#' + $(this).attr('data-comment-id');
+        const ulId = '#comments' + $(this).attr('data-comment-id');
+        const comment = $(inputId).val();
+        const url = "/add_adventure_comment/" + $(this).attr('data-comment-id');
         $.post( url, {"comment": comment}).done(function( data ) {
             $(inputId).val("");
             $(ulId).append('<li class="collection-item avatar"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/OOjs_UI_icon_userAvatar-constructive.svg/1024px-OOjs_UI_icon_userAvatar-constructive.svg.png" alt="" class="circle"> <p>'+ data +'</p></li>');
@@ -63,18 +63,14 @@ $(document).ready(function () {
     });
     
     $('.delete_comment').click(function(event){
-        console.log("delete");
-        commentId = $(this).attr('id');
-        travelId = $(this).attr('travel-id')
-        url = "/remove_adventure_comment/" + travelId;
-        var comment = $(this);
+        const commentId = $(this).attr('id');
+        const travelId = $(this).attr('data-travel-id');
+        const url = "/remove_adventure_comment/" + travelId;
+        const comment = $(this);
         $.post(url, {"comment": commentId}).done(function( data ) {
             console.log('response', data);
-            comment.remove();
-            // $(inputId).val("");
-            // $(ulId).append('<li class="collection-item avatar"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/OOjs_UI_icon_userAvatar-constructive.svg/1024px-OOjs_UI_icon_userAvatar-constructive.svg.png" alt="" class="circle"> <p>'+ data +'</p></li>');
+            comment.parent().remove();
         }); 
-
     });
 });
 

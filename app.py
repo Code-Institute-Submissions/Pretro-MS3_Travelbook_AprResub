@@ -56,7 +56,7 @@ def add_adventure():
             "city": request.form.get("city"),
             "date": request.form.get("date"),
             "description": request.form.get("description"),
-            "created_by":  ObjectId(user["_id"])
+            "created_by": ObjectId(user["_id"])
         }
         mongo.db.travels.insert_one(traveler)
         flash("Information Saved")
@@ -97,14 +97,14 @@ def add_adventure_comment(adventure_id):
         print("You sent ", request.form.get('comment'))
         adventure = mongo.db.travels.find_one({"_id": ObjectId(adventure_id)})
         try:
-            comments = adventure["comments"] 
-        except:
+            comments = adventure["comments"]
+        except Exception as e:
             comments = []
         if "user" in session:
-            author=  session["user"] 
+            author = session["user"]
         else:
-            author="Anonymous"
-        #author="user" in session if session["user"] else "Anonymous"
+            author = "Anonymous"
+        # author="user" in session if session["user"] else "Anonymous"
         comment = {
             "comment": request.form.get('comment'),
             "author": author,
@@ -120,23 +120,20 @@ def add_adventure_comment(adventure_id):
             "created_by": ObjectId(adventure["created_by"]),
             "comments": comments
         }
-        mongo.db.travels.update({"_id": ObjectId(adventure_id)}, data) 
-    #return json.dumps({'success':True}), 201, {'ContentType':'application/json'}
-    return "<p>{}<br> by: {}</p>".format(comment["comment"],comment["author"]), 201, {'ContentType':'text/html'} 
+        mongo.db.travels.update({"_id": ObjectId(adventure_id)}, data)
+    return "<p>{}<br> by: {}</p>".format(comment["comment"], comment["author"]), 201, {'ContentType': 'text/html'}  # noqa: 501
 
 
-
-
-#Delete Commnent
+# Delete Commnent
 @app.route("/remove_adventure_comment/<adventure_id>", methods=["POST"])
 def remove_adventure_comment(adventure_id):
     if request.method == "POST":
-        comment_id =  request.form.get('comment')
+        comment_id = request.form.get('comment')
         adventure = mongo.db.travels.find_one({"_id": ObjectId(adventure_id)})
         try:
             comments = adventure["comments"]
-            comments_deleted = list(filter(lambda x: x['id']!=comment_id, comments))
-        except:
+            comments_deleted = list(filter(lambda x: x['id'] != comment_id, comments))  # noqa: 501
+        except Exception as e:
             raise Exception('Adventure has no comments')
         data = {
             "continent": ObjectId(adventure["continent"]),
@@ -147,10 +144,8 @@ def remove_adventure_comment(adventure_id):
             "created_by": ObjectId(adventure["created_by"]),
             "comments": comments_deleted
         }
-        mongo.db.travels.update({"_id": ObjectId(adventure_id)}, data) 
-    # return json.dumps({'success':True}, 200, {'ContentType':'application/json'})
-    return "<p>{}<br> by: {}</p>".format("Deleted ",comment_id), 200, {'ContentType':'text/html'} 
-
+        mongo.db.travels.update({"_id": ObjectId(adventure_id)}, data)
+    return "<p>{}<br> by: {}</p>".format("Deleted ", comment_id), 200, {'ContentType': 'text/html'}  # noqa: 501
 
 
 # Delete function
@@ -220,7 +215,7 @@ def login():
                 session["user"] = request.form.get("username").lower()
                 flash("Welcome, {}".format(
                     request.form.get("username")))
-                return redirect(url_for("globetrotter",username=session["user"]))
+                return redirect(url_for("globetrotter", username=session["user"]))  # noqa: 501
             else:
                 # invalid password match
                 flash("Incorrect Username and/or Password")

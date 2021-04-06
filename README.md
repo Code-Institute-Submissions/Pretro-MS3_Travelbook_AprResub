@@ -372,8 +372,7 @@ Friends and family tested the site by login in and writing about their stories. 
 
 ## __Deployment__ 
 
-To deploy this project, I used the hosting platform of Github and heroku
-The step to deploy this project are as follows.
+To deploy this project, I used the hosting platform of Github and heroku. The step to deploy this project are as follows.
 
 + GitPod is used for the creation of this project.
 
@@ -384,6 +383,7 @@ The step to deploy this project are as follows.
 + As a final part,  the project is deployed to heroku. This is achieved by the linking between github and heroku.
 
 ### __Heroku__
+
 The Project is deployed to Heroku using the following steps...
 
  1. Navigate to Heroku and log into your account.

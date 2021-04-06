@@ -318,6 +318,9 @@ span.activator{
  .loginbox2 input[type="submit"]{
     margin-left: 0;
  }
+ .boton{
+     left: -45px;
+ }
  
 }
 
