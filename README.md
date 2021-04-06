@@ -8,7 +8,7 @@ In future updates of this project, it is intended to expand the profile of the u
 
 This is the third project out of four Milestone Projects at the Code Institute for the Full Stack Development Course.
 
-# Design Process __UX__
+# User Experience __(UX)__
 
 ## __User stories__
 
@@ -292,8 +292,9 @@ In the future it is planned to make an application that allows users to upload p
 
 + This option is not available at the moment, but it is a project to be carried out in the near future.
 
-
 * During my test period i focus on the user stories.
+
+# __Further Testing__
 
 ## The testing of the Navbar and pages. 
 
@@ -367,22 +368,47 @@ Friends and family tested the site by login in and writing about their stories. 
 
 ## __Known Bugs__
 
-
-+ In the galaxy S5 the footer text in some parts appears one on top another. Also the buttons in the profile page appears not at the same space.
-+ Sometimes the date that you have chosen, do not show, but the actual date. To fix this, push the clear button on the calendar and try again.  
++ 
 
 ## __Deployment__ 
 
 To deploy this project, I used the hosting platform of Github and heroku
-The step to deploy this project were as follows.
+The step to deploy this project are as follows.
+
++ GitPod is used for the creation of this project.
+
++ GitHub was use for the creation of the project repository. 
+
++ The repository is connected to Gitpod. All the changes during the creation of the project are commited and push to GitHub.
+
++ As a final part,  the project is deployed to heroku. This is achieved by the linking between github and heroku.
 
 ### __Heroku__
-The Project was deployed to Heroku using the following steps...
+The Project is deployed to Heroku using the following steps...
 
-1. Log in to your Heroku account
-2. Choose the project you want to deploy
-3. Go to the settings tab and at the domains section, you find the link to deploy your project 
-4. Copy your app link and paste it in your browser or push the link to direct come to your project
+ 1. Navigate to Heroku and log into your account.
+
+ 2. Press the "new" button in the dashboard and choose "Create new app" option.
+ 
+ 3. Write you apps name and choose the region according to where you live. 
+ 
+ 4. Then press the "create app" button.
+ 
+ 5. Press the "Settings" tab. Once done, you see the "config vars" section in the screen.
+ 
+ 6. Press the "Reveal Config Vars" button and add your configuration variables created in the env.py file.
+ 
+ 7. The config var are the IP, PORT, Secret Key, Mongo_URI, MongoDB.
+ 
+ 8. Once this is done, choose the "Deploy" tab in the menu.
+ 
+ 9. In the "Deployment method" section, choose the "Github" icon and connect your Github repository.
+
+10. Be sure to choose the right GitHub username and search for the repository you want. This you can do with the search option.
+
+11. Press the "Disable Automatic Deploys" button to change it to "Enable Automatic deploy" mode.
+
+12. Press the "Deploy Branch" button.
 
 ### __Forking the GitHub Repository__ 
 By forking the GitHub Repository we make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original repository by using the following steps...
