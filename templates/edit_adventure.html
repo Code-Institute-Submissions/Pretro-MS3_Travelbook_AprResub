@@ -4,9 +4,9 @@
 <div class="loginbox2">
     <div class="admin">
         <h3>Edit your adventures</h3>
-        <form class="col s12" method="POST" action="{{ url_for('edit_adventure', adventure_id=traveler._id) }}">
+        <form class="col s12 editing" method="POST" action="{{ url_for('edit_adventure', adventure_id=traveler._id) }}">
             <div class="row">
-                <div class="input-field col s6">
+                <div class="input-field col s6 ">
                     <i class="fas fa-folder-open prefix yellow-text text-white"></i>
                     <select id="continent" name="continent" class="validate" required>
                         <option value="" disabled>Choose Continent</option>
@@ -22,7 +22,6 @@
                 </div>
 
                 <!--Country-->
-
                 <div class="input-field col s6">
                     <i class="fas fa-globe prefix yellow-text text-white"></i>
                     <input id="country" name="country" minlength="5" maxlength="20" value="{{traveler.country}}"
@@ -31,7 +30,7 @@
                 </div>
             </div>
             <!--City-->
-            <div class="row">
+            <div class="row ">
                 <div class="input-field col s6">
                     <i class="fas fa-city prefix yellow-text text-white"></i>
                     <input id="city" name="city" minlength="5" maxlength="40" value="{{traveler.city}}" type="text"
@@ -40,11 +39,10 @@
                 </div>
 
                 <!--Date of travel-->
-
-                <div class="input-field col s6">
+                <div class="input-field col s6 ">
                     <i class="fas fa-calendar-alt prefix yellow-text text-white"></i>
                     <input id="date" name="date" type="text" value="{{traveler.date}}" class="datepicker validate white-text text-darken-4"
-                        required maxlength="30" data-length="30">
+                        required maxlength="50" data-length="30">
                     <label for="date" class="white-text text-darken-4">Date of travel</label>
                 </div>
             </div>
