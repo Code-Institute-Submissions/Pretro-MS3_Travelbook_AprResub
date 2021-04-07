@@ -238,36 +238,42 @@ In the future it is planned to make an application that allows users to upload p
 
 The collections are:
 
-Collections | Type
-------------|--------
- __Continents__ |
- id | ObjectId 
-Continent | String
- __Profile__ |
-id | ObjectId
-username |String
-first_name | String
-last_name | String
-nationality | String
-gender | String
-date_of_birth | String
-phone | String
-email | String
-Travels | String
-users | String
-__Travels__ |
-id | ObjectId
-continent | ObjectId
-country | String
-city | String
-date | String
-description | String
-created_by | ObjectId
-comments: | Array
-__Users__ |
-id | ObjectId
-Username | String
-password | String
+ __Continents__ 
+
+Title |  Db Key|Data Type | 
+------------|-|-|-
+User id | _id | ObjectId 
+Continent | continent|String
+
+__Profile__ 
+Title |  Db Key|Data Type | 
+------------|-|-|-
+User_id | _id | ObjectId
+Username |username|String
+
+__Travels__ 
+Title |  Db Key|Data Type | 
+------------|-|-|-
+User_id | _id | ObjectId
+Continent | continent | ObjectId
+Country | country | String
+City | city |String
+Date of travel | date | String
+Description | description | String
+by | created_by | ObjectId
+Comments: | comments | Array
+
+__Users__ 
+Title |  Db Key|Data Type | 
+------------|-|-|-
+User_id | _id | ObjectId
+Username | username | String
+Password | password | String
+
+ + The Users id is connected to all the collections in order to know who the data belongs to.
+
+ + the variable username in the collection of profile and user allows verification when creating a new record and also verification that the same username is not entered twice.
+
 
 ## Testing
 

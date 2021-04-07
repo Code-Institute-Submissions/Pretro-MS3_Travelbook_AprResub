@@ -324,6 +324,13 @@ span.activator{
  
 }
 
+@media (max-width: 280px){
+    .loginbox{
+        top: 60%;
+    }
+}
+
+
 @media (max-width: 320px){
     .loginbox{
         top: 80%;
@@ -345,6 +352,9 @@ span.activator{
  {
      margin-left: 5px;
  }
+ .light-blue.lighten-1{
+        margin-left: 10px;
+    }
 }
 
 @media (max-width: 375px)
