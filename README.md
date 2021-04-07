@@ -239,43 +239,35 @@ In the future it is planned to make an application that allows users to upload p
 The collections are:
 
 __Users__
-Title          | Db Key      | Data Type |
------          | -           |         - |
-User_id        | _id         | ObjectId  |
-Username       | username    | String    |
-Password       | password    | String    |
+Title          | Db Key      | Data Type | Comments                                              |
+-----          | -           |         - | -                                                     |
+User id        | _id         | ObjectId  | Autocreated by MongoDB                                |
+Username       | username    | String    |                                                       |
+Password       | password    | String    |                                                       |
 
 __Continents__
-
-Title          | Db Key      | Data Type |
------          | -           |         - |
-Continent id   | _id         | ObjectId  |
-Continent      | continent   | String    |
+Title          | Db Key      | Data Type | Comments                                              |
+-----          | -           |         - | -                                                     |
+Continent id   | _id         | ObjectId  | Autocreated by MongoDB                                |
+Continent      | continent   | String    |                                                       |
 
 __Profile__
-
-Title          | Db Key      | Data Type |
------          | -           |         - |
-Profile id     | _id         | ObjectId  |
-Username       | username    | String    |
+Title          | Db Key      | Data Type | Comments                                              |
+-----          | -           |         - | -                                                     |
+Profile id     | _id         | ObjectId  | Autocreated by MongoDB                                |
+Username       | username    | String    | Points to User.username                               |
 
 __Travels__ 
-Title          | Db Key      | Data Type |
------          | -           |         - |
-Travels id     | _id         | ObjectId  |
-Continent      | continent   | ObjectId  |
-Country        | country     | String    |
-City           | city        | String    |
-Date of travel | date        | String    |
-Description    | description | String    |
-by             | created_by  | String    |
-Comments       | comments    | Array     |
-
-
-
- + The Users id is connected to all the collections in order to know who the data belongs to.
-
- + the variable username in the collection of profile and user allows verification when creating a new record and also verification that the same username is not entered twice.
+Title          | Db Key      | Data Type | Comments                                              |
+-----          | -           |         - | -                                                     |
+Travels id     | _id         | ObjectId  | Autocreated by MongoDB                                |
+Continent      | continent   | ObjectId  | Points to Continent._id                               |
+Country        | country     | String    |                                                       |
+City           | city        | String    |                                                       |
+Date of travel | date        | String    |                                                       |
+Description    | description | String    |                                                       |
+by             | created_by  | String    | Points to User._id                                    |
+Comments       | comments    | Array     | Fields comment, author, id                            |
 
 
 ## Testing
