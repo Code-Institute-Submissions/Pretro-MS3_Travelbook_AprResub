@@ -239,36 +239,37 @@ In the future it is planned to make an application that allows users to upload p
 The collections are:
 
  __Continents__ 
-
-Title |  Db Key | Data Type | 
------ | ------- | --------- | -
-User id | _id | ObjectId 
-Continent | continent|String
+ 
+Title          |  Db Key     | Data Type | 
+-              | -           | -         | 
+User id        | _id         | ObjectId  |
+Continent      | continent   | String    |
 
 __Profile__ 
-Title |  Db Key|Data Type | 
-------------|-|-|-
-User_id | _id | ObjectId
-Username |username|String
+
+Title          | Db Key      | Data Type | 
+-              |   -         |         - |
+User_id        | _id         | ObjectId  |
+Username       | username    | String    |
 
 __Travels__ 
-Title |  Db Key|Data Type | 
-------------|-|-|-
-User_id | _id | ObjectId
-Continent | continent | ObjectId
-Country | country | String
-City | city |String
-Date of travel | date | String
-Description | description | String
-by | created_by | ObjectId
-Comments: | comments | Array
+Title          | Db Key      | Data Type | 
+-              |         -   | -         |
+User_id        | _id         | ObjectId  |
+Continent      | continent   | ObjectId  |
+Country        | country     | String    |
+City           | city        | String    |
+Date of travel | date        | String    |
+Description    | description | String    |
+by             | created_by  | ObjectId  |
+Comments       | comments    | Array     |
 
 __Users__ 
-Title |  Db Key|Data Type | 
-------------|-|-|-
-User_id | _id | ObjectId
-Username | username | String
-Password | password | String
+Title          | Db Key      | Data Type | 
+-----          | -           |         - |
+User_id        | _id         | ObjectId  |
+Username       | username    | String    |
+Password       | password    | String    |
 
  + The Users id is connected to all the collections in order to know who the data belongs to.
 
