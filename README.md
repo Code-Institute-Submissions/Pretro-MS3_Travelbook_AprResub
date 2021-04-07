@@ -14,27 +14,27 @@ This is the third project out of four Milestone Projects at the Code Institute f
 
 As a user of this site, I want to
 
-1. As a user, i want to be able to understand what the site is about.
+1. As a user, i want to be able to understand what the site is about so that i can decide if this is a site of my interest.
 
-2. As a user, i must be able to easy navigate through the different pages of the site.
+2. As a user, i want to easy navigate through the different pages so that i can use the site.
 
-3. As a user, i want to be able to register an account.
+3. As a user, i want to register an account so that i can become a member.
 
-4. As a user, i want the process of registration to be simple.
+4. As a user, i want the process of registration to be simple so that i can start make use of the site and not lose interest with registration processes that take a long time.
 
-5. As a user, i want to be able to easily log in to the site.
+5. As a user, i want to easily log in so that i can start using the website at once.
 
-6. As a user, i want to be able to manage my travel journal information in an easy way.
+6. As a user, i want to manage my travel journal information easily so that it can be time efficient.
 
-7. As a user, i want to be able to add travel journal stories.
+7. As a user, i want to be able to add travel journal stories so that i can share my stories with others.
 
-8. As a user, i want to be able to read other members travel journal stories.
+8. As a user, i want to read other members travel journal stories so that i can compare it with mine journal stories.
 
-9. As a user, i want to be able to search other members travel journal stories.
+9. As a user, i want to search other members travel journal stories so that i can see where the most popular travel destination are.
 
-10. As a user, i want to comment other members travel stories.
+10. As a user, i want to comment other members travel stories so that i can follow up others stories and compare with mine stories.
 
-11. As a User, i want to chat with other members.
+11. As a User, i want to chat with other members so that i can communicate with them.
 
 ## __The purpose of the travel journal is to :__
 
@@ -105,6 +105,8 @@ In the future it is planned to make an application that allows users to upload p
 + [Wireframe 5](/static/wireframes/register.png)
 
 + [Wireframe 6](/static/wireframes/responsive.png)
+
++ [Wireframe 7(/static/wireframes/edit_adventure.png) ]
 
 ## __Features__ 
 
@@ -184,10 +186,6 @@ In the future it is planned to make an application that allows users to upload p
 
   Materialize is a modern responsive CSS framework based on Material Design by Google.
 
-+ [Bootstrap Material Design](https://mdbootstrap.github.io/bootstrap-material-design/)
-
-  Open source toolkit based on Bootstrap for developing Material Design apps with HTML, CSS, and JS.
-
 ### __Repository, workspace__
 
 + [Gitpod](https://www.gitpod.io/) 
@@ -234,6 +232,43 @@ In the future it is planned to make an application that allows users to upload p
 
 + [Devtool](https://developers.google.com/web/tools/chrome-devtools)
 
+# Data schema
+
++ MongoBD was used for the making of the datasbase.
+
+The collections are:
+
+Collections | Type
+------------|--------
+ __Continents__ |
+ id | ObjectId 
+Continent | String
+ __Profile__ |
+id | ObjectId
+username |String
+first_name | String
+last_name | String
+nationality | String
+gender | String
+date_of_birth | String
+phone | String
+email | String
+Travels | String
+users | String
+__Travels__ |
+id | ObjectId
+continent | ObjectId
+country | String
+city | String
+date | String
+description | String
+created_by | ObjectId
+comments: | Array
+__Users__ |
+id | ObjectId
+Username | String
+password | String
+
 ## Testing
 
     During the testing time, the following code validates are use. It is worth mentioning that there were errors in the html code due to the content blocks written in jinja. After talking to my mentor, he has informed me that this is normal.
@@ -248,49 +283,53 @@ In the future it is planned to make an application that allows users to upload p
 
 ## __Testing User Stories from User Experience (UX) Section__ 
 
-1. As a user, i want to be able to understand what the site is about.
+1. As a user, i want to be able to understand what the site is about so that i can decide if this is a site of my interest.
 
-+ When entering the page, it presents a title, a paragraph in which it is clearly read what the site is about. Background photography also helps to understand the purpose of the page.
+    i. When entering the page, it presents a title, a paragraph in which it is clearly read what the site is about. Background photography also helps to understand the purpose of the page.
 
-2. As a user, i must be able to easy navigate through the different pages of the site.
+2. As a user, i want to easy navigate through the different pages so that i can use the site.
 
-+ The main page has a navigation menu in which there are two options, one for log in and the other for registration. Once the user is registered, the remaining options shows on the navmenu and this makes the navigation on the site possible for registered users.
+    i. The main page has a navigation menu in which there are two options, one for log in and the other for registration. Once the user is registered, the remaining options shows on the navmenu and this makes the navigation on the site possible for registered users.
 
-3. As a user, i want to be able to register an account.
+3. As a user, i want to register an account so that i can become a member.
 
-+ The user has the option of registering a user account in the navigation menu. Once this is done, the user is directed to the add adventure page where he can start adding his information
+    i. The user has the option of registering a user account in the navigation menu. Once this is done, the user is a registered member.
 
-4. As a user, i want the process of registration to be simple.
+4. As a user, i want the process of registration to be simple so that i can start make use of the site and not lose interest with registration processes that take a long time.
 
-+ The registration form consists of two fields that allow you to choose a username of your choice and a password.
+    i. To registrate choose a username of your choice and a password. Then you can start using the site. This process avoids a delayed registration process and that the user loses interest in the site.
 
-5. As a user, i want to be able to easily log in to the site.
+5. As a user, i want to easily log in so that i can start using the website at once.
 
-+ Like the registration process. The login process also consists of filling in the username and password already registered by the user in the login form in the login page.
+    i. Like the registration process. The login process also consists of filling in the username and password already registered by the user.
 
-6. As a user, i want to be able to manage my travel journal information in an easy way.
+6. As a user, i want to manage my travel journal information easily so that it can be time efficient.
 
-+ Once entered into the system, the user can perform different operations such as input, editing and deleting the information entered.
+    i. The system is made in such a way that the user can input, edit and delete their information from different points of the system through a navigation menu and links.
 
-7. As a user, i want to be able to add travel journal stories.
+7. As a user, i want to be able to add travel journal stories so that i can share my stories with others.
 
-+ Once the user is logged in, by pressing the adventure option in the navigation menu, the user is directed to the add adventures page.
+    i. Once the user is logged in, by pressing the adventure tab option in the navigation menu, the user is directed to the add adventures page.
 
-8. As a user, i want to be able to read other members travel journal stories.
+    ii. Once the information is entered, it is displayed on the main page where it is available for both visitors and members to read.
 
-+ On the main page all the stories of the members of the page are shown on cards. And it is also possible to write your own comments as a visitor to the page.
+8. As a user, i want to read other members travel journal stories so that i can compare it with mine journal stories.
 
-9. As a user, i want to be able to search other members travel journal stories.
+    i. In the home page the stories of other members are shown on cards. This makes it possible to read and compare the stories with the users own experiences.
 
-+ At the moment it is only possible to search other members travel journals by country.
+9. As a user, i want to search other members travel journal stories so that i can see where the most popular travel destination are.
+
+    i. .In the search section, choose the destination you are looking for, the information will appear on the page in the cards written by the users who have visited the place you are looking for.
+
+    ii. It should be clarified that at the moment it is only possible to search by "country"
 
 10. As a user, i want to comment other members travel stories.
 
-+ Upon entering the system, a modal is displayed where the travel history cards of the members appear. By clicking on the comments option it is possible to leave a comment whether you are a visitor or a member of the page.
+    i. Upon entering the system, a modal is displayed where the travel history cards of the members appear. By clicking on the comments option it is possible to leave a comment whether you are a visitor or a member of the page.
 
 11. As a User, i want to chat with other members.
 
-+ This option is not available at the moment, but it is a project to be carried out in the near future.
+    i. This option is not available at the moment, but it is a project to be carried out in the near future.
 
 * During my test period i focus on the user stories.
 
@@ -386,7 +425,7 @@ To deploy this project, I used the hosting platform of Github and he
 
 The Project is deployed to Heroku using the following steps...
 
- 1. Navigate to Heroku and log into your account.
+ 1. Navigate to [Heroku](https://www.heroku.com/) and log into your account.
 
  2. Press the "new" button in the dashboard and choose "Create new app" option.
  
@@ -411,13 +450,18 @@ The Project is deployed to Heroku using the following steps...
 12. Press the "Deploy Branch" button.
 
 ### __Forking the GitHub Repository__ 
+
 By forking the GitHub Repository we make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original repository by using the following steps...
 
-Log in to GitHub and find the GitHub Repository
++ Log into your GitHub account.
 
-At the top of the Repository (not top of page) just above the "Settings" Button on the menu, locate the "Fork" Button.
++ Search for the repository you want to create a fork, in the search section at the top left of the screen.
 
-You should now have a copy of the original repository in your GitHub account.
++ Once chosen, just above the "Settings" tab on the menu, at the top right of the screen, locate the "Fork" Button.
+
++ Press the "Fork" button.
+
++ You should now have a copy of the original repository in your GitHub account.
 
 ### __Local Deployment__
 
@@ -430,6 +474,7 @@ You should now have a copy of the original repository in your GitHub
 4. Open Git Bash
 
 5. Change the current working directory to the place where you want the cloned directory to be made.
+
    Type  "git clone", and then paste the URL you copied.
 
     $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
@@ -445,11 +490,22 @@ You should now have a copy of the original repository in your GitHub
 __Code__
 
 * [Materialize](https://materializecss.com) 
-Library used throughout the project in the making of the website and to make it responsive.
+
++ Library used throughout the project in the making of the website and to make it responsive.
+
+* [Online Tutorials](https://www.youtube.com/watch?v=enBAFo2kEfE)
+
++ For the use of button effects and other features of the site. I search information from Open tutorials
+
+* [Websolutions](https://www.websolutions.com/blog/7-of-the-most-common-website-errors-and-what-they-mean/)
+
++ I use this site to get information about the website errors encounter in this project.
 
 __Content__
 
-The content (this means the coding) for this project was taken from the mini project tutorial from Code Institute, also part of the code is my code and ideas and guidance from my mentor Antonio Rodriguez.
++ I use the mini project tutorial from Code Institute as a guidance in the making of this project. 
+
++ Part of the code written is my code and ideas and guidance from my mentor Antonio Rodriguez.
 
 __Media__
 
@@ -458,8 +514,12 @@ All Images are from the following site:
 
 __Acknowledgements__
 
-My Mentor Antonio Rodriguez for continuous helpful feedback.
++ My Mentor Antonio Rodriguez for continuous helpful feedback.
 
-Tutor support at Code Institute for their support and help.
++ Tutor support at Code Institute for their support and help.
 
-Tim Nelson for the easy to understand tutorial from Code Institute that i use for guidance in this project.
++ My friend Christian Mossberg for guidance and support.
+
++ My dear friend and journalist Maria Hagström for support with her travel stories and testing this site as a user.
+
++ Tim Nelson for tutorial from Code Institute that i use for guidance in this project.
