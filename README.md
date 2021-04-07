@@ -240,8 +240,8 @@ The collections are:
 
  __Continents__ 
 
-Title |  Db Key|Data Type | 
-------------|-|-|-
+Title |  Db Key | Data Type | 
+----- | ------- | --------- | -
 User id | _id | ObjectId 
 Continent | continent|String
 
