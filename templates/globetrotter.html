@@ -18,7 +18,7 @@
                             <div class="card-reveal">
                                 <span class="card-title grey-text text-darken-4">{{ traveler.country }} - {{traveler.city}}<i
                                         class="material-icons right">close</i></span>
-                                <br />
+                                <br/>
                                 <ul class="collection" id="comments{{traveler._id}}">
                                     {% for comment in traveler.comments %}
                                     <li class="collection-item avatar">
@@ -26,7 +26,7 @@
                                             alt="" class="circle">
                                         <p>{{comment["comment"]}}<br>by: {{comment["author"]}}</p>
                                     </li>
-                                    {% endfor %}                   
+                                    {% endfor %}
                                 </ul>
                             </div>
                             <!--<i class="fas fa-caret-down"></i>-->

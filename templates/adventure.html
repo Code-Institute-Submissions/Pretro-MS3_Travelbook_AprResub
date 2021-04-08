@@ -13,7 +13,7 @@
 <div class="loginbox2">
 <div class="row">
     {% for traveler in travels %}
-    <div class="col s12 m4 travel-card">
+    <div class="col s12 m12 travel-card">
         <h5 class="header">{{ traveler.country }} - {{traveler.city}} </h5>
         <div class="card">
             <div class="card-content">
@@ -45,7 +45,7 @@
                         type="button" name="action">Send </button>
                 </div>
             </div>
-            <div class="card-action">
+            <div class="card-action col s12">
                 <span class="activator">Comments</span>
                 {% if session.user|lower == traveler.created_by|lower %}
                 <a href="{{url_for('edit_adventure', adventure_id=traveler._id)}}">Edit</a>

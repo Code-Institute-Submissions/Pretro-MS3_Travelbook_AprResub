@@ -130,7 +130,7 @@ h3{
 line-height: 5%;
 color: #efed40;
 text-align: center;
-margin-bottom: 15px;
+margin-bottom: 55px;
 }
 .loginbox p{
     margin: 0;
@@ -187,9 +187,7 @@ margin-bottom: 15px;
 .card .card-content{
     height: 200px !important;
 }
-.travel-card{
-    height: 350px;
-}
+
 .travel-card .header{
     color: #ffab40;
 
@@ -205,7 +203,6 @@ margin-bottom: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
     background: rgba(0, 0, 0, .5);
     width: 100%;
     padding: 20px;
@@ -281,207 +278,89 @@ margin-bottom: 15px;
     margin-bottom: 4px;
     margin-left: 50px;
 }
-
 a {
     text-decoration: none;
     margin-left: 30px;
 }
-
 span.activator{
     color: #FFAB40;
 }
 
-/* Profile section*/
-.row{
-    margin-bottom: 350px;
-}
+@media (min-width: 280px) and (max-width: 768px){
+    html{
+        height: 125vh;
+    }
 
-.card .card-content .card-title{
-    font-size: 12px;
-}
-
-@media (max-width:280px){
     body{
-        width: 104%;
-    }
-    .boton{
-        margin-left: -95px;
-    }
-        .card .card-content{
-        height: 250px !important;
-        }
-}
-
-
-@media (max-width: 320px){
-   .fa-folder-open:before, .fa-globe:before, .fa-city:before, 
-    .fa-align-left:before, .fa-calendar-alt:before {
-        display:none;
-   }
-  
-}
-
-@media (max-width: 360px){
-    nav .brand-logo.center{
-        left:25%;
-    }
-    .titles h1 { 
-        font-size:20px;
-    }
-     .card .card-content p, .card .card-reveal .card-title, .collection .collection-item.avatar p {
-        font-size:10px;
-    }
-    .card .card-title.activator{
-        font-size:12px;
-    }
-    .loginbox{
-        top: 75%;
-    }
-    .light-blue.lighten-1{
-        left:4px;
-    }
-      .red.accent-4{
-        left:1px;
-    }
-    .row .col.s12{
-        height: 450px;
-    }
-    h3 {
-        font-size:25px;
-    }
-    .alertas{
-        font-size:20px;
+        background-size: auto;
     }
     
-}
-@media (max-width: 375px){
-.card .card-content p{
-font-size:10px;
-}
-.red.accent-4{
-    margin-left:1px;
-}
-}
-
-@media (max-width: 411px){
-    .loginbox{
-        top:85%;
-    }
-    body{
-        height:130vh;
-    }
-    .alertas{
-        font-size:15px;
-    }
-    .light-blue.lighten-1{
-        margin-left:1px;
-    }
-     h3 {
-        font-size:25px;
-    }
-}
-
-
-@media (max-width: 414px){
     .titles h1{
-        font-size:15px;
+        font-size: 20px;
     }
-    .loginbox{
-        top:57%;
+    .boton {
+        left: 55px;
     }
-    body{
-        height:100vh;
+    nav .brand-logo.center {
+        font-size: 20px;
     }
-    .alertas{
-        font-size:15px;
-    }
-    .light-blue.lighten-1{
-        margin-left:1px;
-    }
-      h3 {
-        font-size:25px;
-    }
-}
 
-@media(max-width:540px){
-    .loginbox{
-        margin-top: 230px;
-    }
-    .alertas{
-        font-size: 14px;
-    }
-    .container{
-        width: 100%;
-    }
-    .boton{
-        left: 195px;
-    }
-    .loginbox2 input[type="submit"]{
-        margin:10px;
-    }
-}
-
-@media(max-width:720px){
     .card .card-content {
-    height: 300px !important;
+        width: 250px;
     }
-}
-
-@media(max-width:768px){
-    .travel-card .header{
-        font-size: 12px;
-    }
-     .card .card-content {
-    height: 300px !important;
-    }
-    .card .card-content .card-title, .card .card-content p{
+    .card .card-content .card-title, .card .card-content p, .card .card-reveal .card-title {
         font-size: 10px;
     }
-    .loginbox{
-        top:60%;
-    }
-    body{
-        height: 138vh;
-    }
-    .loginbox2{
-        margin-top: 100px;
-    }
-    .row{
-        margin-bottom: 105px;
-    }
-}
-@media(max-width:1024px){
-.travel-card .header{
-        font-size: 14px;
-    }
-    .card .card-content .card-title, .card .card-content p{
-        font-size: 12px;
-    }
-    html{
-        height: 130vh;
-    }
-    .loginbox2{
-        min-height: 60vh;
-    }
-    body{
-        background-size: 220vh;
-    }
-    .card .card-title{
-        font-size: 17px;
+    .collection .collection-item.avatar:not(.circle-clipper)>.circle{ 
+    display: none;
     }
     .collection .collection-item.avatar p{
         margin-left: -70px;
     }
-    .collection .collection-item.avatar:not(.circle-clipper)>.circle, 
-    .collection .collection-item.avatar :not(.circle-clipper)>.circle{
-        display: none;
+    .travel-card .header{
+        font-size: 14px;
     }
-}
-@media(max-width:1366px){
-    .red.accent-4 {
-        left: 1px;
+    .loginbox{
+        width: 280px;
+        height: 390px;
+        top:77%
     }
-    .light-blue.lighten-1{
-        left: 1px;
+    .member{
+        font-size: 25px;
     }
-}
+    .alertas{
+        margin: 0;
+        font-size: 10px;
+    }
+    .center, .center-align{
+        font-size: 15px;
+    }
+    .red.accent-4, .light-blue.lighten-1{
+        margin-left: 0;
+    }
+    h3{
+        font-size: 15px;
+    }
+    .loginbox2 input[type="submit"], .btn-large {
+        margin-left: 0;
+    }
+    .row .col{
+        padding: 0;
+    }
+    .fa-calendar-alt:before, .fa-city:before, .fa-align-left:before,
+    .fa-globe:before,.fa-folder-open:before{
+        content: none;
+    }
+    .prefix ~ .select-wrapper{
+        margin-left: 1.5rem;
+    }
+    .row .col.s6{
+        margin-left: 1px;
+    }
+    span.activator, .card .card-action, 
+    a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating){
+        font-size: 11px;
+    }
+} 
+
+@media (min-width: 768px) and (max-width: 1024px){

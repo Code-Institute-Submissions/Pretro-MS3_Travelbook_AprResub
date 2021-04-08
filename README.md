@@ -408,7 +408,9 @@ Friends and family tested the site by login in and writing about their stories. 
 
 ## __Known Bugs__
 
-+ 
++ A white dot appears below the continent field in the add and edit form. It's barely noticeable on the screen.
+
++
 
 ## __Deployment__ 
 

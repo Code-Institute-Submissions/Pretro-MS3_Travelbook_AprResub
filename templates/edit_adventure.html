@@ -1,6 +1,5 @@
 {% extends "base.html" %}
 {% block content %}
-
 <div class="loginbox2">
     <div class="admin">
         <h3>Edit your adventures</h3>
@@ -18,9 +17,7 @@
                         {% endif %}
                         {% endfor %}
                     </select>
-                    
                 </div>
-
                 <!--Country-->
                 <div class="input-field col s6">
                     <i class="fas fa-globe prefix yellow-text text-white"></i>
@@ -37,7 +34,6 @@
                         class="validate white-text text-darken-4" required data-length="40">
                     <label for="city" class="white-text text-darken-4">City</label>
                 </div>
-
                 <!--Date of travel-->
                 <div class="input-field col s6 ">
                     <i class="fas fa-calendar-alt prefix yellow-text text-white"></i>
@@ -70,4 +66,4 @@
         </form>
     </div>
 </div>
-        {% endblock %}
+{% endblock %}
