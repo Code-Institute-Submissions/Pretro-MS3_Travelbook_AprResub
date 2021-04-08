@@ -130,7 +130,7 @@ h3{
 line-height: 5%;
 color: #efed40;
 text-align: center;
-margin-bottom: 150px;
+margin-bottom: 15px;
 }
 .loginbox p{
     margin: 0;
@@ -291,74 +291,27 @@ span.activator{
     color: #FFAB40;
 }
 
-@media (max-width: 280px){
-    .collection .collection-item.avatar:not(.circle-clipper)>.circle, 
-    .collection .collection-item.avatar :not(.circle-clipper)>.circle{
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    overflow: hidden;
-    display: inline-block;
-    vertical-align: middle;
-    right: 123px;
-    }
-    .collection .collection-item.avatar{
-    min-height: 84px;
-    padding-left: 42px;
-    position: relative;
-    }
-      a.brand-logo.center{
-    left: 25%;
-    font-size: 20px;
- }
-    .btn-large{
-    margin-left: 0px;
-    margin-top: 25px;
- }
- .loginbox2 input[type="submit"]{
-    margin-left: 0;
- }
+/* Profile section*/
+.row{
+    margin-bottom: 350px;
+}
+
+.card .card-content .card-title{
+    font-size: 12px;
+}
+
+@media (max-width:280px){
     body{
-        height:180vh;
-    }
-    .loginbox{
-        top: 98%;
-    }
-    .alertas, .travel-card .header{
-        font-size:15px;
-    }
-    .white-text , .titles h1, h3{
-        font-size: 20px;
+        width: 104%;
     }
     .boton{
-        left:55px;
+        margin-left: -95px;
     }
-    .card .card-content .card-title,  
-    .card .card-content p, .collection .collection-item.avatar p, {
-        font-size:10px;
-    }
-    .loginbox2 .row100 .input-field{
-        width:80%;
-        padding: 0 30px;
-        margin: 16px 15px 15px;
-    }
-    .fa-globe:before{
-        margin-left:-1px;
-    }
-    .red.accent-4{
-        margin-top:10px;
-    }
-    .fa-folder-open:before, .fa-globe:before, .fa-city:before, 
-    .fa-align-left:before, .fa-calendar-alt:before {
-        display:none;
-    }
-    .row .col.s6{
-        left:-12px;
-    }
-    .editing{
-        margin-left:-40px;
-    }
+        .card .card-content{
+        height: 250px !important;
+        }
 }
+
 
 @media (max-width: 320px){
    .fa-folder-open:before, .fa-globe:before, .fa-city:before, 
@@ -390,12 +343,16 @@ span.activator{
       .red.accent-4{
         left:1px;
     }
+    .row .col.s12{
+        height: 450px;
+    }
     h3 {
         font-size:25px;
     }
     .alertas{
         font-size:20px;
     }
+    
 }
 @media (max-width: 375px){
 .card .card-content p{
@@ -446,3 +403,85 @@ font-size:10px;
     }
 }
 
+@media(max-width:540px){
+    .loginbox{
+        margin-top: 230px;
+    }
+    .alertas{
+        font-size: 14px;
+    }
+    .container{
+        width: 100%;
+    }
+    .boton{
+        left: 195px;
+    }
+    .loginbox2 input[type="submit"]{
+        margin:10px;
+    }
+}
+
+@media(max-width:720px){
+    .card .card-content {
+    height: 300px !important;
+    }
+}
+
+@media(max-width:768px){
+    .travel-card .header{
+        font-size: 12px;
+    }
+     .card .card-content {
+    height: 300px !important;
+    }
+    .card .card-content .card-title, .card .card-content p{
+        font-size: 10px;
+    }
+    .loginbox{
+        top:60%;
+    }
+    body{
+        height: 138vh;
+    }
+    .loginbox2{
+        margin-top: 100px;
+    }
+    .row{
+        margin-bottom: 105px;
+    }
+}
+@media(max-width:1024px){
+.travel-card .header{
+        font-size: 14px;
+    }
+    .card .card-content .card-title, .card .card-content p{
+        font-size: 12px;
+    }
+    html{
+        height: 130vh;
+    }
+    .loginbox2{
+        min-height: 60vh;
+    }
+    body{
+        background-size: 220vh;
+    }
+    .card .card-title{
+        font-size: 17px;
+    }
+    .collection .collection-item.avatar p{
+        margin-left: -70px;
+    }
+    .collection .collection-item.avatar:not(.circle-clipper)>.circle, 
+    .collection .collection-item.avatar :not(.circle-clipper)>.circle{
+        display: none;
+    }
+}
+@media(max-width:1366px){
+    .red.accent-4 {
+        left: 1px;
+    }
+    .light-blue.lighten-1{
+        left: 1px;
+    }
+}

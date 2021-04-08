@@ -106,7 +106,7 @@ In the future it is planned to make an application that allows users to upload p
 
 + [Wireframe 6](/static/wireframes/responsive.png)
 
-+ [Wireframe 7(/static/wireframes/edit_adventure.png) ]
++ [Wireframe 7](/static/wireframes/edit_adventure.png)
 
 ## __Features__ 
 

@@ -5,10 +5,10 @@
             <form class="col s12 m8 offset-m2" method="POST" action="{{ url_for('login') }}">
                 <p>Username</p>
                 <input id="username" name="username" type="text" minlength="3" 
-                        maxlength="20" pattern="^[a-zA-Z0-9]{5,20}$" class="validate" required>
+                        maxlength="50" pattern="^[a-zA-Z0-9]{5,20}$" class="validate" required>
                 <p>Password</p>
                 <input id="password" name="password" type="password" minlength="5" 
-                        maxlength="20" pattern="^[a-zA-Z0-9]{5,20}$" class="validate" placeholder="*****" required>
+                        maxlength="50" pattern="^[a-zA-Z0-9]{5,20}$" class="validate" placeholder="*****" required>
                         <input type="submit" name="submit" value="Sign In">
                 <p class="center-align">
             Is this your first time here?<br>
