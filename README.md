@@ -74,7 +74,7 @@ The colours that I used for the site:
 
 * (Black) Is used for the text shadows.
 
-* (White) Is use for the menu options in the navbar and for the paragraph in the home , log in and register, add and edit adventure page textfields .
+* (White) Is use for the menu options in the navbar and for the paragraph in the home , log in and register, add and edit adventure page text fields .
 
 * (Lightgrey) Is used for background forms in all of the sites pages.
 
@@ -298,7 +298,7 @@ Comments       | comments    | Array     | Fields comment, author, id           
 
 4. As a user, i want the process of registration to be simple so that i can start make use of the site and not lose interest with registration processes that take a long time.
 
-    i. To registrate choose a username of your choice and a password. Then you can start using the site. This process avoids a delayed registration process and that the user loses interest in the site.
+    i. To register choose a username of your choice and a password. Then you can start using the site. This process avoids a delayed registration process and that the user loses interest in the site.
 
 5. As a user, i want to easily log in so that i can start using the website at once.
 
@@ -420,7 +420,7 @@ To deploy this project, I used the hosting platform of Github and he
 
 + GitHub was use for the creation of the project repository. 
 
-+ The repository is connected to Gitpod. All the changes during the creation of the project are commited and push to GitHub.
++ The repository is connected to Gitpod. All the changes during the creation of the project are committed and push to GitHub.
 
 + As a final part,  the project is deployed to heroku. This is achieved by the linking between github and heroku.
 
@@ -472,7 +472,7 @@ By forking the GitHub Repository we make a copy of the original repo
 
 2. Above the list of files, click "Code".
 
-3. Mark the HTTPS tag ad press the copy icon at the end of the link.
+3. Mark the HTTPS tag and press the copy icon at the end of the link.
 
 4. Open Git Bash
 
