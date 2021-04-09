@@ -285,7 +285,7 @@ a {
 span.activator{
     color: #FFAB40;
 }
-
+/* Media Queries*/
 @media (min-width: 280px) and (max-width: 768px){
     html{
         height: 125vh;
@@ -359,6 +359,3 @@ span.activator{
         font-size: 11px;
     }
 } 
-
-@media (min-width: 768px) and (max-width: 1024px){
-}

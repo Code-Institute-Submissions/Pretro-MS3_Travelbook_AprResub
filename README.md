@@ -1,4 +1,4 @@
-#__Travel Journal__
+# __Travel Journal__
 
 (https://ms3-traveler-project.herokuapp.com/)
 
@@ -14,7 +14,7 @@ This is the third project out of four Milestone Projects at the Code Institute f
 
 As a user of this site, I want to
 
-1. As a user, i want to be able to understand what the site is about so that i can decide if this is a site of my interest.
+1. As a user, i want to be able to easily understand what the site is about so that i can decide if this is a site of my interest.
 
 2. As a user, i want to easy navigate through the different pages so that i can use the site.
 
@@ -34,7 +34,7 @@ As a user of this site, I want to
 
 10. As a user, i want to comment other members travel stories so that i can follow up others stories and compare with mine stories.
 
-11. As a User, i want to chat with other members so that i can communicate with them.
+11. As a User, i want to chat with other members so we can advise each other on destinations.
 
 ## __The purpose of the travel journal is to :__
 
@@ -44,9 +44,7 @@ As a user of this site, I want to
 
 + Give us the possibility in these difficult times to get a little closer and make life a little more entertaining.
 
-The idea was born during the pandemic. It is believed that interest in travel will increase markedly after this difficult time is over. Choosing a destination is not always easy, but through a page where you can search for destinations and integrate with other travelers, 
-
-check their comments and reviews of the different places they have been to, in some way it makes it easier to choose where you would like to travel to in the future.
+The idea was born during the pandemic. It is believed that interest in travel will increase markedly after this difficult time is over. Choosing a destination is not always easy, but through a page where you can search for destinations and integrate with other travelers, check their comments and reviews of the different places they have been to, in some way it makes it easier to choose where you would like to travel to in the future.
 
 ### __Project Strategy__
 
@@ -104,9 +102,10 @@ In the future it is planned to make an application that allows users to upload p
 
 + [Wireframe 5](/static/wireframes/register.png)
 
++ [Wireframe 7](/static/wireframes/edit_adventure.png)
+
 + [Wireframe 6](/static/wireframes/responsive.png)
 
-+ [Wireframe 7](/static/wireframes/edit_adventure.png)
 
 ## __Features__ 
 
@@ -272,11 +271,11 @@ Comments       | comments    | Array     | Fields comment, author, id           
 
 ## Testing
 
-    During the testing time, the following code validates are use. It is worth mentioning that there were errors in the html code due to the content blocks written in jinja. After talking to my mentor, he has informed me that this is normal.
+    During the testing time, the following code validates are use. 
 
 + [W3C](https://validator.w3.org/) Validator HTML.
 
-+ [W3C](https://jigsaw.w3.org/css-validator/#validate_by_input) validator CSS.
++ [CSS](https://jigsaw.w3.org/css-validator/#validate_by_input) validator CSS.
 
 + [Pep8](http://pep8online.com/) validator Python
 
@@ -284,7 +283,7 @@ Comments       | comments    | Array     | Fields comment, author, id           
 
 ## __Testing User Stories from User Experience (UX) Section__ 
 
-1. As a user, i want to be able to understand what the site is about so that i can decide if this is a site of my interest.
+1. As a user, i want to be able to easily understand what the site is about so that i can decide if this is a site of my interest.
 
     i. When entering the page, it presents a title, a paragraph in which it is clearly read what the site is about. Background photography also helps to understand the purpose of the page.
 
@@ -324,11 +323,11 @@ Comments       | comments    | Array     | Fields comment, author, id           
 
     ii. It should be clarified that at the moment it is only possible to search by "country"
 
-10. As a user, i want to comment other members travel stories.
+10. As a user, i want to comment other members travel stories so that i can follow up others stories and compare with mine stories.
 
     i. Upon entering the system, a modal is displayed where the travel history cards of the members appear. By clicking on the comments option it is possible to leave a comment whether you are a visitor or a member of the page.
 
-11. As a User, i want to chat with other members.
+11. As a User, i want to chat with other members so we can advise each other on destinations.
 
     i. This option is not available at the moment, but it is a project to be carried out in the near future.
 
@@ -410,7 +409,6 @@ Friends and family tested the site by login in and writing about their stories. 
 
 + A white dot appears below the continent field in the add and edit form. It's barely noticeable on the screen.
 
-+
 
 ## __Deployment__ 
 
