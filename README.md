@@ -70,13 +70,17 @@ The colours that I used for the site:
 
 * (Orange) For the hover effect on the buttons.
 
-* (Black) Is used for the text shadows.
+* (Black) It is used for the text shadows.
 
-* (White) Is use for the menu options in the navbar and for the paragraph in the home , log in and register, add and edit adventure page text fields .
+* (White) It is used for the menu options in the navbar and for the paragraph in the home , log in and register, add and edit adventure page text fields .
 
-* (Lightgrey) Is used for background forms in all of the sites pages.
+* (Lightgrey) It is used for background forms in all of the sites pages.
 
-* (Green) is the default color of the icon in the comment feature.
+* (Green) Is the default color of the icon in the comment feature.
+
+* (Red) It is used for the delete button.
+
+* (Lightblue) It is used for the edit button in the edit adventure template.
 
 The reason why these colors were chosen is because since the background image is colorful, these colors give a more joyful tone and at the same time allow the user to be focused on what they are doing. Generating a more attractive effect not only for the frequent user but also for the one who visits the site for the first time.
     
@@ -105,7 +109,6 @@ In the future it is planned to make an application that allows users to upload p
 + [Wireframe 7](/static/wireframes/edit_adventure.png)
 
 + [Wireframe 6](/static/wireframes/responsive.png)
-
 
 ## __Features__ 
 
@@ -408,7 +411,6 @@ Friends and family tested the site by login in and writing about their stories. 
 ## __Known Bugs__
 
 + A white dot appears below the continent field in the add and edit form. It's barely noticeable on the screen.
-
 
 ## __Deployment__ 
 

@@ -285,6 +285,7 @@ a {
 span.activator{
     color: #FFAB40;
 }
+
 /* Media Queries*/
 @media (min-width: 280px) and (max-width: 768px){
     html{
